@@ -14,3 +14,5 @@ export * from './Search';
 export * from './Sort';
 export * from './Success';
 export * from './Trash';
+export * from './Gear';
+export * from './Escape';
