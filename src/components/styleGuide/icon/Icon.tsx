@@ -1,21 +1,25 @@
 import styled from 'styled-components';
 import { Text } from '../text/Text';
-import { Add } from './Add';
-import { Arrow } from './Arrow';
-import { Close } from './Close';
-import { Eye } from './Eye';
-import { Human } from './Human';
-import { PlusBubble } from './PlusBubble';
-import { Search } from './Search';
-import { Sort } from './Sort';
-import { Trash } from './Trash';
-import { Information } from './Information';
-import { Error } from './Error';
-import { Success } from './Success';
-import { Home } from './Home';
-import { PaperPlane } from './PaperPlane';
-import { MegaPhone } from './MegaPhone';
-import { ArchiveBox } from './ArchiveBox';
+import {
+  Add,
+  Arrow,
+  Close,
+  Eye,
+  Home,
+  Human,
+  PaperPlane,
+  Search,
+  Success,
+  Sort,
+  Trash,
+  Information,
+  Error,
+  PlusBubble,
+  MegaPhone,
+  ArchiveBox,
+  Gear,
+  Escape,
+} from './index';
 
 const IconList = [
   { svg: <Arrow direction="left" />, name: 'left-arrow' },
@@ -43,6 +47,8 @@ const IconList = [
   { svg: <Information />, name: 'information' },
   { svg: <Error />, name: 'error' },
   { svg: <Success />, name: 'success' },
+  { svg: <Gear />, name: 'gear' },
+  { svg: <Escape />, name: 'escape' },
 ];
 
 export const Icon = () => {
