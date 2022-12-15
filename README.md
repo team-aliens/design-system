@@ -1,6 +1,6 @@
 # @aliens/design-system
 
-![NPM](https://img.shields.io/npm/v/@aliens/design-system.svg)
+![NPM](https://img.shields.io/npm/v/@team-aliens/design-system.svg)
 
 ## Documentation
 
