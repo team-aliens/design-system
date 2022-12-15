@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "noResolve": false,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "keyofStringsOnly": true,
+    "noEmit": false
+  },
+  "typeRoots": ["node_modules/@types", "src/@types"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "config/webpack",
+    "src/setupTests.ts",
+    "./node_modules/**/*",
+    "./src/**/*.stories.tsx"
+  ],
+  "include": ["./src/**/*", "@types", "__tests__"]
+}
