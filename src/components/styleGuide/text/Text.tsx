@@ -9,6 +9,7 @@ interface PropsType extends marginCssType, styledType {
   /** 타입 지정 필요 */
   onClick?: any;
   cursor?: 'pointer';
+  align?: 'center' | 'start' | 'end';
 }
 
 export const Text = ({
@@ -19,6 +20,7 @@ export const Text = ({
   className,
   onClick,
   margin,
+  align,
   cursor,
 }: PropsType) => {
   return (
@@ -30,6 +32,7 @@ export const Text = ({
       onClick={onClick}
       margin={margin}
       cursor={cursor}
+      align={align}
     >
       {children}
     </_Text>
@@ -42,4 +45,5 @@ const _Text = styled.div<PropsType>`
   ${({ size, theme }) => theme.font[size]};
   margin: ${({ margin }) => marginToCss({ margin })};
   cursor: ${({ cursor }) => cursor};
+  text-align: ${({ align }) => align};
 `;

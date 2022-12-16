@@ -3,6 +3,6 @@
 ## install
 
 ```bash
-npm install @aliens/design-system
+npm install @team-aliens/design-system
 ```
 

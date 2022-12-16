@@ -1,4 +1,4 @@
-# @aliens/design-system
+# @team-aliens/design-system
 
 ![NPM](https://img.shields.io/npm/v/@team-aliens/design-system.svg)
 
