@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/team-aliens/design-system/compare/v1.1.0...v1.1.1) (2022-12-19)
+
+
+### Bug Fixes
+
+* onChange return type void로 변경 ([3545632](https://github.com/team-aliens/design-system/commit/3545632d2cceabd64feeb306ee6f53646943adb7))
+
 # [1.1.0](https://github.com/team-aliens/design-system/compare/v1.0.2...v1.1.0) (2022-12-19)
 
 
