@@ -35,6 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-react", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:7.18.6"],\
             ["@babel/preset-typescript", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:7.18.6"],\
             ["@babel/runtime-corejs3", "npm:7.20.6"],\
+            ["@semantic-release/changelog", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:6.0.2"],\
             ["@semantic-release/git", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:10.0.1"],\
             ["@storybook/addon-actions", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:6.5.14"],\
             ["@storybook/addon-essentials", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:6.5.14"],\
@@ -4995,6 +4996,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@semantic-release/changelog", [\
+        ["npm:6.0.2", {\
+          "packageLocation": "./.yarn/cache/@semantic-release-changelog-npm-6.0.2-63a61e6d7f-e116a1ac25.zip/node_modules/@semantic-release/changelog/",\
+          "packageDependencies": [\
+            ["@semantic-release/changelog", "npm:6.0.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:6.0.2", {\
+          "packageLocation": "./.yarn/__virtual__/@semantic-release-changelog-virtual-2bbe6e49df/0/cache/@semantic-release-changelog-npm-6.0.2-63a61e6d7f-e116a1ac25.zip/node_modules/@semantic-release/changelog/",\
+          "packageDependencies": [\
+            ["@semantic-release/changelog", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:6.0.2"],\
+            ["@semantic-release/error", "npm:3.0.0"],\
+            ["@types/semantic-release", null],\
+            ["aggregate-error", "npm:3.1.0"],\
+            ["fs-extra", "npm:11.1.0"],\
+            ["lodash", "npm:4.17.21"],\
+            ["semantic-release", "npm:19.0.5"]\
+          ],\
+          "packagePeers": [\
+            "@types/semantic-release",\
+            "semantic-release"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@semantic-release/commit-analyzer", [\
         ["npm:9.0.2", {\
           "packageLocation": "./.yarn/cache/@semantic-release-commit-analyzer-npm-9.0.2-6c1ff15dac-f7f759e608.zip/node_modules/@semantic-release/commit-analyzer/",\
@@ -7291,6 +7318,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-react", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:7.18.6"],\
             ["@babel/preset-typescript", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:7.18.6"],\
             ["@babel/runtime-corejs3", "npm:7.20.6"],\
+            ["@semantic-release/changelog", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:6.0.2"],\
             ["@semantic-release/git", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:10.0.1"],\
             ["@storybook/addon-actions", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:6.5.14"],\
             ["@storybook/addon-essentials", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:6.5.14"],\
