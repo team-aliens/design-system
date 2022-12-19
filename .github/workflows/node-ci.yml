@@ -5,11 +5,9 @@ on:
     branches:
       - 'feature/**'
       - 'hotfixes'
-      - 'main'
       - 'develop'
   pull_request:
     branches:
-      - 'main'
       - 'develop'
 
 concurrency:
