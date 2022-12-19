@@ -1,3 +1,4 @@
+import { ReactNode } from 'react';
 import OutsideClickHandler from 'react-outside-click-handler';
 import styled from 'styled-components';
 import { Close } from '../styleGuide/icon/Close';
@@ -8,6 +9,7 @@ interface propsType extends headerPropsType, contentPropsType {
   inputList?: JSX.Element[];
   buttonList: JSX.Element[];
   close: () => void;
+  children: ReactNode;
 }
 
 export const Modal = ({
@@ -16,6 +18,7 @@ export const Modal = ({
   inputList,
   buttonList,
   close,
+  children,
 }: propsType) => {
   return (
     <_Background>
@@ -27,6 +30,7 @@ export const Modal = ({
           <Header title={title} />
           {content && <Content content={content} />}
           <_InputWrapper>{inputList?.map((input) => input)}</_InputWrapper>
+          {children}
           <_BtnWrapper>{buttonList.map((Btn) => Btn)}</_BtnWrapper>
         </_Modal>
       </OutsideClickHandler>
