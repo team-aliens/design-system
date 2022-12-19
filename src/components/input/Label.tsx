@@ -6,7 +6,7 @@ export interface labelPropsType {
 
 export const Label = ({ label }: labelPropsType) => {
   return (
-    <Text size="bodyM" color="gray6">
+    <Text margin={['left', 6]} size="bodyM" color="gray6">
       {label}
     </Text>
   );
