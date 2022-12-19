@@ -1,6 +1,6 @@
 {
   "name": "@team-aliens/design-system",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "this is @aliens/design-system",
   "main": "dist/index",
   "module": "dist/index",
