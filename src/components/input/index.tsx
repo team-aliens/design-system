@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import { ChangeEvent, Dispatch, SetStateAction, useState } from 'react';
+import { useState } from 'react';
 import { Eye } from '../styleGuide/icon/Eye';
 import { Label, labelPropsType } from './Label';
 import { ErrorMsg, errorMsgPropsType } from './ErrorMsg';
 import { marginCssType, _Wrapper } from '../../utils/distance';
 
 interface PropsType extends marginCssType, errorMsgPropsType, labelPropsType {
-  setState: Dispatch<SetStateAction<string>>;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => {};
   type?: 'text' | 'password';
   placeholder?: string;
   width?: number;
@@ -17,7 +17,7 @@ interface PropsType extends marginCssType, errorMsgPropsType, labelPropsType {
 
 /** input 에러 상태일 때에는 포커싱이 파란색..? */
 export const Input = ({
-  setState,
+  onChange,
   label,
   placeholder,
   width,
@@ -34,7 +34,7 @@ export const Input = ({
       <Label label={label} />
       <_InputWrapper width={width}>
         <_Input
-          onChange={(e) => setState(e.target.value)}
+          onChange={onChange}
           type={(isOpen && 'text') || type}
           errorMsg={errorMsg}
           placeholder={placeholder}
