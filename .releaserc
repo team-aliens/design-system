@@ -44,12 +44,18 @@
       }
     ],
     "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "docs/CHANGELOG.md"
+      }
+    ],
     "@semantic-release/npm",
     [
       "@semantic-release/git",
       {
         "assets": [
-          "package.json"
+          "docs/CHANGELOG.md"
         ]
       }
     ],
