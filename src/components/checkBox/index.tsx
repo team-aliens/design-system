@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from 'react';
 import styled from 'styled-components';
 import { marginCssType, marginToCss } from '../../utils/distance';
-import { CheckBox } from './CheckBox';
+import { Box } from './Box';
 import { Label } from './Label';
 
 interface PropsType extends marginCssType {
@@ -13,7 +13,7 @@ interface PropsType extends marginCssType {
 }
 
 /** checkBox 여러개 있을 때 처리를 딱히 안해둠 (사용할 때 고민해봅시다) */
-export const Wrapper = ({
+export const CheckBox = ({
   className,
   disabled = false,
   label,
@@ -28,7 +28,7 @@ export const Wrapper = ({
       onClick={() => !disabled && checkSetState(!status)}
       margin={margin}
     >
-      <CheckBox status={status} disabled={disabled} />
+      <Box status={status} disabled={disabled} />
       {label && <Label label={label} disabled={disabled} />}
     </_Wrapper>
   );
