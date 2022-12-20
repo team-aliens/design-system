@@ -6,7 +6,7 @@ import { ErrorMsg, errorMsgPropsType } from './ErrorMsg';
 import { marginCssType, _Wrapper } from '../../utils/distance';
 
 interface PropsType extends marginCssType, errorMsgPropsType, labelPropsType {
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => {};
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   type?: 'text' | 'password';
   placeholder?: string;
   width?: number;
