@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/team-aliens/design-system/compare/v1.1.3...v1.1.4) (2022-12-20)
+
+
+### Bug Fixes
+
+* checkBox 네이밍 수정 ([ea9aaf2](https://github.com/team-aliens/design-system/commit/ea9aaf2e73b0b23fa5daf8d328a1f1e2df55b492))
+
 ## [1.1.3](https://github.com/team-aliens/design-system/compare/v1.1.2...v1.1.3) (2022-12-20)
 
 
