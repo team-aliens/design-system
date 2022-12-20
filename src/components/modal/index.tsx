@@ -9,7 +9,7 @@ interface propsType extends headerPropsType, contentPropsType {
   inputList?: JSX.Element[];
   buttonList: JSX.Element[];
   close: () => void;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export const Modal = ({
