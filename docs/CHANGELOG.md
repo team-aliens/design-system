@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/team-aliens/design-system/compare/v1.1.2...v1.1.3) (2022-12-20)
+
+
+### Bug Fixes
+
+* 버그 수정사항 반영한 develop into main ([#17](https://github.com/team-aliens/design-system/issues/17)) ([5a32d46](https://github.com/team-aliens/design-system/commit/5a32d468775805cbbdbce58c75aa20d342c7b7c5)), closes [#12](https://github.com/team-aliens/design-system/issues/12) [#11](https://github.com/team-aliens/design-system/issues/11) [#11](https://github.com/team-aliens/design-system/issues/11) [#14](https://github.com/team-aliens/design-system/issues/14) [#15](https://github.com/team-aliens/design-system/issues/15)
+
 ## [1.1.2](https://github.com/team-aliens/design-system/compare/v1.1.1...v1.1.2) (2022-12-20)
 
 
