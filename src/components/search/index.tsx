@@ -1,29 +1,25 @@
 import styled, { css } from 'styled-components';
 import { Search } from '../styleGuide/icon/Search';
-import { Dispatch, SetStateAction } from 'react';
+import { ChangeEvent } from 'react';
 import { marginCssType, marginToCss } from '../../utils/distance';
 
 interface PropsType extends marginCssType {
   className?: string;
   value: string;
-  setState: Dispatch<SetStateAction<string>>;
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
   disabled?: boolean;
 }
 
 export const SearchBox = ({
   className,
   value,
-  setState,
+  onChange,
   disabled,
 }: PropsType) => {
   return (
     <_Wrapper className={className} disabled={disabled}>
       <Search colorKey="gray5" size={28} className={className} />
-      <_Input
-        value={value}
-        onChange={(e) => setState(e.target.value)}
-        disabled={disabled}
-      />
+      <_Input value={value} onChange={onChange} disabled={disabled} />
     </_Wrapper>
   );
 };
