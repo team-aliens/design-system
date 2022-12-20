@@ -1,7 +1,7 @@
 import { Text } from '../styleGuide/text/Text';
 
 export interface labelPropsType {
-  label: string;
+  label?: string;
 }
 
 export const Label = ({ label }: labelPropsType) => {
