@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/team-aliens/design-system/compare/v1.2.2...v1.2.3) (2022-12-21)
+
+
+### Bug Fixes
+
+* checkBox Wrapper div로 수정 ([ebb031c](https://github.com/team-aliens/design-system/commit/ebb031c8c59bf181a4ada86c4772a13c5d455762))
+
 ## [1.2.2](https://github.com/team-aliens/design-system/compare/v1.2.1...v1.2.2) (2022-12-21)
 
 
