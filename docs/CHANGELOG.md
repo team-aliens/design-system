@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/team-aliens/design-system/compare/v1.2.0...v1.2.1) (2022-12-21)
+
+
+### Bug Fixes
+
+* checkBox export as 제거 ([4a383fb](https://github.com/team-aliens/design-system/commit/4a383fbd4635e954404aebfa07029bc7ae1fb7f8))
+
 # [1.2.0](https://github.com/team-aliens/design-system/compare/v1.1.4...v1.2.0) (2022-12-21)
 
 
