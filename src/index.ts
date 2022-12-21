@@ -17,3 +17,4 @@ export * from './components/search';
 export * from './components/styleGuide/icon';
 export * from './components/modal';
 export * from './components/breadCrumb/BreadCrumb';
+export * from './components/segmentedBtn';
