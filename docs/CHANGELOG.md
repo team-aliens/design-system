@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/team-aliens/design-system/compare/v1.2.1...v1.2.2) (2022-12-21)
+
+
+### Bug Fixes
+
+* margin: 제거 ([4ec7d5b](https://github.com/team-aliens/design-system/commit/4ec7d5b6285b08dd353eb308de2c13753ee29cb0))
+
 ## [1.2.1](https://github.com/team-aliens/design-system/compare/v1.2.0...v1.2.1) (2022-12-21)
 
 
