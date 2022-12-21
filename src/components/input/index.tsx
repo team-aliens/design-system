@@ -70,7 +70,9 @@ const _Input = styled.input<{ errorMsg: string }>`
   border-radius: 4px;
   border: 1px solid
     ${({ theme, errorMsg }) =>
-      typeof errorMsg === 'undefined' ? theme.color.gray5 : theme.color.error};
+      typeof errorMsg === 'undefined' || errorMsg === ''
+        ? theme.color.gray5
+        : theme.color.error};
   :focus {
     border: 2px solid ${({ theme }) => theme.color.primary};
   }
