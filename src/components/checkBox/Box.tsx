@@ -5,7 +5,7 @@ interface PropsType {
   status: boolean;
 }
 
-export const CheckBox = ({ disabled, status }: PropsType) => {
+export const Box = ({ disabled, status }: PropsType) => {
   return (
     <_Wrapper disabled={disabled} status={status}>
       {status && (
