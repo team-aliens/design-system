@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/team-aliens/design-system/compare/v1.1.4...v1.2.0) (2022-12-21)
+
+
+### Features
+
+* 세그멘트 버튼 추가 및 여러 버그수정 ([#20](https://github.com/team-aliens/design-system/issues/20)) ([7670d58](https://github.com/team-aliens/design-system/commit/7670d589f80c9976691bb690c17bb90d09f096ef)), closes [#12](https://github.com/team-aliens/design-system/issues/12) [#11](https://github.com/team-aliens/design-system/issues/11) [#11](https://github.com/team-aliens/design-system/issues/11) [#14](https://github.com/team-aliens/design-system/issues/14) [#15](https://github.com/team-aliens/design-system/issues/15) [#19](https://github.com/team-aliens/design-system/issues/19)
+
 ## [1.1.4](https://github.com/team-aliens/design-system/compare/v1.1.3...v1.1.4) (2022-12-20)
 
 
