@@ -43,7 +43,7 @@ const _Wrapper = styled.label<wrapperPropsType>`
   align-items: center;
   width: 241px;
   height: 40px;
-  margin: ${({ margin }) => marginToCss({ margin })};
+  ${({ margin }) => marginToCss({ margin })};
   background: ${({ theme }) => theme.color.gray1};
   box-shadow: 0 1px 20px rgba(204, 204, 204, 0.24);
   border-radius: 30px;

@@ -1,5 +1,5 @@
 export * from './components/button/Button';
-export * from './components/checkBox';
+export * as CheckBox from './components/checkBox';
 export * from './components/dropdown';
 export * from './components/input';
 export * from './components/radio/Radio';
@@ -17,3 +17,4 @@ export * from './components/search';
 export * from './components/styleGuide/icon';
 export * from './components/modal';
 export * from './components/breadCrumb/BreadCrumb';
+export * from './components/segmentedBtn';

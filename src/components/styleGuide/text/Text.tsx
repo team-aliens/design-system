@@ -43,7 +43,7 @@ const _Text = styled.div<PropsType>`
   display: ${({ display }) => display};
   color: ${({ color, theme }) => theme.color[color]};
   ${({ size, theme }) => theme.font[size]};
-  margin: ${({ margin }) => marginToCss({ margin })};
+  ${({ margin }) => marginToCss({ margin })};
   cursor: ${({ cursor }) => cursor};
   text-align: ${({ align }) => align};
 `;
