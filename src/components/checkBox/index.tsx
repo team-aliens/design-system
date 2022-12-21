@@ -40,5 +40,5 @@ interface WrapperProps extends marginCssType {
 
 const _Wrapper = styled.span<WrapperProps>`
   cursor: ${({ disabled }) => (disabled ? 'no-drop' : 'pointer')};
-  margin: ${({ margin }) => marginToCss({ margin })};
+  ${({ margin }) => marginToCss({ margin })};
 `;

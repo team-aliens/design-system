@@ -84,7 +84,7 @@ const _Wrapper = styled.button<propsType>`
         return '100%';
     }
   }};
-  margin: ${({ margin }) => marginToCss({ margin })};
+  ${({ margin }) => marginToCss({ margin })};
   ${({ color, disabled, kind }) => {
     return cssGenerator(kind, color, disabled);
   }};
