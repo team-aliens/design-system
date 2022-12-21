@@ -1,5 +1,5 @@
 export * from './components/button/Button';
-export * as CheckBox from './components/checkBox';
+export * from './components/checkBox';
 export * from './components/dropdown';
 export * from './components/input';
 export * from './components/radio/Radio';
