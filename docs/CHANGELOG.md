@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/team-aliens/design-system/compare/v1.2.3...v1.2.4) (2022-12-22)
+
+
+### Bug Fixes
+
+* checkBox 매개변수 onChange로 변경 ([4565772](https://github.com/team-aliens/design-system/commit/4565772f2516dc7aa7eb11103f5f180a04ea5b25))
+
 ## [1.2.3](https://github.com/team-aliens/design-system/compare/v1.2.2...v1.2.3) (2022-12-21)
 
 
