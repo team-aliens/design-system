@@ -27,6 +27,7 @@ export const text = Template.bind({});
 
 text.args = {
   kind: 'text',
+  Icon: <Add />,
 };
 
 export const underline = Template.bind({});
@@ -44,5 +45,5 @@ rounded.args = {
 export const withIcon = Template.bind({});
 
 withIcon.args = {
-  icon: <Add />,
+  Icon: <Add />,
 };
