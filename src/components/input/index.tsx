@@ -7,12 +7,12 @@ import { marginCssType, _Wrapper } from '../../utils/distance';
 
 interface PropsType extends marginCssType, errorMsgPropsType, labelPropsType {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  type?: 'text' | 'password';
+  type?: 'text' | 'password' | 'number';
   placeholder?: string;
   width?: number;
   name: string;
   className?: string;
-  value: string;
+  value: string | number;
 }
 
 /** input 에러 상태일 때에는 포커싱이 파란색..? */
