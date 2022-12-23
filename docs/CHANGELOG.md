@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/team-aliens/design-system/compare/v1.2.5...v1.2.6) (2022-12-23)
+
+
+### Bug Fixes
+
+* input type number도 받게 ([de1cd88](https://github.com/team-aliens/design-system/commit/de1cd88932114d2c150ae34afa344e22a9f33471))
+
 ## [1.2.5](https://github.com/team-aliens/design-system/compare/v1.2.4...v1.2.5) (2022-12-23)
 
 
