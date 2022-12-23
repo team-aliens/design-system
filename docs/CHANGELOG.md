@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/team-aliens/design-system/compare/v1.2.4...v1.2.5) (2022-12-23)
+
+
+### Bug Fixes
+
+* text Btn outline Btn으로 되던 현상 ([67147fb](https://github.com/team-aliens/design-system/commit/67147fbfa44479a19f3fc25278d4303971981608))
+
 ## [1.2.4](https://github.com/team-aliens/design-system/compare/v1.2.3...v1.2.4) (2022-12-22)
 
 
