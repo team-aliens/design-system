@@ -18,3 +18,4 @@ export * from './components/styleGuide/icon';
 export * from './components/modal';
 export * from './components/breadCrumb/BreadCrumb';
 export * from './components/segmentedBtn';
+export * from './components/studyRoom';
