@@ -1,3 +1,10 @@
+## [1.2.8](https://github.com/team-aliens/design-system/compare/v1.2.7...v1.2.8) (2022-12-27)
+
+
+### Bug Fixes
+
+* main에서 export ([1308cf0](https://github.com/team-aliens/design-system/commit/1308cf0699fc381ea65a597af9c66cc2e3add792))
+
 ## [1.2.7](https://github.com/team-aliens/design-system/compare/v1.2.6...v1.2.7) (2022-12-27)
 
 
