@@ -31,6 +31,7 @@ export const {
   gray2,
   gray3,
   gray4,
+  gray5,
   gray6,
   gray8,
   errorDarken1,

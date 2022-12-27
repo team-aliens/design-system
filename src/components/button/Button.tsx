@@ -10,6 +10,7 @@ import {
   gray2,
   gray3,
   gray4,
+  gray5,
   gray6,
   gray8,
   errorDarken1,
@@ -126,7 +127,7 @@ const cssGenerator = (kind: kindType, color: colorType, disabled: boolean) => {
               background: ${!disabled && gray4};
             }
             :active {
-              background: ${!disabled && errorDarken2};
+              background: ${!disabled && gray5};
             }
           `;
         case 'error':
