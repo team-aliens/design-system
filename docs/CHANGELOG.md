@@ -1,3 +1,10 @@
+## [1.2.9](https://github.com/team-aliens/design-system/compare/v1.2.8...v1.2.9) (2022-12-27)
+
+
+### Bug Fixes
+
+* 타입 변경 ([af09649](https://github.com/team-aliens/design-system/commit/af0964968df807c963656519cf9bdc1a7fd81a91))
+
 ## [1.2.8](https://github.com/team-aliens/design-system/compare/v1.2.7...v1.2.8) (2022-12-27)
 
 
