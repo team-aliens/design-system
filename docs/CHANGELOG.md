@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/team-aliens/design-system/compare/v1.3.3...v1.3.4) (2022-12-27)
+
+
+### Bug Fixes
+
+* studyRoom selected 로직 수정 ([f9e926d](https://github.com/team-aliens/design-system/commit/f9e926d6cf6e5513c66c2555227884ece773c753))
+
 ## [1.3.3](https://github.com/team-aliens/design-system/compare/v1.3.2...v1.3.3) (2022-12-27)
 
 
