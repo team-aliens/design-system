@@ -14,6 +14,14 @@ const Template: ComponentStory<typeof StudyRoom> = () => (
     north_description={'북쪽'}
     total_height_size={15}
     total_width_size={10}
+    isEdit={true}
+    onClickSeat={(x, y) => {
+      console.log(x, y);
+    }}
+    selectedPosition={{
+      x: 1,
+      y: 3,
+    }}
     seats={[
       {
         id: 'b77eafed-69ab-422d-8448-1ec1f0a2eb8c',

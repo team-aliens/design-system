@@ -34,7 +34,22 @@ interface PropsType {
   total_width_size: number;
   total_height_size: number;
   seats: seatType[];
+  isEdit?: boolean;
+  onClickSeat?: (xPosition: number, yPosition: number) => void;
+  selectedPosition?: {
+    x: number;
+    y: number;
+  };
 }
+
+const arr2Generator = (x: number, y: number) => {
+  let arr = [];
+  for (let i = 0; i < x; i++) {
+    arr[i] = [];
+    for (let j = 0; j < y; j++) arr[i][j] = 0;
+  }
+  return arr;
+};
 
 export const StudyRoom = ({
   east_description,
@@ -44,16 +59,10 @@ export const StudyRoom = ({
   total_height_size,
   total_width_size,
   seats,
+  isEdit,
+  onClickSeat,
+  selectedPosition,
 }: PropsType) => {
-  const arr2Generator = (x: number, y: number) => {
-    let arr = [];
-    for (let i = 0; i < x; i++) {
-      arr[i] = [];
-      for (let j = 0; j < y; j++) arr[i][j] = 0;
-    }
-    return arr;
-  };
-
   let arr: any[][] = arr2Generator(total_width_size, total_height_size);
   for (let i = 0; i < seats.length; i++)
     arr[seats[i].width_location - 1][seats[i].height_location - 1] = seats[i];
@@ -72,32 +81,61 @@ export const StudyRoom = ({
         {north_description}
       </_NorthDirection>
       <_Room>
-        {arr.map((seat, idx) => (
-          <_Seats>
-            {seat.map((seat, idx) => (
+        {arr.map((seatY, y) => (
+          <_Seats isEdit={isEdit}>
+            {seatY.map((seat, x) => (
               <>
                 {seat ? (
                   seat.number ? (
-                    <_Seat
-                      display="inline-block"
-                      background={seat.type.color || '#b1d0ff'}
-                      color="gray1"
-                      size="bodyS"
+                    <_SeatBlock
+                      isSelected={
+                        isEdit &&
+                        selectedPosition.x === x &&
+                        selectedPosition.y === y
+                      }
                     >
-                      {seat.type ? seat.type.name : seat.number}
-                    </_Seat>
+                      <_Seat
+                        onClick={() => isEdit && onClickSeat(x, y)}
+                        display="inline-block"
+                        background={seat.type.color || '#b1d0ff'}
+                        color="gray1"
+                        size="bodyS"
+                      >
+                        {seat.type ? seat.type.name : seat.number}
+                      </_Seat>
+                    </_SeatBlock>
                   ) : (
-                    <_Seat
-                      display="inline-block"
-                      background={'gray4'}
-                      color="gray1"
-                      size="bodyS"
+                    <_SeatBlock
+                      isSelected={
+                        isEdit &&
+                        selectedPosition.x === x &&
+                        selectedPosition.y === y
+                      }
                     >
-                      사용불가
-                    </_Seat>
+                      <_Seat
+                        onClick={() => isEdit && onClickSeat(x, y)}
+                        display="inline-block"
+                        background={'gray4'}
+                        color="gray1"
+                        size="bodyS"
+                      >
+                        사용불가
+                      </_Seat>
+                    </_SeatBlock>
                   )
                 ) : (
-                  <_Seat background={'gray1'} />
+                  <_SeatBlock
+                    isSelected={
+                      isEdit &&
+                      selectedPosition.x === x &&
+                      selectedPosition.y === y
+                    }
+                  >
+                    <_Seat
+                      onClick={() => isEdit && onClickSeat(x, y)}
+                      background={'gray1'}
+                    />
+                  </_SeatBlock>
                 )}
               </>
             ))}
@@ -108,8 +146,24 @@ export const StudyRoom = ({
   );
 };
 
-const _Seats = styled.div`
+const _Seats = styled.div<{
+  isEdit: boolean;
+}>`
   display: flex;
+  overflow: hidden;
+  > div {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+  }
+`;
+
+const _SeatBlock = styled.div<{
+  isSelected: boolean;
+}>`
+  border: 1px solid
+    ${({ theme, isSelected }) =>
+      isSelected ? theme.color.primary : theme.color.gray4};
 `;
 
 const _Seat = styled(Text)<{ background: string }>`
@@ -118,7 +172,6 @@ const _Seat = styled(Text)<{ background: string }>`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
   border-radius: 70%;
   background-color: ${({ background }) => background};
 `;
