@@ -90,8 +90,8 @@ export const StudyRoom = ({
                     <_SeatBlock
                       isSelected={
                         isEdit &&
-                        selectedPosition.x === x &&
-                        selectedPosition.y === y
+                        selectedPosition?.x === x &&
+                        selectedPosition?.y === y
                       }
                     >
                       <_Seat
@@ -108,8 +108,8 @@ export const StudyRoom = ({
                     <_SeatBlock
                       isSelected={
                         isEdit &&
-                        selectedPosition.x === x &&
-                        selectedPosition.y === y
+                        selectedPosition?.x === x &&
+                        selectedPosition?.y === y
                       }
                     >
                       <_Seat
@@ -127,8 +127,8 @@ export const StudyRoom = ({
                   <_SeatBlock
                     isSelected={
                       isEdit &&
-                      selectedPosition.x === x &&
-                      selectedPosition.y === y
+                      selectedPosition?.x === x &&
+                      selectedPosition?.y === y
                     }
                   >
                     <_Seat
