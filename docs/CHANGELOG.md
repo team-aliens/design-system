@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/team-aliens/design-system/compare/v1.3.1...v1.3.2) (2022-12-27)
+
+
+### Bug Fixes
+
+* default value 추가 ([9ef1910](https://github.com/team-aliens/design-system/commit/9ef1910fc6d24bf945560f013a924d3afe8f4734))
+
 ## [1.3.1](https://github.com/team-aliens/design-system/compare/v1.3.0...v1.3.1) (2022-12-27)
 
 
