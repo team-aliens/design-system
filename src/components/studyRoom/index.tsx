@@ -59,9 +59,12 @@ export const StudyRoom = ({
   total_height_size,
   total_width_size,
   seats,
-  isEdit,
-  onClickSeat,
-  selectedPosition,
+  isEdit = false,
+  onClickSeat = (x, y) => {},
+  selectedPosition = {
+    x: -1,
+    y: -1,
+  },
 }: PropsType) => {
   let arr: any[][] = arr2Generator(total_width_size, total_height_size);
   for (let i = 0; i < seats.length; i++)
