@@ -12,13 +12,13 @@ type SeatStatusType = 'AVAILABLE' | 'UNAVAILABLE' | 'EMPTY';
 type SeatStatus = 'IN_USE' | SeatStatusType;
 
 type seatType = {
-  id: string;
+  id?: string;
   width_location: number;
   height_location: number;
   number: number | null;
   type: SeatType | null;
   status: SeatStatus;
-  student: {
+  student?: {
     id: string;
     gcn: string;
     name: string;
@@ -27,20 +27,20 @@ type seatType = {
 };
 
 interface PropsType {
-  east_des: string;
-  west_des: string;
-  south_des: string;
-  north_des: string;
+  east_description: string;
+  west_description: string;
+  south_description: string;
+  north_description: string;
   total_width_size: number;
   total_height_size: number;
   seats: seatType[];
 }
 
 export const StudyRoom = ({
-  east_des,
-  west_des,
-  south_des,
-  north_des,
+  east_description,
+  west_description,
+  south_description,
+  north_description,
   total_height_size,
   total_width_size,
   seats,
@@ -60,16 +60,16 @@ export const StudyRoom = ({
   return (
     <_Wrapper>
       <_EastDirection size="titleM" color="primaryLighten1">
-        {east_des}
+        {east_description}
       </_EastDirection>
       <_WestDirection size="titleM" color="primaryLighten1">
-        {west_des}
+        {west_description}
       </_WestDirection>
       <_SouthDirection size="titleM" color="primaryLighten1">
-        {south_des}
+        {south_description}
       </_SouthDirection>
       <_NorthDirection size="titleM" color="primaryLighten1">
-        {north_des}
+        {north_description}
       </_NorthDirection>
       <_Room>
         {arr.map((seat, idx) => (
