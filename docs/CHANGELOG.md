@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/team-aliens/design-system/compare/v1.3.2...v1.3.3) (2022-12-27)
+
+
+### Bug Fixes
+
+* width와 height에 -1를 하여 발생하는 에러 수정 ([cec1026](https://github.com/team-aliens/design-system/commit/cec1026e261d3562f7ae84fa5fb314fa59d983c1))
+
 ## [1.3.2](https://github.com/team-aliens/design-system/compare/v1.3.1...v1.3.2) (2022-12-27)
 
 
