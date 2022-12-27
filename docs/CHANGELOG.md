@@ -1,3 +1,52 @@
+## [1.3.5](https://github.com/team-aliens/design-system/compare/v1.3.4...v1.3.5) (2022-12-27)
+
+
+### Bug Fixes
+
+* x,y 좌표 수정 ([84e0d59](https://github.com/team-aliens/design-system/commit/84e0d59bda9539531303dc29c9f40cf915534fda))
+
+## [1.3.4](https://github.com/team-aliens/design-system/compare/v1.3.3...v1.3.4) (2022-12-27)
+
+
+### Bug Fixes
+
+* studyRoom selected 로직 수정 ([f9e926d](https://github.com/team-aliens/design-system/commit/f9e926d6cf6e5513c66c2555227884ece773c753))
+
+## [1.3.3](https://github.com/team-aliens/design-system/compare/v1.3.2...v1.3.3) (2022-12-27)
+
+
+### Bug Fixes
+
+* width와 height에 -1를 하여 발생하는 에러 수정 ([cec1026](https://github.com/team-aliens/design-system/commit/cec1026e261d3562f7ae84fa5fb314fa59d983c1))
+
+## [1.3.2](https://github.com/team-aliens/design-system/compare/v1.3.1...v1.3.2) (2022-12-27)
+
+
+### Bug Fixes
+
+* default value 추가 ([9ef1910](https://github.com/team-aliens/design-system/commit/9ef1910fc6d24bf945560f013a924d3afe8f4734))
+
+## [1.3.1](https://github.com/team-aliens/design-system/compare/v1.3.0...v1.3.1) (2022-12-27)
+
+
+### Bug Fixes
+
+* selectedPosition optional 처리 ([d696052](https://github.com/team-aliens/design-system/commit/d6960527a34994c65e5bbe2a96413a51ca0dcf6a))
+
+# [1.3.0](https://github.com/team-aliens/design-system/compare/v1.2.12...v1.3.0) (2022-12-27)
+
+
+### Features
+
+* 자습실 에디터 기능 추가 ([079a490](https://github.com/team-aliens/design-system/commit/079a490f4d856b2615dbf2331b8be9150ccfd9b1))
+
+## [1.2.12](https://github.com/team-aliens/design-system/compare/v1.2.11...v1.2.12) (2022-12-27)
+
+
+### Bug Fixes
+
+* studyRoom  색 수정 ([b2cd88b](https://github.com/team-aliens/design-system/commit/b2cd88bee8b80f10ffc1c57910792e992b7c3225))
+
 ## [1.2.11](https://github.com/team-aliens/design-system/compare/v1.2.10...v1.2.11) (2022-12-27)
 
 
