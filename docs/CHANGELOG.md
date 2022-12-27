@@ -1,3 +1,10 @@
+## [1.2.11](https://github.com/team-aliens/design-system/compare/v1.2.10...v1.2.11) (2022-12-27)
+
+
+### Bug Fixes
+
+* -1 ([e098839](https://github.com/team-aliens/design-system/commit/e0988394268dbf06662e94f63dbeda8e8fd17f37))
+
 ## [1.2.10](https://github.com/team-aliens/design-system/compare/v1.2.9...v1.2.10) (2022-12-27)
 
 
