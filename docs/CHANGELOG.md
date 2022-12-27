@@ -1,3 +1,10 @@
+## [1.2.10](https://github.com/team-aliens/design-system/compare/v1.2.9...v1.2.10) (2022-12-27)
+
+
+### Bug Fixes
+
+* studyroom 타입 수정 ([90e6fdb](https://github.com/team-aliens/design-system/commit/90e6fdb771ae18f357e7d0e0c12f3f42bada987a))
+
 ## [1.2.9](https://github.com/team-aliens/design-system/compare/v1.2.8...v1.2.9) (2022-12-27)
 
 
