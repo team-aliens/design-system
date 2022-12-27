@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/team-aliens/design-system/compare/v1.2.12...v1.3.0) (2022-12-27)
+
+
+### Features
+
+* 자습실 에디터 기능 추가 ([079a490](https://github.com/team-aliens/design-system/commit/079a490f4d856b2615dbf2331b8be9150ccfd9b1))
+
 ## [1.2.12](https://github.com/team-aliens/design-system/compare/v1.2.11...v1.2.12) (2022-12-27)
 
 
