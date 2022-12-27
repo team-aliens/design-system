@@ -86,12 +86,13 @@ export const StudyRoom = ({
       </_NorthDirection>
       <_Room>
         {arr.map((seatY, y) => (
-          <_Seats isEdit={isEdit}>
+          <_Seats>
             {seatY.map((seat, x) => (
               <>
                 {seat ? (
                   seat.number ? (
                     <_SeatBlock
+                      isEdit={isEdit}
                       isSelected={
                         isEdit &&
                         selectedPosition?.x === x &&
@@ -110,6 +111,7 @@ export const StudyRoom = ({
                     </_SeatBlock>
                   ) : (
                     <_SeatBlock
+                      isEdit={isEdit}
                       isSelected={
                         isEdit &&
                         selectedPosition?.x === x &&
@@ -129,6 +131,7 @@ export const StudyRoom = ({
                   )
                 ) : (
                   <_SeatBlock
+                    isEdit={isEdit}
                     isSelected={
                       isEdit &&
                       selectedPosition?.x === x &&
@@ -150,24 +153,21 @@ export const StudyRoom = ({
   );
 };
 
-const _Seats = styled.div<{
-  isEdit: boolean;
-}>`
+const _Seats = styled.div`
   display: flex;
   overflow: hidden;
-  > div {
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-  }
 `;
 
 const _SeatBlock = styled.div<{
+  isEdit: boolean;
   isSelected: boolean;
 }>`
+  width: 100px;
+  height: 100px;
+  padding: 10px;
   border: 1px solid
-    ${({ theme, isSelected }) =>
-      isSelected ? theme.color.primary : theme.color.gray4};
+    ${({ theme, isSelected, isEdit }) =>
+      isEdit ? (isSelected ? theme.color.primary : theme.color.gray4) : 'none'};
 `;
 
 const _Seat = styled(Text)<{ background: string }>`
