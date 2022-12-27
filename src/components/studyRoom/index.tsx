@@ -80,11 +80,11 @@ export const StudyRoom = ({
                   seat.number ? (
                     <_Seat
                       display="inline-block"
-                      background="primaryLighten1"
+                      background={seat.type.color || '#b1d0ff'}
                       color="gray1"
                       size="bodyS"
                     >
-                      {seat.number}
+                      {seat.type ? seat.type.name : seat.number}
                     </_Seat>
                   ) : (
                     <_Seat
@@ -112,15 +112,15 @@ const _Seats = styled.div`
   display: flex;
 `;
 
-const _Seat = styled(Text)<{ background: colorKeyOfType }>`
+const _Seat = styled(Text)<{ background: string }>`
   min-width: 80px;
   min-height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
   border-radius: 70%;
-  background-color: ${({ theme, background }) => theme.color[background]};
+  background-color: ${({ background }) => background};
 `;
 
 const _EastDirection = styled(Text)`
@@ -140,7 +140,7 @@ const _NorthDirection = styled(Text)`
 `;
 const _WestDirection = styled(Text)`
   position: absolute;
-  transform: rotate(90deg) translateX(-50%);
+  transform: rotate(-90deg) translateX(50%);
   left: 0;
 `;
 
