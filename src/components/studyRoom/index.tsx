@@ -67,8 +67,9 @@ export const StudyRoom = ({
   },
 }: PropsType) => {
   let arr: any[][] = arr2Generator(total_width_size, total_height_size);
-  for (let i = 0; i < seats.length; i++)
-    arr[seats[i].width_location - 1][seats[i].height_location - 1] = seats[i];
+  for (let i = 0; i < seats.length; i++) {
+    arr[seats[i].width_location][seats[i].height_location] = seats[i];
+  }
   return (
     <_Wrapper>
       <_EastDirection size="titleM" color="primaryLighten1">
