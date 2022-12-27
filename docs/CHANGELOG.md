@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/team-aliens/design-system/compare/v1.3.4...v1.3.5) (2022-12-27)
+
+
+### Bug Fixes
+
+* x,y 좌표 수정 ([84e0d59](https://github.com/team-aliens/design-system/commit/84e0d59bda9539531303dc29c9f40cf915534fda))
+
 ## [1.3.4](https://github.com/team-aliens/design-system/compare/v1.3.3...v1.3.4) (2022-12-27)
 
 
