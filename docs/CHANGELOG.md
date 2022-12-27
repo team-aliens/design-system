@@ -1,3 +1,10 @@
+## [1.2.12](https://github.com/team-aliens/design-system/compare/v1.2.11...v1.2.12) (2022-12-27)
+
+
+### Bug Fixes
+
+* studyRoom  색 수정 ([b2cd88b](https://github.com/team-aliens/design-system/commit/b2cd88bee8b80f10ffc1c57910792e992b7c3225))
+
 ## [1.2.11](https://github.com/team-aliens/design-system/compare/v1.2.10...v1.2.11) (2022-12-27)
 
 
