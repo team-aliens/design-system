@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/team-aliens/design-system/compare/v1.3.0...v1.3.1) (2022-12-27)
+
+
+### Bug Fixes
+
+* selectedPosition optional 처리 ([d696052](https://github.com/team-aliens/design-system/commit/d6960527a34994c65e5bbe2a96413a51ca0dcf6a))
+
 # [1.3.0](https://github.com/team-aliens/design-system/compare/v1.2.12...v1.3.0) (2022-12-27)
 
 
