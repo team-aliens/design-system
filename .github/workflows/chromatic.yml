@@ -1,0 +1,15 @@
+name: 'Chromatic Deployment'
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: yarn config set nodeLinker "node-modules"
+      - run: yarn install --immutable
+      - uses: chromaui/action@v3
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}

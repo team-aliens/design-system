@@ -1,15 +1,15 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { useState } from 'react';
-import { Wrapper } from './';
+import { CheckBox } from './';
 
 export default {
   title: 'component/checkBox',
-  component: Wrapper,
-} as ComponentMeta<typeof Wrapper>;
+  component: CheckBox,
+} as ComponentMeta<typeof CheckBox>;
 
-const Template: ComponentStory<typeof Wrapper> = (args) => {
+const Template: ComponentStory<typeof CheckBox> = (args) => {
   const [status, setCheck] = useState<boolean>(false);
-  return <Wrapper status={status} checkSetState={setCheck} {...args} />;
+  return <CheckBox status={status} checkSetState={setCheck} {...args} />;
 };
 
 export const disabled = Template.bind({});

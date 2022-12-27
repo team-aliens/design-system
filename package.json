@@ -52,6 +52,7 @@
     "@yarnpkg/pnpify": "^4.0.0-rc.33",
     "@yarnpkg/sdks": "^3.0.0-rc.33",
     "babel-loader": "^9.0.0",
+    "chromatic": "^6.14.0",
     "clean-webpack-plugin": "^4.0.0",
     "husky": ">=6",
     "lint-staged": ">=10",

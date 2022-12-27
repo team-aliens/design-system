@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import { Text } from '../styleGuide/text/Text';
-import { colorKeyOfType } from '../../styles/theme/color';
 
 interface SeatType {
   id: string;
   name: string;
   color: string;
 }
+
 type SeatStatusType = 'AVAILABLE' | 'UNAVAILABLE' | 'EMPTY';
 
 type SeatStatus = 'IN_USE' | SeatStatusType;
@@ -54,9 +54,11 @@ export const StudyRoom = ({
     return arr;
   };
 
-  let arr: any[][] = arr2Generator(total_width_size, total_height_size);
+  let arr: seatType[][] = arr2Generator(total_width_size, total_height_size);
+
   for (let i = 0; i < seats.length; i++)
     arr[seats[i].width_location - 1][seats[i].height_location - 1] = seats[i];
+
   return (
     <_Wrapper>
       <_EastDirection size="titleM" color="primaryLighten1">

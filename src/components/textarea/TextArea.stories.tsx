@@ -8,7 +8,7 @@ export default {
 } as ComponentMeta<typeof TextArea>;
 
 const Template: ComponentStory<typeof TextArea> = (args) => (
-  <TextArea {...args} />
+  <TextArea value="" {...args} />
 );
 
 export const enable = Template.bind({
