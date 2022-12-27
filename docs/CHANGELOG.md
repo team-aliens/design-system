@@ -1,3 +1,11 @@
+## [1.2.7](https://github.com/team-aliens/design-system/compare/v1.2.6...v1.2.7) (2022-12-27)
+
+
+### Bug Fixes
+
+* children 옵셔널로 변경 ([0e269dd](https://github.com/team-aliens/design-system/commit/0e269ddc7f0c1f12c06f59e89fb2c5969b096e90))
+* 스터디룸 임시 추가 ([eba22aa](https://github.com/team-aliens/design-system/commit/eba22aae8e320642255999c1054af5c2f4e8771c))
+
 ## [1.2.6](https://github.com/team-aliens/design-system/compare/v1.2.5...v1.2.6) (2022-12-23)
 
 
