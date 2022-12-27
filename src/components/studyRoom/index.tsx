@@ -2,41 +2,45 @@ import styled from 'styled-components';
 import { Text } from '../styleGuide/text/Text';
 import { colorKeyOfType } from '../../styles/theme/color';
 
+interface SeatType {
+  id: string;
+  name: string;
+  color: string;
+}
+type SeatStatusType = 'AVAILABLE' | 'UNAVAILABLE' | 'EMPTY';
+
+type SeatStatus = 'IN_USE' | SeatStatusType;
+
 type seatType = {
   id: string;
   width_location: number;
   height_location: number;
   number: number | null;
-  type: {
-    id: string;
-    name: string;
-    color: string;
-  } | null;
-  status: 'IN_USE' | 'AVAILABLE' | 'UNAVAILABLE' | 'EMPTY';
-  is_mine: boolean | null;
+  type: SeatType | null;
+  status: SeatStatus;
   student: {
     id: string;
-    gcn?: string;
+    gcn: string;
     name: string;
-    profile_image_url?: string;
+    profile_image_url: string;
   } | null;
 };
 
 interface PropsType {
-  east_description: string;
-  west_description: string;
-  south_description: string;
-  north_description: string;
+  east_des: string;
+  west_des: string;
+  south_des: string;
+  north_des: string;
   total_width_size: number;
   total_height_size: number;
   seats: seatType[];
 }
 
 export const StudyRoom = ({
-  east_description,
-  west_description,
-  south_description,
-  north_description,
+  east_des,
+  west_des,
+  south_des,
+  north_des,
   total_height_size,
   total_width_size,
   seats,
@@ -56,16 +60,16 @@ export const StudyRoom = ({
   return (
     <_Wrapper>
       <_EastDirection size="titleM" color="primaryLighten1">
-        {east_description}
+        {east_des}
       </_EastDirection>
       <_WestDirection size="titleM" color="primaryLighten1">
-        {west_description}
+        {west_des}
       </_WestDirection>
       <_SouthDirection size="titleM" color="primaryLighten1">
-        {south_description}
+        {south_des}
       </_SouthDirection>
       <_NorthDirection size="titleM" color="primaryLighten1">
-        {north_description}
+        {north_des}
       </_NorthDirection>
       <_Room>
         {arr.map((seat, idx) => (
@@ -93,7 +97,7 @@ export const StudyRoom = ({
                     </_Seat>
                   )
                 ) : (
-                  <_Seat background="gray1" />
+                  <_Seat background={'gray1'} />
                 )}
               </>
             ))}
