@@ -5,7 +5,6 @@ import { PaperPlane } from '../styleGuide/icon/PaperPlane';
 import { PlusBubble } from '../styleGuide/icon/PlusBubble';
 import { ArchiveBox } from '../styleGuide/icon/ArchiveBox';
 import { Human } from '../styleGuide/icon/Human';
-import { Text } from '../styleGuide/text/Text';
 import { Item } from './Item';
 import { Logo } from '../logo';
 
@@ -44,7 +43,7 @@ const nameToIconLink = {
     Icon: MegaPhone,
   },
   설문: { link: 'survey', Icon: PlusBubble },
-  분실문: {
+  분실물: {
     link: 'lost',
     Icon: ArchiveBox,
   },
