@@ -2,14 +2,20 @@ import styled from 'styled-components';
 import { Arrow } from '../styleGuide/icon';
 import { Text } from '../styleGuide/text/Text';
 import { useLocation, Link } from 'react-router-dom';
-import { marginCssType, marginToCss } from '../../utils/distance';
 
-interface PropsType extends marginCssType {
+interface PropsType {
   className?: string;
   pathToKorean: any;
+  top: number;
+  left: number;
 }
 
-export const BreadCrumb = ({ className, pathToKorean, margin }: PropsType) => {
+export const BreadCrumb = ({
+  className,
+  pathToKorean,
+  top,
+  left,
+}: PropsType) => {
   const path: string[] = useLocation().pathname.split('/').slice(1);
   const pathList = [];
   const LinkList = [`/${path[0]}`];
@@ -25,7 +31,7 @@ export const BreadCrumb = ({ className, pathToKorean, margin }: PropsType) => {
     }
   }
   return (
-    <_Wrapper margin={margin} className={className}>
+    <_Wrapper left={left} top={top} className={className}>
       {pathList &&
         pathList.map((item, idx, arr) => (
           <>
@@ -46,9 +52,11 @@ export const BreadCrumb = ({ className, pathToKorean, margin }: PropsType) => {
   );
 };
 
-const _Wrapper = styled.div<marginCssType>`
+const _Wrapper = styled.div<{ top: number; left: number }>`
+  position: absolute;
   display: flex;
   align-items: center;
   gap: 12px;
-  ${({ margin }) => marginToCss({ margin })};
+  top: ${({ top }) => top}px;
+  left: ${({ left }) => left}px;
 `;
