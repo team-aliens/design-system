@@ -1,3 +1,10 @@
+## [1.3.13](https://github.com/team-aliens/design-system/compare/v1.3.12...v1.3.13) (2022-12-28)
+
+
+### Bug Fixes
+
+* navigation ([c97472a](https://github.com/team-aliens/design-system/commit/c97472a524e19a3c2fd4e76232b656740ec93b68))
+
 ## [1.3.12](https://github.com/team-aliens/design-system/compare/v1.3.11...v1.3.12) (2022-12-28)
 
 
