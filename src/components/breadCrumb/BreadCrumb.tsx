@@ -6,29 +6,34 @@ import { marginCssType } from '../../utils/distance';
 
 interface PropsType extends marginCssType {
   className?: string;
-  pathToKorean: { [key: string]: string };
+  pathToKorean: any;
 }
 
-['notice', 'my-page'];
-
-// 동적 라우팅
-// 링크 이동
 export const BreadCrumb = ({ className, pathToKorean, margin }: PropsType) => {
+  const path: string[] = useLocation().pathname.split('/').slice(1);
+  const pathList = [];
+  const LinkList = [`/${path[0]}`];
+  for (let i = 0; i < path.length; i++) {
+    if (i > 0) LinkList.push(`${LinkList[i - 1]}/${path[i]}`);
+    if (pathToKorean[path[i]]) {
+      pathList.push(pathToKorean[path[i]].index || pathToKorean[path[i]]);
+      pathToKorean = pathToKorean[path[i]];
+    } else if (pathToKorean['dynamic']) {
+      pathList.push(pathToKorean['dynamic']);
+      pathToKorean = pathToKorean['dynamic'];
+    }
+  }
   return (
     <_Wrapper margin={margin} className={className}>
-      {/* {useLocation()
-        .pathname */}
-      {'/notice/my-page'
-        .split('/')
-        .slice(1)
-        .map((item, idx, arr) => (
+      {pathList &&
+        pathList.map((item, idx, arr) => (
           <>
-            <Link to={'/'}>
+            <Link to={LinkList[idx]}>
               <Text
                 size="bodyS"
                 color={arr.length !== idx + 1 ? 'gray5' : 'gray10'}
               >
-                {pathToKorean[item]}
+                {item}
               </Text>
             </Link>
             {arr.length !== idx + 1 && (
