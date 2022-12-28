@@ -16,8 +16,7 @@ export const BreadCrumb = ({
   top = 86,
   left = 330,
 }: PropsType) => {
-  const path: string[] = ['my-page', 'change-pwd'];
-  // useLocation().pathname.split('/').slice(1);
+  const path: string[] = useLocation().pathname.split('/').slice(1);
   const pathList = [];
   const LinkList = [`/${path[0]}`];
   for (let i = 0; i < path.length; i++) {
