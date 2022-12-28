@@ -1,3 +1,10 @@
+## [1.3.9](https://github.com/team-aliens/design-system/compare/v1.3.8...v1.3.9) (2022-12-28)
+
+
+### Bug Fixes
+
+* index -1 삭제 ([f4ebcec](https://github.com/team-aliens/design-system/commit/f4ebcec6ea8216ede4817f7b269d89ce6d5df091))
+
 ## [1.3.8](https://github.com/team-aliens/design-system/compare/v1.3.7...v1.3.8) (2022-12-28)
 
 
