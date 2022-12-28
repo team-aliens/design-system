@@ -6,15 +6,15 @@ import { useLocation, Link } from 'react-router-dom';
 interface PropsType {
   className?: string;
   pathToKorean: any;
-  top: number;
-  left: number;
+  top?: number;
+  left?: number;
 }
 
 export const BreadCrumb = ({
   className,
   pathToKorean,
-  top,
-  left,
+  top = 86,
+  left = 330,
 }: PropsType) => {
   const path: string[] = useLocation().pathname.split('/').slice(1);
   const pathList = [];
