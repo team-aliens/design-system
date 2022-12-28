@@ -1,7 +1,8 @@
+import styled from 'styled-components';
+import { Text } from '../styleGuide/text/Text';
 import { Blank } from './Blank';
 import { NoSpace } from './NoSpace';
 import { Seat } from './Seat';
-import * as S from './styled';
 
 interface SeatType {
   id: string;
@@ -73,22 +74,22 @@ export const StudyRoom = ({
   for (let i = 0; i < seats.length; i++)
     arr[seats[i].height_location - 1][seats[i].width_location - 1] = seats[i];
   return (
-    <S._Wrapper>
-      <S._EastDirection size="titleM" color="primaryLighten1">
+    <_Wrapper>
+      <_EastDirection size="titleM" color="primaryLighten1">
         {east_description}
-      </S._EastDirection>
-      <S._WestDirection size="titleM" color="primaryLighten1">
+      </_EastDirection>
+      <_WestDirection size="titleM" color="primaryLighten1">
         {west_description}
-      </S._WestDirection>
-      <S._SouthDirection size="titleM" color="primaryLighten1">
+      </_WestDirection>
+      <_SouthDirection size="titleM" color="primaryLighten1">
         {south_description}
-      </S._SouthDirection>
-      <S._NorthDirection size="titleM" color="primaryLighten1">
+      </_SouthDirection>
+      <_NorthDirection size="titleM" color="primaryLighten1">
         {north_description}
-      </S._NorthDirection>
-      <S._Room>
+      </_NorthDirection>
+      <_Room>
         {arr.map((seatY, y) => (
-          <S._Seats>
+          <_Seats>
             {seatY.map((seat, x) => {
               const isSelected =
                 isEdit &&
@@ -125,9 +126,54 @@ export const StudyRoom = ({
                 </div>
               );
             })}
-          </S._Seats>
+          </_Seats>
         ))}
-      </S._Room>
-    </S._Wrapper>
+      </_Room>
+    </_Wrapper>
   );
 };
+
+const _EastDirection = styled(Text)`
+  position: absolute;
+  transform: rotate(90deg) translateX(-50%);
+  right: 0;
+`;
+
+const _SouthDirection = styled(Text)`
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 0;
+`;
+
+const _NorthDirection = styled(Text)`
+  position: absolute;
+  transform: translateX(-50%);
+  top: 0;
+`;
+
+const _WestDirection = styled(Text)`
+  position: absolute;
+  transform: rotate(-90deg) translateX(50%);
+  left: 0;
+`;
+
+const _Seats = styled.div`
+  display: flex;
+`;
+
+const _Wrapper = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 684px;
+  height: 684px;
+`;
+
+const _Room = styled.div`
+  border: 2px solid ${({ theme }) => theme.color.primary};
+  width: 600px;
+  border-radius: 10px;
+  height: 600px;
+  overflow: scroll;
+`;
