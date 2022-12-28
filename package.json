@@ -59,7 +59,7 @@
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.4",
+    "react-router-dom": "^6.6.1",
     "semantic-release": "^19.0.5",
     "styled-components": "^5.3.6",
     "ts-loader": "^9.4.1",

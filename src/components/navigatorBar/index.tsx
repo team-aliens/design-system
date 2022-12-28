@@ -7,6 +7,7 @@ import { ArchiveBox } from '../styleGuide/icon/ArchiveBox';
 import { Human } from '../styleGuide/icon/Human';
 import { Text } from '../styleGuide/text/Text';
 import { Item } from './Item';
+import { Logo } from '../logo';
 
 type NavListType = '홈' | '신청' | '공지' | '설문' | '분실물' | '마이페이지';
 
@@ -18,9 +19,12 @@ export const NavigatorBar = ({ navList }: PropsType) => {
   return (
     <_Filler>
       <_Navigation>
-        <Text margin={['bottom', 30]} size="headlineL" color="primary">
-          DMS
-        </Text>
+        <Logo
+          margin={['bottom', 48]}
+          width={113}
+          height={40}
+          type="horizontal"
+        />
         {navList.map((name, idx) => {
           const { Icon, link } = nameToIconLink[name];
           return <Item key={idx} name={name} Icon={Icon} link={link} />;

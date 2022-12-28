@@ -1,6 +1,6 @@
 interface PropsType {
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
 }
 
 export const Horizontal = ({ width = 707, height = 254 }: PropsType) => (

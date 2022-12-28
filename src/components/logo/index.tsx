@@ -4,8 +4,8 @@ import { Vertical } from './Vertical';
 
 interface PropsType extends marginCssType {
   type: 'horizontal' | 'vertical';
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
 }
 
 export const Logo = ({ type, margin, width, height }: PropsType) => {
