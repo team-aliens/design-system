@@ -1,3 +1,10 @@
+## [1.3.8](https://github.com/team-aliens/design-system/compare/v1.3.7...v1.3.8) (2022-12-28)
+
+
+### Bug Fixes
+
+* empty 로직수정 ([8d64daa](https://github.com/team-aliens/design-system/commit/8d64daad33dcac46d0c104fbb6d76bdef868079c))
+
 ## [1.3.7](https://github.com/team-aliens/design-system/compare/v1.3.6...v1.3.7) (2022-12-28)
 
 
