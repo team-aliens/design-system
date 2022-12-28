@@ -87,63 +87,65 @@ export const StudyRoom = ({
       <_Room>
         {arr.map((seatY, y) => (
           <_Seats>
-            {seatY.map((seat, x) => (
-              <>
-                {!seat || seat.status === 'EMPTY' ? (
-                  <_SeatBlock
-                    isEdit={isEdit}
-                    isSelected={
-                      isEdit &&
-                      selectedPosition?.x === x &&
-                      selectedPosition?.y === y
-                    }
-                  >
-                    <_Seat
-                      onClick={() => isEdit && onClickSeat(x, y)}
-                      background={'gray1'}
-                    />
-                  </_SeatBlock>
-                ) : seat.status === 'UNAVAILABLE' ? (
-                  <_SeatBlock
-                    isEdit={isEdit}
-                    isSelected={
-                      isEdit &&
-                      selectedPosition?.x === x &&
-                      selectedPosition?.y === y
-                    }
-                  >
-                    <_Seat
-                      onClick={() => isEdit && onClickSeat(x, y)}
-                      display="inline-block"
-                      background={'gray4'}
-                      color="gray1"
-                      size="bodyS"
+            {seatY.map((seat, x) => {
+              return (
+                <>
+                  {!seat || seat.status === 'EMPTY' ? (
+                    <_SeatBlock
+                      isEdit={isEdit}
+                      isSelected={
+                        isEdit &&
+                        selectedPosition?.x === x &&
+                        selectedPosition?.y === y
+                      }
                     >
-                      사용불가
-                    </_Seat>
-                  </_SeatBlock>
-                ) : (
-                  <_SeatBlock
-                    isEdit={isEdit}
-                    isSelected={
-                      isEdit &&
-                      selectedPosition?.x === x &&
-                      selectedPosition?.y === y
-                    }
-                  >
-                    <_Seat
-                      onClick={() => isEdit && onClickSeat(x, y)}
-                      display="inline-block"
-                      background={seat.type ? seat.type.color : '#b1d0ff'}
-                      color="gray1"
-                      size="bodyS"
+                      <_Seat
+                        onClick={() => isEdit && onClickSeat(x, y)}
+                        background={'gray1'}
+                      />
+                    </_SeatBlock>
+                  ) : seat.status === 'UNAVAILABLE' ? (
+                    <_SeatBlock
+                      isEdit={isEdit}
+                      isSelected={
+                        isEdit &&
+                        selectedPosition?.x === x &&
+                        selectedPosition?.y === y
+                      }
                     >
-                      {seat.student ? seat.student.name : seat.number}
-                    </_Seat>
-                  </_SeatBlock>
-                )}
-              </>
-            ))}
+                      <_Seat
+                        onClick={() => isEdit && onClickSeat(x, y)}
+                        display="inline-block"
+                        background={'gray4'}
+                        color="gray1"
+                        size="bodyS"
+                      >
+                        사용불가
+                      </_Seat>
+                    </_SeatBlock>
+                  ) : (
+                    <_SeatBlock
+                      isEdit={isEdit}
+                      isSelected={
+                        isEdit &&
+                        selectedPosition?.x === x &&
+                        selectedPosition?.y === y
+                      }
+                    >
+                      <_Seat
+                        onClick={() => isEdit && onClickSeat(x, y)}
+                        display="inline-block"
+                        background={seat.type ? seat.type?.color : '#b1d0ff'}
+                        color="gray1"
+                        size="bodyS"
+                      >
+                        {seat.student ? seat.student.name : seat.number}
+                      </_Seat>
+                    </_SeatBlock>
+                  )}
+                </>
+              );
+            })}
           </_Seats>
         ))}
       </_Room>
@@ -174,7 +176,7 @@ const _Seat = styled(Text)<{ background: string }>`
   justify-content: center;
   align-items: center;
   border-radius: 70%;
-  background-color: ${({ background }) => background};
+  background-color: ${({ background, theme }) => theme.color[background]};
 `;
 
 const _EastDirection = styled(Text)`
