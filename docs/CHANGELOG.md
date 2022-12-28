@@ -1,3 +1,10 @@
+## [1.3.11](https://github.com/team-aliens/design-system/compare/v1.3.10...v1.3.11) (2022-12-28)
+
+
+### Bug Fixes
+
+* 사용불가 좌석일때 배경색 적용되게 수정 ([ddfee10](https://github.com/team-aliens/design-system/commit/ddfee107a9ef7f4e845defbe41108f3e1eac7e24))
+
 ## [1.3.10](https://github.com/team-aliens/design-system/compare/v1.3.9...v1.3.10) (2022-12-28)
 
 
