@@ -1,5 +1,7 @@
-import styled from 'styled-components';
-import { Text } from '../styleGuide/text/Text';
+import { Blank } from './Blank';
+import { NoSpace } from './NoSpace';
+import { Seat } from './Seat';
+import * as S from './styled';
 
 interface SeatType {
   id: string;
@@ -11,7 +13,7 @@ type SeatStatusType = 'AVAILABLE' | 'UNAVAILABLE' | 'EMPTY';
 
 type SeatStatus = 'IN_USE' | SeatStatusType;
 
-type seatType = {
+export type seatType = {
   id?: string;
   width_location: number;
   height_location: number;
@@ -69,150 +71,63 @@ export const StudyRoom = ({
   let arr: seatType[][] = arr2Generator(total_height_size, total_width_size);
 
   for (let i = 0; i < seats.length; i++)
-    arr[seats[i].width_location][seats[i].height_location] = seats[i];
+    arr[seats[i].height_location - 1][seats[i].width_location - 1] = seats[i];
   return (
-    <_Wrapper>
-      <_EastDirection size="titleM" color="primaryLighten1">
+    <S._Wrapper>
+      <S._EastDirection size="titleM" color="primaryLighten1">
         {east_description}
-      </_EastDirection>
-      <_WestDirection size="titleM" color="primaryLighten1">
+      </S._EastDirection>
+      <S._WestDirection size="titleM" color="primaryLighten1">
         {west_description}
-      </_WestDirection>
-      <_SouthDirection size="titleM" color="primaryLighten1">
+      </S._WestDirection>
+      <S._SouthDirection size="titleM" color="primaryLighten1">
         {south_description}
-      </_SouthDirection>
-      <_NorthDirection size="titleM" color="primaryLighten1">
+      </S._SouthDirection>
+      <S._NorthDirection size="titleM" color="primaryLighten1">
         {north_description}
-      </_NorthDirection>
-      <_Room>
+      </S._NorthDirection>
+      <S._Room>
         {arr.map((seatY, y) => (
-          <_Seats>
+          <S._Seats>
             {seatY.map((seat, x) => {
+              const isSelected =
+                isEdit &&
+                selectedPosition?.x === x &&
+                selectedPosition?.y === y;
               return (
-                <>
+                <div>
                   {!seat || seat.status === 'EMPTY' ? (
-                    <_SeatBlock
+                    <Blank
+                      x={x}
+                      y={y}
+                      isSelected={isSelected}
+                      onClickSeat={onClickSeat}
                       isEdit={isEdit}
-                      isSelected={
-                        isEdit &&
-                        selectedPosition?.x === x &&
-                        selectedPosition?.y === y
-                      }
-                    >
-                      <_Seat
-                        onClick={() => isEdit && onClickSeat(x, y)}
-                        background={'gray1'}
-                      />
-                    </_SeatBlock>
+                    />
                   ) : seat.status === 'UNAVAILABLE' ? (
-                    <_SeatBlock
+                    <NoSpace
+                      x={x}
+                      y={y}
+                      isSelected={isSelected}
+                      onClickSeat={onClickSeat}
                       isEdit={isEdit}
-                      isSelected={
-                        isEdit &&
-                        selectedPosition?.x === x &&
-                        selectedPosition?.y === y
-                      }
-                    >
-                      <_Seat
-                        onClick={() => isEdit && onClickSeat(x, y)}
-                        display="inline-block"
-                        background={'gray4'}
-                        color="gray1"
-                        size="bodyS"
-                      >
-                        사용불가
-                      </_Seat>
-                    </_SeatBlock>
+                    />
                   ) : (
-                    <_SeatBlock
+                    <Seat
+                      seat={seat}
                       isEdit={isEdit}
-                      isSelected={
-                        isEdit &&
-                        selectedPosition?.x === x &&
-                        selectedPosition?.y === y
-                      }
-                    >
-                      <_Seat
-                        onClick={() => isEdit && onClickSeat(x, y)}
-                        display="inline-block"
-                        background={seat.type ? seat.type?.color : '#b1d0ff'}
-                        color="gray1"
-                        size="bodyS"
-                      >
-                        {seat.student ? seat.student.name : seat.number}
-                      </_Seat>
-                    </_SeatBlock>
+                      isSelected={isSelected}
+                      onClickSeat={onClickSeat}
+                      x={x}
+                      y={y}
+                    />
                   )}
-                </>
+                </div>
               );
             })}
-          </_Seats>
+          </S._Seats>
         ))}
-      </_Room>
-    </_Wrapper>
+      </S._Room>
+    </S._Wrapper>
   );
 };
-
-const _Seats = styled.div`
-  display: flex;
-`;
-
-const _SeatBlock = styled.div<{
-  isEdit: boolean;
-  isSelected: boolean;
-}>`
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-  border: 1px solid
-    ${({ theme, isSelected, isEdit }) =>
-      isEdit ? (isSelected ? theme.color.primary : theme.color.gray4) : 'none'};
-`;
-
-const _Seat = styled(Text)<{ background: string }>`
-  min-width: 80px;
-  min-height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 70%;
-  background-color: ${({ background, theme }) => theme.color[background]};
-`;
-
-const _EastDirection = styled(Text)`
-  position: absolute;
-  transform: rotate(90deg) translateX(-50%);
-  right: 0;
-`;
-const _SouthDirection = styled(Text)`
-  position: absolute;
-  transform: translateX(-50%);
-  bottom: 0;
-`;
-const _NorthDirection = styled(Text)`
-  position: absolute;
-  transform: translateX(-50%);
-  top: 0;
-`;
-const _WestDirection = styled(Text)`
-  position: absolute;
-  transform: rotate(-90deg) translateX(50%);
-  left: 0;
-`;
-
-const _Wrapper = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 684px;
-  height: 684px;
-`;
-
-const _Room = styled.div`
-  border: 2px solid ${({ theme }) => theme.color.primary};
-  width: 600px;
-  border-radius: 10px;
-  height: 600px;
-  overflow: scroll;
-`;
