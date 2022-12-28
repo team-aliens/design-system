@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 import { Arrow } from '../styleGuide/icon';
 import { Text } from '../styleGuide/text/Text';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import { marginCssType } from '../../utils/distance';
 
 interface PropsType extends marginCssType {
   className?: string;
   pathToKorean: { [key: string]: string };
 }
+
+['notice', 'my-page'];
 
 // 동적 라우팅
 // 링크 이동
@@ -21,12 +23,14 @@ export const BreadCrumb = ({ className, pathToKorean, margin }: PropsType) => {
         .slice(1)
         .map((item, idx, arr) => (
           <>
-            <Text
-              size="bodyS"
-              color={arr.length !== idx + 1 ? 'gray5' : 'gray10'}
-            >
-              {pathToKorean[item]}
-            </Text>
+            <Link to={'/'}>
+              <Text
+                size="bodyS"
+                color={arr.length !== idx + 1 ? 'gray5' : 'gray10'}
+              >
+                {pathToKorean[item]}
+              </Text>
+            </Link>
             {arr.length !== idx + 1 && (
               <Arrow colorKey="gray5" direction="right" />
             )}
