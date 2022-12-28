@@ -18,6 +18,6 @@ const Template: ComponentStory<typeof NavigatorBar> = (args) => (
 export const navigator = Template.bind({});
 
 navigator.args = {
-  navList: ['홈', '신청', '공지', '설문', '분실문', '마이페이지'],
+  navList: ['홈', '신청', '공지', '설문', '분실물', '마이페이지'],
   pathname: '/',
 };

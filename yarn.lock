@@ -3917,6 +3917,7 @@ __metadata:
   peerDependencies:
     react: ">= 18"
     react-dom: ">= 18"
+    react-router-dom: ">= 6"
     styled-components: ">= 5"
   languageName: unknown
   linkType: soft
