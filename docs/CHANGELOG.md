@@ -1,3 +1,10 @@
+## [1.3.22](https://github.com/team-aliens/design-system/compare/v1.3.21...v1.3.22) (2022-12-28)
+
+
+### Bug Fixes
+
+* left top 옵셔널 ([9bed99a](https://github.com/team-aliens/design-system/commit/9bed99ad1be444521392ee2a6ae8ff18f48bcbe9))
+
 ## [1.3.21](https://github.com/team-aliens/design-system/compare/v1.3.20...v1.3.21) (2022-12-28)
 
 
