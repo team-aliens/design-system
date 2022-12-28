@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Arrow } from '../styleGuide/icon';
 import { Text } from '../styleGuide/text/Text';
 import { useLocation, Link } from 'react-router-dom';
-import { marginCssType } from '../../utils/distance';
+import { marginCssType, marginToCss } from '../../utils/distance';
 
 interface PropsType extends marginCssType {
   className?: string;
@@ -16,7 +16,8 @@ export const BreadCrumb = ({ className, pathToKorean, margin }: PropsType) => {
   for (let i = 0; i < path.length; i++) {
     if (i > 0) LinkList.push(`${LinkList[i - 1]}/${path[i]}`);
     if (pathToKorean[path[i]]) {
-      pathList.push(pathToKorean[path[i]].index || pathToKorean[path[i]]);
+      if (pathToKorean[path[i]].index)
+        pathList.push(pathToKorean[path[i]].index);
       pathToKorean = pathToKorean[path[i]];
     } else if (pathToKorean['dynamic']) {
       pathList.push(pathToKorean['dynamic']);
@@ -49,4 +50,5 @@ const _Wrapper = styled.div<marginCssType>`
   display: flex;
   align-items: center;
   gap: 12px;
+  ${({ margin }) => marginToCss({ margin })};
 `;
