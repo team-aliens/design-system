@@ -22,7 +22,7 @@ const toastIconType = {
 export const Toast = ({
   type,
   children,
-  holdingTime = 1000,
+  holdingTime = 5000,
   className,
 }: Props) => {
   const [remainingHoldingTime, setRemainingHoldingTime] = useState(holdingTime);

@@ -19,3 +19,4 @@ export * from './components/modal';
 export * from './components/breadCrumb/BreadCrumb';
 export * from './components/segmentedBtn';
 export * from './components/studyRoom';
+export * from './components/logo';

@@ -8,7 +8,7 @@ import { Human } from '../styleGuide/icon/Human';
 import { Text } from '../styleGuide/text/Text';
 import { Item } from './Item';
 
-type NavListType = '홈' | '신청' | '공지' | '설문' | '분실문' | '마이페이지';
+type NavListType = '홈' | '신청' | '공지' | '설문' | '분실물' | '마이페이지';
 
 interface PropsType {
   navList: NavListType[];
