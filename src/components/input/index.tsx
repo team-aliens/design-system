@@ -13,6 +13,7 @@ interface PropsType extends marginCssType, errorMsgPropsType, labelPropsType {
   name: string;
   className?: string;
   value: string | number;
+  clickedPlaceholderHide?: boolean;
 }
 
 /** input 에러 상태일 때에는 포커싱이 파란색..? */
@@ -27,17 +28,26 @@ export const Input = ({
   value,
   className,
   margin,
+  clickedPlaceholderHide,
 }: PropsType) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isInputClicked, setIsInputClicked] = useState<boolean>(false);
+  const place = clickedPlaceholderHide ? '' : placeholder;
   return (
     <_Wrapper margin={margin} className={className}>
       <Label label={label} />
       <_InputWrapper width={width}>
         <_Input
+          onFocus={() => {
+            setIsInputClicked(false);
+          }}
+          onBlur={() => {
+            setIsInputClicked(true);
+          }}
           onChange={onChange}
           type={(isOpen && 'text') || type}
           errorMsg={errorMsg}
-          placeholder={placeholder}
+          placeholder={isInputClicked ? placeholder : place}
           value={value}
           name={name}
         />
