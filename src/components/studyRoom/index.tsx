@@ -93,8 +93,8 @@ export const StudyRoom = ({
             {seatY.map((seat, x) => {
               const isSelected =
                 isEdit &&
-                selectedPosition?.x - 1 === x &&
-                selectedPosition?.y - 1 === y;
+                selectedPosition?.x === x &&
+                selectedPosition?.y === y;
               return (
                 <div>
                   {!seat || seat.status === 'EMPTY' ? (
