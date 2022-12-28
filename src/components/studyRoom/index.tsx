@@ -70,6 +70,7 @@ export const StudyRoom = ({
 
   for (let i = 0; i < seats.length; i++)
     arr[seats[i].width_location - 1][seats[i].height_location - 1] = seats[i];
+  console.log(arr);
   return (
     <_Wrapper>
       <_EastDirection size="titleM" color="primaryLighten1">
@@ -89,47 +90,7 @@ export const StudyRoom = ({
           <_Seats>
             {seatY.map((seat, x) => (
               <>
-                {seat || seat.status === 'EMPTY' ? (
-                  seat.status === 'UNAVAILABLE' ? (
-                    <_SeatBlock
-                      isEdit={isEdit}
-                      isSelected={
-                        isEdit &&
-                        selectedPosition?.x === x &&
-                        selectedPosition?.y === y
-                      }
-                    >
-                      <_Seat
-                        onClick={() => isEdit && onClickSeat(x, y)}
-                        display="inline-block"
-                        background={'gray4'}
-                        color="gray1"
-                        size="bodyS"
-                      >
-                        사용불가
-                      </_Seat>
-                    </_SeatBlock>
-                  ) : (
-                    <_SeatBlock
-                      isEdit={isEdit}
-                      isSelected={
-                        isEdit &&
-                        selectedPosition?.x === x &&
-                        selectedPosition?.y === y
-                      }
-                    >
-                      <_Seat
-                        onClick={() => isEdit && onClickSeat(x, y)}
-                        display="inline-block"
-                        background={seat.type ? seat.type.color : '#b1d0ff'}
-                        color="gray1"
-                        size="bodyS"
-                      >
-                        {seat.student ? seat.student.name : seat.number}
-                      </_Seat>
-                    </_SeatBlock>
-                  )
-                ) : (
+                {!seat || seat.status === 'EMPTY' ? (
                   <_SeatBlock
                     isEdit={isEdit}
                     isSelected={
@@ -142,6 +103,44 @@ export const StudyRoom = ({
                       onClick={() => isEdit && onClickSeat(x, y)}
                       background={'gray1'}
                     />
+                  </_SeatBlock>
+                ) : seat.status === 'UNAVAILABLE' ? (
+                  <_SeatBlock
+                    isEdit={isEdit}
+                    isSelected={
+                      isEdit &&
+                      selectedPosition?.x === x &&
+                      selectedPosition?.y === y
+                    }
+                  >
+                    <_Seat
+                      onClick={() => isEdit && onClickSeat(x, y)}
+                      display="inline-block"
+                      background={'gray4'}
+                      color="gray1"
+                      size="bodyS"
+                    >
+                      사용불가
+                    </_Seat>
+                  </_SeatBlock>
+                ) : (
+                  <_SeatBlock
+                    isEdit={isEdit}
+                    isSelected={
+                      isEdit &&
+                      selectedPosition?.x === x &&
+                      selectedPosition?.y === y
+                    }
+                  >
+                    <_Seat
+                      onClick={() => isEdit && onClickSeat(x, y)}
+                      display="inline-block"
+                      background={seat.type ? seat.type.color : '#b1d0ff'}
+                      color="gray1"
+                      size="bodyS"
+                    >
+                      {seat.student ? seat.student.name : seat.number}
+                    </_Seat>
                   </_SeatBlock>
                 )}
               </>
