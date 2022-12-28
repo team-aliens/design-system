@@ -1,3 +1,11 @@
+## [1.3.12](https://github.com/team-aliens/design-system/compare/v1.3.11...v1.3.12) (2022-12-28)
+
+
+### Bug Fixes
+
+* navigation 로고 ([765f908](https://github.com/team-aliens/design-system/commit/765f908190f42a1f9f59ca3f71e50bf4135b5cba))
+* 분실문 -> 분실물 ([9f69e73](https://github.com/team-aliens/design-system/commit/9f69e73248540c8a6abc970bad6575e232bb0cd7))
+
 ## [1.3.11](https://github.com/team-aliens/design-system/compare/v1.3.10...v1.3.11) (2022-12-28)
 
 
