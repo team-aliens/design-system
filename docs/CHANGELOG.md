@@ -1,3 +1,10 @@
+## [1.3.18](https://github.com/team-aliens/design-system/compare/v1.3.17...v1.3.18) (2022-12-28)
+
+
+### Bug Fixes
+
+* input clickedPlaceholderHide ([e5c0381](https://github.com/team-aliens/design-system/commit/e5c0381693cf82a0719b0914e003d5aa236b0f9f))
+
 ## [1.3.17](https://github.com/team-aliens/design-system/compare/v1.3.16...v1.3.17) (2022-12-28)
 
 
