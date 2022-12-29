@@ -1,3 +1,10 @@
+## [1.3.31](https://github.com/team-aliens/design-system/compare/v1.3.30...v1.3.31) (2022-12-29)
+
+
+### Bug Fixes
+
+* input limit studyRoom 방향 ([01cfc0f](https://github.com/team-aliens/design-system/commit/01cfc0f8c6a90417b31bcb442828e2c8f8a481d9))
+
 ## [1.3.30](https://github.com/team-aliens/design-system/compare/v1.3.29...v1.3.30) (2022-12-29)
 
 
