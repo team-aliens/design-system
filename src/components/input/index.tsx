@@ -38,6 +38,7 @@ export const Input = ({
       <Label label={label} />
       <_InputWrapper width={width}>
         <_Input
+          onWheel={(e) => e.preventDefault()}
           onFocus={() => {
             setIsInputClicked(false);
           }}
