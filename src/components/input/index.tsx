@@ -38,7 +38,10 @@ export const Input = ({
       <Label label={label} />
       <_InputWrapper width={width}>
         <_Input
-          onWheel={(e) => e.preventDefault()}
+          onWheel={(e) => {
+            //@ts-ignore
+            document.activeElement.blur();
+          }}
           onFocus={() => {
             setIsInputClicked(false);
           }}
