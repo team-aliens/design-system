@@ -1,3 +1,10 @@
+## [1.3.26](https://github.com/team-aliens/design-system/compare/v1.3.25...v1.3.26) (2022-12-29)
+
+
+### Bug Fixes
+
+* input number 스크롤 시 값 변경 ([961a920](https://github.com/team-aliens/design-system/commit/961a920727c05f8fd64369bd0522b16c171bba87))
+
 ## [1.3.25](https://github.com/team-aliens/design-system/compare/v1.3.24...v1.3.25) (2022-12-29)
 
 
