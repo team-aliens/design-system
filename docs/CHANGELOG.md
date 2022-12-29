@@ -1,3 +1,10 @@
+## [1.3.25](https://github.com/team-aliens/design-system/compare/v1.3.24...v1.3.25) (2022-12-29)
+
+
+### Bug Fixes
+
+* BreadCrumb ([6bba197](https://github.com/team-aliens/design-system/commit/6bba1974780abf1310a22225901181cbd6852f2a))
+
 ## [1.3.24](https://github.com/team-aliens/design-system/compare/v1.3.23...v1.3.24) (2022-12-28)
 
 
