@@ -13,7 +13,7 @@ interface PropsType extends marginCssType, errorMsgPropsType, labelPropsType {
   name: string;
   className?: string;
   value: string | number;
-  clickedPlaceholderHide?: boolean;
+  limit?: number;
 }
 
 /** input 에러 상태일 때에는 포커싱이 파란색..? */
@@ -28,6 +28,7 @@ export const Input = ({
   value,
   className,
   margin,
+  limit,
 }: PropsType) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isInputClicked, setIsInputClicked] = useState<boolean>(false);
@@ -51,6 +52,7 @@ export const Input = ({
           errorMsg={errorMsg}
           placeholder={isInputClicked ? '' : placeholder}
           value={value}
+          maxLength={limit}
           name={name}
         />
         {type == 'password' && (

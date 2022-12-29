@@ -135,26 +135,26 @@ export const StudyRoom = ({
 
 const _EastDirection = styled(Text)`
   position: absolute;
-  transform: rotate(90deg) translateX(-50%);
+  transform: translate(50%, 50%) rotate(90deg);
   right: 0;
+  transform-origin: center;
 `;
 
 const _SouthDirection = styled(Text)`
   position: absolute;
-  transform: translateX(-50%);
   bottom: 0;
 `;
 
 const _NorthDirection = styled(Text)`
   position: absolute;
-  transform: translateX(-50%);
   top: 0;
 `;
 
 const _WestDirection = styled(Text)`
   position: absolute;
-  transform: rotate(-90deg) translateX(50%);
+  transform: translate(-50%, 50%) rotate(-90deg);
   left: 0;
+  transform-origin: center;
 `;
 
 const _Seats = styled.div`
@@ -162,9 +162,9 @@ const _Seats = styled.div`
 `;
 
 const _Wrapper = styled.div`
-  position: relative;
   display: flex;
   justify-content: center;
+  position: relative;
   align-items: center;
   width: 684px;
   height: 684px;
