@@ -1,3 +1,10 @@
+## [1.3.30](https://github.com/team-aliens/design-system/compare/v1.3.29...v1.3.30) (2022-12-29)
+
+
+### Bug Fixes
+
+* studyRoom 중앙정렬 ([3f6f359](https://github.com/team-aliens/design-system/commit/3f6f359b616ffcba0f295a0fee3eb7da4736229d))
+
 ## [1.3.29](https://github.com/team-aliens/design-system/compare/v1.3.28...v1.3.29) (2022-12-29)
 
 
