@@ -1,3 +1,10 @@
+## [1.3.27](https://github.com/team-aliens/design-system/compare/v1.3.26...v1.3.27) (2022-12-29)
+
+
+### Bug Fixes
+
+* input type number scroll 막음 ([d1b79df](https://github.com/team-aliens/design-system/commit/d1b79df8c5d5317af999b66d6b56c2d46b517de4))
+
 ## [1.3.26](https://github.com/team-aliens/design-system/compare/v1.3.25...v1.3.26) (2022-12-29)
 
 
