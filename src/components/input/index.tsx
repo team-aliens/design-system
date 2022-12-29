@@ -28,11 +28,9 @@ export const Input = ({
   value,
   className,
   margin,
-  clickedPlaceholderHide,
 }: PropsType) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isInputClicked, setIsInputClicked] = useState<boolean>(false);
-  const place = clickedPlaceholderHide ? '' : placeholder;
   return (
     <_Wrapper margin={margin} className={className}>
       <Label label={label} />
@@ -51,7 +49,7 @@ export const Input = ({
           onChange={onChange}
           type={(isOpen && 'text') || type}
           errorMsg={errorMsg}
-          placeholder={isInputClicked ? placeholder : place}
+          placeholder={isInputClicked ? '' : placeholder}
           value={value}
           name={name}
         />
