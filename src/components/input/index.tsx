@@ -41,10 +41,10 @@ export const Input = ({
             document.activeElement.blur();
           }}
           onFocus={() => {
-            setIsInputClicked(false);
+            setIsInputClicked(true);
           }}
           onBlur={() => {
-            setIsInputClicked(true);
+            setIsInputClicked(false);
           }}
           onChange={onChange}
           type={(isOpen && 'text') || type}
