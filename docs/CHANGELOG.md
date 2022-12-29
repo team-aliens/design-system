@@ -1,3 +1,10 @@
+## [1.3.32](https://github.com/team-aliens/design-system/compare/v1.3.31...v1.3.32) (2022-12-29)
+
+
+### Bug Fixes
+
+* studyroom margin 수정 ([747ea9a](https://github.com/team-aliens/design-system/commit/747ea9ada2c206434d455c41bfe2b460d5720973))
+
 ## [1.3.31](https://github.com/team-aliens/design-system/compare/v1.3.30...v1.3.31) (2022-12-29)
 
 
