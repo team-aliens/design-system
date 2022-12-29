@@ -20,7 +20,6 @@ export const BreadCrumb = ({
   const pathList = [];
   const LinkList = [`/${path[0]}`];
   for (let i = 0; i < path.length; i++) {
-    if (i > 0) LinkList.push(`${LinkList[i - 1]}/${path[i]}`);
     if (pathToKorean[path[i]]) {
       if (pathToKorean[path[i]].index)
         pathList.push(pathToKorean[path[i]].index);
@@ -30,7 +29,12 @@ export const BreadCrumb = ({
     } else if (pathToKorean['dynamic']) {
       pathList.push(pathToKorean['dynamic']);
       pathToKorean = pathToKorean['dynamic'];
+      LinkList[LinkList.length - 2] = `${LinkList[LinkList.length - 2]}/${
+        path[i]
+      }`;
     }
+
+    if (i > 0) LinkList.push(`${LinkList[LinkList.length - 1]}/${path[i]}`);
   }
   return (
     <_Wrapper left={left} top={top} className={className}>
