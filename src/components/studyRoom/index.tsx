@@ -136,7 +136,7 @@ export const StudyRoom = ({
 const _EastDirection = styled(Text)`
   position: absolute;
   transform: translate(50%, 50%) rotate(90deg);
-  right: 0;
+  right: 16px;
   transform-origin: center;
 `;
 
@@ -153,7 +153,7 @@ const _NorthDirection = styled(Text)`
 const _WestDirection = styled(Text)`
   position: absolute;
   transform: translate(-50%, 50%) rotate(-90deg);
-  left: 0;
+  left: 16px;
   transform-origin: center;
 `;
 
