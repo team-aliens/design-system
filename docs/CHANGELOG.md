@@ -1,3 +1,10 @@
+## [1.3.28](https://github.com/team-aliens/design-system/compare/v1.3.27...v1.3.28) (2022-12-29)
+
+
+### Bug Fixes
+
+* placeholder 항상 누루면 없어지게 ([e5a0753](https://github.com/team-aliens/design-system/commit/e5a07533c01734b29d447fc1d2987372074288b0))
+
 ## [1.3.27](https://github.com/team-aliens/design-system/compare/v1.3.26...v1.3.27) (2022-12-29)
 
 
