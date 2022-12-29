@@ -176,4 +176,8 @@ const _Room = styled.div`
   border-radius: 10px;
   height: 600px;
   overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;

@@ -16,7 +16,7 @@ const Template: ComponentStory<typeof StudyRoom> = () => (
     west_description={'창문'}
     south_description={'벽'}
     north_description={'칠판'}
-    total_width_size={5}
+    total_width_size={4}
     total_height_size={5}
     seats={[
       {
