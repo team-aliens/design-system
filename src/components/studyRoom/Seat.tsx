@@ -28,7 +28,7 @@ export const Seat = ({
         color="gray1"
         size="bodyS"
       >
-        {seat.student ? seat.student.name : seat.number}
+        {seat.number}
       </_Seat>
     </_SeatBlock>
   );
