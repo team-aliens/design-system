@@ -94,7 +94,7 @@ export const StudyRoom = ({
       <_NorthDirection size="titleM" color="primaryLighten1">
         {north_description}
       </_NorthDirection>
-      <_Room align={arr.length > 0 && (arr[0].length < 6 || arr.length < 6)}>
+      <_Room jutify={arr.length < 6} align={arr[0] && arr[0].length < 6}>
         {arr.map((seatY, y) => (
           <_Seats>
             {seatY.map((seat, x) => {
@@ -177,18 +177,14 @@ const _Wrapper = styled.div`
   height: 684px;
 `;
 
-const _Room = styled.div<{ align: boolean }>`
+const _Room = styled.div<{ align: boolean; jutify: boolean }>`
   border: 2px solid ${({ theme }) => theme.color.primary};
   width: 600px;
   border-radius: 10px;
   height: 600px;
   overflow: scroll;
-  ${({ align }) =>
-    align &&
-    css`
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    `}
+  display: flex;
+  flex-direction: column;
+  justify-content: ${({ jutify }) => jutify && 'center'};
+  align-items: ${({ align }) => align && 'center'};
 `;
