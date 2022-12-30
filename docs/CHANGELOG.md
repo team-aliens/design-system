@@ -1,3 +1,10 @@
+## [1.3.36](https://github.com/team-aliens/design-system/compare/v1.3.35...v1.3.36) (2022-12-30)
+
+
+### Bug Fixes
+
+* colum 추가 ([f30dfca](https://github.com/team-aliens/design-system/commit/f30dfca4f5592717c975a3e8d7ce2445876bbe8e))
+
 ## [1.3.35](https://github.com/team-aliens/design-system/compare/v1.3.34...v1.3.35) (2022-12-30)
 
 
