@@ -167,6 +167,7 @@ const _WestDirection = styled(Text)`
 
 const _Seats = styled.div`
   display: flex;
+  justify-content: center;
 `;
 
 const _Wrapper = styled.div`
