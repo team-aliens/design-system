@@ -74,8 +74,10 @@ export const StudyRoom = ({
     +total_width_size
   );
 
-  for (let i = 0; i < seats.length; i++)
-    arr[seats[i].height_location - 1][seats[i].width_location - 1] = seats[i];
+  for (let i = 0; i < seats.length; i++) {
+    const colum = arr[seats[i].height_location - 1];
+    if (colum) colum[seats[i].width_location - 1] = seats[i];
+  }
 
   return (
     <_Wrapper>
