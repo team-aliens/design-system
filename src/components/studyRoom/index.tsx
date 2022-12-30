@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Text } from '../styleGuide/text/Text';
 import { Blank } from './Blank';
 import { NoSpace } from './NoSpace';
@@ -69,10 +69,14 @@ export const StudyRoom = ({
     y: -1,
   },
 }: PropsType) => {
-  let arr: seatType[][] = arr2Generator(total_height_size, total_width_size);
+  let arr: seatType[][] = arr2Generator(
+    +total_height_size || 0,
+    +total_width_size
+  );
 
   for (let i = 0; i < seats.length; i++)
     arr[seats[i].height_location - 1][seats[i].width_location - 1] = seats[i];
+
   return (
     <_Wrapper>
       <_EastDirection size="titleM" color="primaryLighten1">
@@ -87,7 +91,7 @@ export const StudyRoom = ({
       <_NorthDirection size="titleM" color="primaryLighten1">
         {north_description}
       </_NorthDirection>
-      <_Room>
+      <_Room align={arr[0].length < 6 && arr.length < 6}>
         {arr.map((seatY, y) => (
           <_Seats>
             {seatY.map((seat, x) => {
@@ -170,14 +174,18 @@ const _Wrapper = styled.div`
   height: 684px;
 `;
 
-const _Room = styled.div`
+const _Room = styled.div<{ align: boolean }>`
   border: 2px solid ${({ theme }) => theme.color.primary};
   width: 600px;
   border-radius: 10px;
   height: 600px;
   overflow: scroll;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  ${({ align }) =>
+    align &&
+    css`
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    `}
 `;
