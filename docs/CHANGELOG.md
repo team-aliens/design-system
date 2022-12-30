@@ -1,3 +1,10 @@
+## [1.3.33](https://github.com/team-aliens/design-system/compare/v1.3.32...v1.3.33) (2022-12-30)
+
+
+### Bug Fixes
+
+* 자습실 이름말고 번호만 보여주게 수정 ([2e972a8](https://github.com/team-aliens/design-system/commit/2e972a84ef473f1b16f69d7bdf48c59465fb4096))
+
 ## [1.3.32](https://github.com/team-aliens/design-system/compare/v1.3.31...v1.3.32) (2022-12-29)
 
 
