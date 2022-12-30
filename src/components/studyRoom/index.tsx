@@ -91,7 +91,7 @@ export const StudyRoom = ({
       <_NorthDirection size="titleM" color="primaryLighten1">
         {north_description}
       </_NorthDirection>
-      <_Room align={arr[0].length < 6 && arr.length < 6}>
+      <_Room align={arr.length > 0 && arr[0].length < 6 && arr.length < 6}>
         {arr.map((seatY, y) => (
           <_Seats>
             {seatY.map((seat, x) => {
