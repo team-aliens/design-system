@@ -1,3 +1,10 @@
+## [1.3.37](https://github.com/team-aliens/design-system/compare/v1.3.36...v1.3.37) (2022-12-30)
+
+
+### Bug Fixes
+
+* studyRoom ([ef86e45](https://github.com/team-aliens/design-system/commit/ef86e45a6a5255cd8ca56c815fe7e21026941cb0))
+
 ## [1.3.36](https://github.com/team-aliens/design-system/compare/v1.3.35...v1.3.36) (2022-12-30)
 
 
