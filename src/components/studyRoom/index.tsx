@@ -69,15 +69,17 @@ export const StudyRoom = ({
     y: -1,
   },
 }: PropsType) => {
-  let arr: seatType[][] = arr2Generator(
-    +total_height_size || 0,
-    +total_width_size
-  );
+  let arr: seatType[][] = arr2Generator(total_height_size, total_width_size);
 
   for (let i = 0; i < seats.length; i++) {
-    const colum = arr[seats[i].height_location - 1];
-    if (colum) colum[seats[i].width_location - 1] = seats[i];
+    const x = seats[i].height_location - 1;
+    const y = seats[i].width_location - 1;
+    if (x < total_height_size && y < total_width_size) {
+      const colum = arr[x];
+      if (colum) colum[y] = seats[i];
+    }
   }
+  console.log(arr);
 
   return (
     <_Wrapper>
