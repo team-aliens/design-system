@@ -79,7 +79,6 @@ export const StudyRoom = ({
       if (colum) colum[y] = seats[i];
     }
   }
-  console.log(arr);
 
   return (
     <_Wrapper>
@@ -95,7 +94,7 @@ export const StudyRoom = ({
       <_NorthDirection size="titleM" color="primaryLighten1">
         {north_description}
       </_NorthDirection>
-      <_Room align={arr.length > 0 && arr[0].length < 6 && arr.length < 6}>
+      <_Room align={arr.length > 0 && (arr[0].length < 6 || arr.length < 6)}>
         {arr.map((seatY, y) => (
           <_Seats>
             {seatY.map((seat, x) => {
@@ -167,7 +166,6 @@ const _WestDirection = styled(Text)`
 
 const _Seats = styled.div`
   display: flex;
-  justify-content: center;
 `;
 
 const _Wrapper = styled.div`
