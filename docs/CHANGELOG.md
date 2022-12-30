@@ -1,3 +1,10 @@
+## [1.3.34](https://github.com/team-aliens/design-system/compare/v1.3.33...v1.3.34) (2022-12-30)
+
+
+### Bug Fixes
+
+* 버그 수정 ([142148d](https://github.com/team-aliens/design-system/commit/142148d07c8987d53c6559b64fdc988dace8ce41))
+
 ## [1.3.33](https://github.com/team-aliens/design-system/compare/v1.3.32...v1.3.33) (2022-12-30)
 
 
