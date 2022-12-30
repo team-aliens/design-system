@@ -1,3 +1,10 @@
+## [1.3.35](https://github.com/team-aliens/design-system/compare/v1.3.34...v1.3.35) (2022-12-30)
+
+
+### Bug Fixes
+
+* arr.length > 0 ([7fd2c8c](https://github.com/team-aliens/design-system/commit/7fd2c8c9f9c62621bdc9f4df52edc49d89f0e294))
+
 ## [1.3.34](https://github.com/team-aliens/design-system/compare/v1.3.33...v1.3.34) (2022-12-30)
 
 
