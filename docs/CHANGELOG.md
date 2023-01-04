@@ -1,3 +1,11 @@
+## [1.3.41](https://github.com/team-aliens/design-system/compare/v1.3.40...v1.3.41) (2023-01-04)
+
+
+### Bug Fixes
+
+* 스크롤바 숨기기 ([f7f448e](https://github.com/team-aliens/design-system/commit/f7f448eaf2144be966493848d2d4bdcd859313b3))
+* 자습실 스크롤 숨기기 ([66d089b](https://github.com/team-aliens/design-system/commit/66d089be1b9ff4cf76796e24b90cbeaecc1cd555))
+
 ## [1.3.40](https://github.com/team-aliens/design-system/compare/v1.3.39...v1.3.40) (2022-12-30)
 
 
