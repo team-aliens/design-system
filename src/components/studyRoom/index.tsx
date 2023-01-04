@@ -155,6 +155,9 @@ export const StudyRoom = ({
 
 const _Seats = styled.div`
   display: flex;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const _SeatBlock = styled.div<{
@@ -215,4 +218,7 @@ const _Room = styled.div`
   border-radius: 10px;
   height: 600px;
   overflow: scroll;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;
