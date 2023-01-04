@@ -1,6 +1,6 @@
 interface PropsType {
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
 }
 
 export const Vertical = ({ width = 458, height = 556 }: PropsType) => (
@@ -11,7 +11,7 @@ export const Vertical = ({ width = 458, height = 556 }: PropsType) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0_9350_8671)">
+    <g clipPath="url(#clip0_9350_8671)">
       <path
         d="M125.55 509C121.942 517.724 116.542 525.594 109.7 532.1C102.618 538.743 94.3145 543.949 85.25 547.43C75.3034 551.247 64.7232 553.144 54.07 553.02H0V408H54.07C64.7141 407.878 75.2878 409.739 85.25 413.49C94.3217 416.906 102.63 422.078 109.7 428.71C116.527 435.19 121.925 443.023 125.55 451.71C129.321 460.766 131.222 470.49 131.14 480.3C131.216 490.144 129.315 499.903 125.55 509ZM100.78 460.85C98.462 455.002 95.0012 449.675 90.6 445.18C86.0881 440.641 80.6751 437.098 74.71 434.78C68.0934 432.198 61.0418 430.915 53.94 431H25.28V530H53.94C61.0299 530.095 68.0749 528.86 74.71 526.36C80.6597 524.137 86.074 520.686 90.6 516.23C95.0184 511.776 98.4823 506.468 100.78 500.63C105.634 487.828 105.634 473.692 100.78 460.89V460.85Z"
         fill="#262626"
@@ -62,10 +62,10 @@ export const Vertical = ({ width = 458, height = 556 }: PropsType) => (
         y2="134.921"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#4AC4FF" />
-        <stop offset="0.44" stop-color="#429FFF" />
-        <stop offset="0.75" stop-color="#3D8AFF" />
-        <stop offset="1" stop-color="#3377FF" />
+        <stop stopColor="#4AC4FF" />
+        <stop offset="0.44" stopColor="#429FFF" />
+        <stop offset="0.75" stopColor="#3D8AFF" />
+        <stop offset="1" stopColor="#3377FF" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_9350_8671"
@@ -75,10 +75,10 @@ export const Vertical = ({ width = 458, height = 556 }: PropsType) => (
         y2="237.92"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#58C0FF" />
-        <stop offset="0.12" stop-color="#4CBCFF" />
-        <stop offset="0.71" stop-color="#15A8FF" />
-        <stop offset="1" stop-color="#00A0FF" />
+        <stop stopColor="#58C0FF" />
+        <stop offset="0.12" stopColor="#4CBCFF" />
+        <stop offset="0.71" stopColor="#15A8FF" />
+        <stop offset="1" stopColor="#00A0FF" />
       </linearGradient>
       <linearGradient
         id="paint2_linear_9350_8671"
@@ -88,10 +88,10 @@ export const Vertical = ({ width = 458, height = 556 }: PropsType) => (
         y2="178.98"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0090FF" />
-        <stop offset="0.34" stop-color="#0073FF" />
-        <stop offset="0.71" stop-color="#0052E4" />
-        <stop offset="1" stop-color="#003DD2" />
+        <stop stopColor="#0090FF" />
+        <stop offset="0.34" stopColor="#0073FF" />
+        <stop offset="0.71" stopColor="#0052E4" />
+        <stop offset="1" stopColor="#003DD2" />
       </linearGradient>
       <clipPath id="clip0_9350_8671">
         <rect width="457.2" height="555.8" fill="white" />

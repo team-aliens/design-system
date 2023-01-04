@@ -1,3 +1,216 @@
+## [1.3.40](https://github.com/team-aliens/design-system/compare/v1.3.39...v1.3.40) (2022-12-30)
+
+
+### Bug Fixes
+
+* studyRoom ([c77a3ee](https://github.com/team-aliens/design-system/commit/c77a3ee80d56c8485e4a36dc7fcaeb32c33bea88))
+
+## [1.3.39](https://github.com/team-aliens/design-system/compare/v1.3.38...v1.3.39) (2022-12-30)
+
+
+### Bug Fixes
+
+* studyRoom ([111317f](https://github.com/team-aliens/design-system/commit/111317f56058c2bd823a3341d0eb03f84fc715c7))
+
+## [1.3.38](https://github.com/team-aliens/design-system/compare/v1.3.37...v1.3.38) (2022-12-30)
+
+
+### Bug Fixes
+
+* studyRoom ([299f645](https://github.com/team-aliens/design-system/commit/299f645044c684b37b12c7178f138322a2657fcb))
+
+## [1.3.37](https://github.com/team-aliens/design-system/compare/v1.3.36...v1.3.37) (2022-12-30)
+
+
+### Bug Fixes
+
+* studyRoom ([ef86e45](https://github.com/team-aliens/design-system/commit/ef86e45a6a5255cd8ca56c815fe7e21026941cb0))
+
+## [1.3.36](https://github.com/team-aliens/design-system/compare/v1.3.35...v1.3.36) (2022-12-30)
+
+
+### Bug Fixes
+
+* colum 추가 ([f30dfca](https://github.com/team-aliens/design-system/commit/f30dfca4f5592717c975a3e8d7ce2445876bbe8e))
+
+## [1.3.35](https://github.com/team-aliens/design-system/compare/v1.3.34...v1.3.35) (2022-12-30)
+
+
+### Bug Fixes
+
+* arr.length > 0 ([7fd2c8c](https://github.com/team-aliens/design-system/commit/7fd2c8c9f9c62621bdc9f4df52edc49d89f0e294))
+
+## [1.3.34](https://github.com/team-aliens/design-system/compare/v1.3.33...v1.3.34) (2022-12-30)
+
+
+### Bug Fixes
+
+* 버그 수정 ([142148d](https://github.com/team-aliens/design-system/commit/142148d07c8987d53c6559b64fdc988dace8ce41))
+
+## [1.3.33](https://github.com/team-aliens/design-system/compare/v1.3.32...v1.3.33) (2022-12-30)
+
+
+### Bug Fixes
+
+* 자습실 이름말고 번호만 보여주게 수정 ([2e972a8](https://github.com/team-aliens/design-system/commit/2e972a84ef473f1b16f69d7bdf48c59465fb4096))
+
+## [1.3.32](https://github.com/team-aliens/design-system/compare/v1.3.31...v1.3.32) (2022-12-29)
+
+
+### Bug Fixes
+
+* studyroom margin 수정 ([747ea9a](https://github.com/team-aliens/design-system/commit/747ea9ada2c206434d455c41bfe2b460d5720973))
+
+## [1.3.31](https://github.com/team-aliens/design-system/compare/v1.3.30...v1.3.31) (2022-12-29)
+
+
+### Bug Fixes
+
+* input limit studyRoom 방향 ([01cfc0f](https://github.com/team-aliens/design-system/commit/01cfc0f8c6a90417b31bcb442828e2c8f8a481d9))
+
+## [1.3.30](https://github.com/team-aliens/design-system/compare/v1.3.29...v1.3.30) (2022-12-29)
+
+
+### Bug Fixes
+
+* studyRoom 중앙정렬 ([3f6f359](https://github.com/team-aliens/design-system/commit/3f6f359b616ffcba0f295a0fee3eb7da4736229d))
+
+## [1.3.29](https://github.com/team-aliens/design-system/compare/v1.3.28...v1.3.29) (2022-12-29)
+
+
+### Bug Fixes
+
+* 상태 반대로 되어있던 것 수정 ([bfb694e](https://github.com/team-aliens/design-system/commit/bfb694e60e6a42921d7e56e9f74cbf11100e7c7c))
+
+## [1.3.28](https://github.com/team-aliens/design-system/compare/v1.3.27...v1.3.28) (2022-12-29)
+
+
+### Bug Fixes
+
+* placeholder 항상 누루면 없어지게 ([e5a0753](https://github.com/team-aliens/design-system/commit/e5a07533c01734b29d447fc1d2987372074288b0))
+
+## [1.3.27](https://github.com/team-aliens/design-system/compare/v1.3.26...v1.3.27) (2022-12-29)
+
+
+### Bug Fixes
+
+* input type number scroll 막음 ([d1b79df](https://github.com/team-aliens/design-system/commit/d1b79df8c5d5317af999b66d6b56c2d46b517de4))
+
+## [1.3.26](https://github.com/team-aliens/design-system/compare/v1.3.25...v1.3.26) (2022-12-29)
+
+
+### Bug Fixes
+
+* input number 스크롤 시 값 변경 ([961a920](https://github.com/team-aliens/design-system/commit/961a920727c05f8fd64369bd0522b16c171bba87))
+
+## [1.3.25](https://github.com/team-aliens/design-system/compare/v1.3.24...v1.3.25) (2022-12-29)
+
+
+### Bug Fixes
+
+* BreadCrumb ([6bba197](https://github.com/team-aliens/design-system/commit/6bba1974780abf1310a22225901181cbd6852f2a))
+
+## [1.3.24](https://github.com/team-aliens/design-system/compare/v1.3.23...v1.3.24) (2022-12-28)
+
+
+### Bug Fixes
+
+* BreadCrumb ([454595e](https://github.com/team-aliens/design-system/commit/454595e63fda0701c7fe9be0652815ffcd83f75f))
+
+## [1.3.23](https://github.com/team-aliens/design-system/compare/v1.3.22...v1.3.23) (2022-12-28)
+
+
+### Bug Fixes
+
+* BreadCrumb ([ad3740b](https://github.com/team-aliens/design-system/commit/ad3740b0994bdc0cd6a274a3361356a79aa21d9d))
+
+## [1.3.22](https://github.com/team-aliens/design-system/compare/v1.3.21...v1.3.22) (2022-12-28)
+
+
+### Bug Fixes
+
+* left top 옵셔널 ([9bed99a](https://github.com/team-aliens/design-system/commit/9bed99ad1be444521392ee2a6ae8ff18f48bcbe9))
+
+## [1.3.21](https://github.com/team-aliens/design-system/compare/v1.3.20...v1.3.21) (2022-12-28)
+
+
+### Bug Fixes
+
+* margin -> top, left ([0d1bf29](https://github.com/team-aliens/design-system/commit/0d1bf293f08374b97eabf41526b63d4b669d2013))
+
+## [1.3.20](https://github.com/team-aliens/design-system/compare/v1.3.19...v1.3.20) (2022-12-28)
+
+
+### Bug Fixes
+
+* BreadCrumb ([d00e9b2](https://github.com/team-aliens/design-system/commit/d00e9b208802f1008561abc7d698f587316f89a0))
+
+## [1.3.19](https://github.com/team-aliens/design-system/compare/v1.3.18...v1.3.19) (2022-12-28)
+
+
+### Bug Fixes
+
+* breadCrumb ([2d56c74](https://github.com/team-aliens/design-system/commit/2d56c748ce3055161806a594b2622a45d877a34c))
+
+## [1.3.18](https://github.com/team-aliens/design-system/compare/v1.3.17...v1.3.18) (2022-12-28)
+
+
+### Bug Fixes
+
+* input clickedPlaceholderHide ([e5c0381](https://github.com/team-aliens/design-system/commit/e5c0381693cf82a0719b0914e003d5aa236b0f9f))
+
+## [1.3.17](https://github.com/team-aliens/design-system/compare/v1.3.16...v1.3.17) (2022-12-28)
+
+
+### Bug Fixes
+
+* index 수정 ([1250026](https://github.com/team-aliens/design-system/commit/125002648322ea77bd720cc400049e288b0932ed))
+
+## [1.3.16](https://github.com/team-aliens/design-system/compare/v1.3.15...v1.3.16) (2022-12-28)
+
+
+### Bug Fixes
+
+* index 수정 ([e614193](https://github.com/team-aliens/design-system/commit/e6141932102d8437d66986d989dc3a3549414187))
+
+## [1.3.15](https://github.com/team-aliens/design-system/compare/v1.3.14...v1.3.15) (2022-12-28)
+
+
+### Bug Fixes
+
+* 생성 + 1 ([9e21d4c](https://github.com/team-aliens/design-system/commit/9e21d4cdb5e3670b11fa4057698514534c284b11))
+
+## [1.3.14](https://github.com/team-aliens/design-system/compare/v1.3.13...v1.3.14) (2022-12-28)
+
+
+### Bug Fixes
+
+* breadCrumb link to 수정 ([2ab385d](https://github.com/team-aliens/design-system/commit/2ab385de0bed0a2ba42fba4f11de3b534f032cd2))
+* build 실패 이유를 모르겠어.. ([2a9b9f5](https://github.com/team-aliens/design-system/commit/2a9b9f5e11d2bf5b283f79855a19a350df02ba84))
+* 수정사항 반영 ([955cad0](https://github.com/team-aliens/design-system/commit/955cad0a8977f74a8c198f9b2da533fad4277946))
+
+## [1.3.13](https://github.com/team-aliens/design-system/compare/v1.3.12...v1.3.13) (2022-12-28)
+
+
+### Bug Fixes
+
+* navigation ([c97472a](https://github.com/team-aliens/design-system/commit/c97472a524e19a3c2fd4e76232b656740ec93b68))
+
+## [1.3.12](https://github.com/team-aliens/design-system/compare/v1.3.11...v1.3.12) (2022-12-28)
+
+
+### Bug Fixes
+
+* navigation 로고 ([765f908](https://github.com/team-aliens/design-system/commit/765f908190f42a1f9f59ca3f71e50bf4135b5cba))
+* 분실문 -> 분실물 ([9f69e73](https://github.com/team-aliens/design-system/commit/9f69e73248540c8a6abc970bad6575e232bb0cd7))
+
+## [1.3.11](https://github.com/team-aliens/design-system/compare/v1.3.10...v1.3.11) (2022-12-28)
+
+
+### Bug Fixes
+
+* 사용불가 좌석일때 배경색 적용되게 수정 ([ddfee10](https://github.com/team-aliens/design-system/commit/ddfee107a9ef7f4e845defbe41108f3e1eac7e24))
+
 ## [1.3.10](https://github.com/team-aliens/design-system/compare/v1.3.9...v1.3.10) (2022-12-28)
 
 
