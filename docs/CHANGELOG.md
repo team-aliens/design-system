@@ -1,3 +1,10 @@
+## [1.3.42](https://github.com/team-aliens/design-system/compare/v1.3.41...v1.3.42) (2023-01-08)
+
+
+### Bug Fixes
+
+* input border에서 outline으로 변경 ([84679f3](https://github.com/team-aliens/design-system/commit/84679f39784813edb1360e25ba807fd95ddf0b1c))
+
 ## [1.3.41](https://github.com/team-aliens/design-system/compare/v1.3.40...v1.3.41) (2023-01-04)
 
 
