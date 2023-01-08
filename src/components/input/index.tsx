@@ -82,16 +82,16 @@ const _Input = styled.input<{ errorMsg: string }>`
   padding: 16px 9px;
   ${({ theme }) => theme.font.bodyM}
   border-radius: 4px;
-  border: 1px solid
+  outline: 1px solid
     ${({ theme, errorMsg }) =>
       typeof errorMsg === 'undefined' || errorMsg === ''
         ? theme.color.gray5
         : theme.color.error};
   :focus {
-    border: 2px solid ${({ theme }) => theme.color.primary};
+    outline: 2px solid ${({ theme }) => theme.color.primary};
   }
   :active {
-    border: 2px solid ${({ theme }) => theme.color.primary};
+    outline: 2px solid ${({ theme }) => theme.color.primary};
   }
 `;
 
