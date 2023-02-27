@@ -19,6 +19,8 @@ import {
   ArchiveBox,
   Gear,
   Escape,
+  Change,
+  SeeMore,
 } from './index';
 
 const IconList = [
@@ -49,6 +51,8 @@ const IconList = [
   { svg: <Success />, name: 'success' },
   { svg: <Gear />, name: 'gear' },
   { svg: <Escape />, name: 'escape' },
+  { svg: <Change />, name: 'change' },
+  { svg: <SeeMore />, name: 'see-more' },
 ];
 
 export const Icon = () => {

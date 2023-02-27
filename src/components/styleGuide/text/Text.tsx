@@ -7,7 +7,7 @@ interface PropsType extends marginCssType, styledType {
   display?: 'inline' | 'inline-block' | 'block';
   size?: fontKeyOfType;
   /** 타입 지정 필요 */
-  onClick?: any;
+  onClick?: (e: React.MouseEvent<HTMLElement>) => void;
   cursor?: 'pointer';
   align?: 'center' | 'start' | 'end';
 }

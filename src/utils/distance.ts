@@ -20,13 +20,10 @@ const mgReturn = (mg: marginType) => {
 
   switch (mg[0]) {
     case 'top':
-      return `margin-top: ${unitTransform(mg[1])};`;
-    case 'bottom':
-      return `margin-bottom: ${unitTransform(mg[1])};`;
     case 'left':
-      return `margin-left: ${unitTransform(mg[1])};`;
+    case 'bottom':
     case 'right':
-      return `margin-right: ${unitTransform(mg[1])};`;
+      return `margin-${mg[0]}: ${unitTransform(mg[1])};`;
     default:
       let css = 'margin: ';
       for (let j = 0; j < mg.length; j++) css += mg[j] + 'px ';
