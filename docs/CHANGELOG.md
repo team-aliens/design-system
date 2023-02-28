@@ -1,3 +1,17 @@
+# [1.4.0](https://github.com/team-aliens/design-system/compare/v1.3.42...v1.4.0) (2023-02-28)
+
+
+### Bug Fixes
+
+* 빌드 오류 수정 ([6822df8](https://github.com/team-aliens/design-system/commit/6822df80268771ec539c538cac5de60c685991ec))
+* 에러 수정 ([1f222a1](https://github.com/team-aliens/design-system/commit/1f222a14c4cbb0f3245067cc41cc7d6f1bec1966))
+
+
+### Features
+
+* 아이콘 추가 ([0de291e](https://github.com/team-aliens/design-system/commit/0de291eea930c4da442096abd237c58700b7b226))
+* 아이콘 추가 & 잔버그 수정 ([3b284fa](https://github.com/team-aliens/design-system/commit/3b284fa36a2c518b99adc307076889f38eb3def3))
+
 ## [1.3.42](https://github.com/team-aliens/design-system/compare/v1.3.41...v1.3.42) (2023-01-08)
 
 
