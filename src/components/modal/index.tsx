@@ -23,9 +23,9 @@ export const Modal = ({
   children,
 }: propsType) => {
   return (
-    <_Background className={className}>
+    <_Background>
       <OutsideClickHandler onOutsideClick={close}>
-        <_Modal>
+        <_Modal className={className}>
           <_CloseWrapper onClick={close}>
             <Close size={18} />
           </_CloseWrapper>
