@@ -29,8 +29,8 @@ export const Modal = ({
           <_CloseWrapper onClick={close}>
             <Close size={18} />
           </_CloseWrapper>
-          <Header title={title} />
-          {content && <Content content={content} />}
+          <Header className={className} title={title} />
+          {content && <Content className={className} content={content} />}
           <_InputWrapper>{inputList?.map((input) => input)}</_InputWrapper>
           {children}
           <_BtnWrapper>{buttonList.map((Btn) => Btn)}</_BtnWrapper>

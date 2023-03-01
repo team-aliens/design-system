@@ -2,12 +2,13 @@ import styled from 'styled-components';
 import { Text } from '../styleGuide/text/Text';
 
 export interface contentPropsType {
+  className?: string;
   content?: string;
 }
 
-export const Content = ({ content }: contentPropsType) => {
+export const Content = ({ className, content }: contentPropsType) => {
   return (
-    <_Content size="bodyM" color="gray6">
+    <_Content className={className} size="bodyM" color="gray6">
       {content}
     </_Content>
   );
