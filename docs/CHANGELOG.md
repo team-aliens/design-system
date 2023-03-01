@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/team-aliens/design-system/compare/v1.4.0...v1.4.1) (2023-03-01)
+
+
+### Bug Fixes
+
+* 모달 className 추가 ([e00ce10](https://github.com/team-aliens/design-system/commit/e00ce10582a21ad64bba02cd2e1a49373d1c708f))
+
 # [1.4.0](https://github.com/team-aliens/design-system/compare/v1.3.42...v1.4.0) (2023-02-28)
 
 
