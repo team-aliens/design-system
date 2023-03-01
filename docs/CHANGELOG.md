@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/team-aliens/design-system/compare/v1.4.2...v1.4.3) (2023-03-01)
+
+
+### Bug Fixes
+
+* 모달 Title, Content에 className 추가 ([490d1aa](https://github.com/team-aliens/design-system/commit/490d1aaf879771cdb4fc80cd64168840a8b85be1))
+
 ## [1.4.2](https://github.com/team-aliens/design-system/compare/v1.4.1...v1.4.2) (2023-03-01)
 
 
