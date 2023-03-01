@@ -6,6 +6,7 @@ import { Content, contentPropsType } from './Content';
 import { Header, headerPropsType } from './Header';
 
 interface propsType extends headerPropsType, contentPropsType {
+  className?: string;
   inputList?: JSX.Element[];
   buttonList: JSX.Element[];
   close: () => void;
@@ -18,10 +19,11 @@ export const Modal = ({
   inputList,
   buttonList,
   close,
+  className,
   children,
 }: propsType) => {
   return (
-    <_Background>
+    <_Background className={className}>
       <OutsideClickHandler onOutsideClick={close}>
         <_Modal>
           <_CloseWrapper onClick={close}>
