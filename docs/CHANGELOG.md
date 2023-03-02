@@ -1,3 +1,10 @@
+## [1.4.5](https://github.com/team-aliens/design-system/compare/v1.4.4...v1.4.5) (2023-03-02)
+
+
+### Bug Fixes
+
+* zIndex props로 받을 수 있게 수정 ([a4a8c55](https://github.com/team-aliens/design-system/commit/a4a8c55e1d7be24e220c2ad226c335388ca5c9de))
+
 ## [1.4.4](https://github.com/team-aliens/design-system/compare/v1.4.3...v1.4.4) (2023-03-02)
 
 
