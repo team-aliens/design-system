@@ -34,9 +34,10 @@ export const Input = ({
   const [isInputClicked, setIsInputClicked] = useState<boolean>(false);
   return (
     <_Wrapper margin={margin} className={className}>
-      <Label label={label} />
-      <_InputWrapper width={width}>
+      <Label className={className} label={label} />
+      <_InputWrapper className={className} width={width}>
         <_Input
+          className={className}
           onWheel={(e) => {
             //@ts-ignore
             document.activeElement.blur();
@@ -56,8 +57,9 @@ export const Input = ({
           name={name}
         />
         {type == 'password' && (
-          <_IconBox>
+          <_IconBox className={className}>
             <Eye
+              className={className}
               onClick={() => setIsOpen(!isOpen)}
               colorKey="gray5"
               state={isOpen}
@@ -65,7 +67,7 @@ export const Input = ({
           </_IconBox>
         )}
       </_InputWrapper>
-      <ErrorMsg errorMsg={errorMsg} />
+      <ErrorMsg className={className} errorMsg={errorMsg} />
     </_Wrapper>
   );
 };

@@ -2,6 +2,7 @@ import { Dispatch, SetStateAction } from 'react';
 import styled from 'styled-components';
 
 interface PropsType<T> {
+  className?: string;
   items: ReadonlyArray<T>;
   onChange: (value: T) => void;
   isOpen: boolean;
@@ -17,11 +18,13 @@ export const ItemBox = <T extends string>({
   setIsOpen,
   setText,
   disable,
+  className,
 }: PropsType<T>) => {
   return (
-    <_DropDownItemsBox isOpen={!disable && isOpen}>
+    <_DropDownItemsBox className={className} isOpen={!disable && isOpen}>
       {items.map((i, idx) => (
         <_DropDownItem
+          className={className}
           key={idx}
           onClick={() => {
             setIsOpen(false);
