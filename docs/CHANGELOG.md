@@ -1,3 +1,10 @@
+## [1.4.6](https://github.com/team-aliens/design-system/compare/v1.4.5...v1.4.6) (2023-03-05)
+
+
+### Bug Fixes
+
+* modal 수정 ([941280f](https://github.com/team-aliens/design-system/commit/941280f6a9919868ac04aa7aa449a11590c898f3))
+
 ## [1.4.5](https://github.com/team-aliens/design-system/compare/v1.4.4...v1.4.5) (2023-03-02)
 
 
