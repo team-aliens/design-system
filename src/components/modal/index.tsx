@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { Fragment, ReactNode } from 'react';
 import OutsideClickHandler from 'react-outside-click-handler';
 import styled from 'styled-components';
 import { Close } from '../styleGuide/icon/Close';
@@ -31,9 +31,17 @@ export const Modal = ({
           </_CloseWrapper>
           <Header className={className} title={title} />
           {content && <Content className={className} content={content} />}
-          <_InputWrapper>{inputList?.map((input) => input)}</_InputWrapper>
+          <_InputWrapper className={className}>
+            {inputList?.map((input, idx) => (
+              <Fragment key={idx}>{input}</Fragment>
+            ))}
+          </_InputWrapper>
           {children}
-          <_BtnWrapper>{buttonList.map((Btn) => Btn)}</_BtnWrapper>
+          <_BtnWrapper className={className}>
+            {buttonList.map((Btn, idx) => (
+              <Fragment key={idx}>{Btn}</Fragment>
+            ))}
+          </_BtnWrapper>
         </_Modal>
       </OutsideClickHandler>
     </_Background>
