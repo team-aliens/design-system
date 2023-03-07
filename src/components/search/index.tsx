@@ -19,7 +19,12 @@ export const SearchBox = ({
   return (
     <_Wrapper className={className} disabled={disabled}>
       <Search colorKey="gray5" size={28} className={className} />
-      <_Input value={value} onChange={onChange} disabled={disabled} />
+      <_Input
+        className={className}
+        value={value}
+        onChange={onChange}
+        disabled={disabled}
+      />
     </_Wrapper>
   );
 };
