@@ -1,3 +1,10 @@
+## [1.4.7](https://github.com/team-aliens/design-system/compare/v1.4.6...v1.4.7) (2023-03-07)
+
+
+### Bug Fixes
+
+* searchBox className 수정 ([4e0f003](https://github.com/team-aliens/design-system/commit/4e0f003280b50fcba64f1bb6a938dcbf5c648b05))
+
 ## [1.4.6](https://github.com/team-aliens/design-system/compare/v1.4.5...v1.4.6) (2023-03-05)
 
 
