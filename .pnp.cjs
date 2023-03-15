@@ -56,7 +56,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-loader", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:9.1.0"],\
             ["chromatic", "npm:6.14.0"],\
             ["clean-webpack-plugin", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:4.0.0"],\
-            ["husky", "npm:8.0.2"],\
+            ["husky", "npm:8.0.3"],\
             ["lint-staged", "npm:13.1.0"],\
             ["prettier", "npm:2.8.1"],\
             ["react", "npm:18.2.0"],\
@@ -7397,7 +7397,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-loader", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:9.1.0"],\
             ["chromatic", "npm:6.14.0"],\
             ["clean-webpack-plugin", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:4.0.0"],\
-            ["husky", "npm:8.0.2"],\
+            ["husky", "npm:8.0.3"],\
             ["lint-staged", "npm:13.1.0"],\
             ["prettier", "npm:2.8.1"],\
             ["react", "npm:18.2.0"],\
@@ -14776,10 +14776,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["husky", [\
-        ["npm:8.0.2", {\
-          "packageLocation": "./.yarn/cache/husky-npm-8.0.2-46c70b41ed-e101656fcb.zip/node_modules/husky/",\
+        ["npm:8.0.3", {\
+          "packageLocation": "./.yarn/cache/husky-npm-8.0.3-b0b59c5127-837bc7e441.zip/node_modules/husky/",\
           "packageDependencies": [\
-            ["husky", "npm:8.0.2"]\
+            ["husky", "npm:8.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
