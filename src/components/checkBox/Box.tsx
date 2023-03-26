@@ -3,11 +3,12 @@ import styled, { css } from 'styled-components';
 interface PropsType {
   disabled?: boolean;
   status: boolean;
+  size?: number;
 }
 
-export const Box = ({ disabled, status }: PropsType) => {
+export const Box = ({ size, disabled, status }: PropsType) => {
   return (
-    <_Wrapper disabled={disabled} status={status}>
+    <_Wrapper size={size} disabled={disabled} status={status}>
       {status && (
         <svg
           width="15"
@@ -29,8 +30,8 @@ const _Wrapper = styled.span<PropsType>`
   justify-content: center;
   float: left;
   border-radius: 2px;
-  width: 24px;
-  height: 24px;
+  width: ${({ size }) => `${size}px`};
+  height: ${({ size }) => `${size}px`};
   ${({ status, disabled, theme }) => {
     const { gray2, primaryLighten1, gray3, gray5, primary } = theme.color;
     if (status && disabled) {

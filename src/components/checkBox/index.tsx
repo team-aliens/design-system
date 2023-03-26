@@ -9,6 +9,7 @@ interface PropsType extends marginCssType {
   disabled?: boolean;
   label?: string;
   status: boolean;
+  size?: number;
   onChange: (status: boolean) => void;
 }
 
@@ -19,6 +20,7 @@ export const CheckBox = ({
   label,
   status,
   onChange,
+  size = 24,
   margin,
 }: PropsType) => {
   return (
@@ -28,7 +30,7 @@ export const CheckBox = ({
       onClick={() => !disabled && onChange(!status)}
       margin={margin}
     >
-      <Box status={status} disabled={disabled} />
+      <Box size={size} status={status} disabled={disabled} />
       {label && <Label label={label} disabled={disabled} />}
     </_Wrapper>
   );
@@ -39,6 +41,8 @@ interface WrapperProps extends marginCssType {
 }
 
 const _Wrapper = styled.div<WrapperProps>`
+  display: flex;
+  align-items: center;
   cursor: ${({ disabled }) => (disabled ? 'no-drop' : 'pointer')};
   ${({ margin }) => marginToCss({ margin })};
 `;
