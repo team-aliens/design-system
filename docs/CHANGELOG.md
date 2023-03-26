@@ -1,3 +1,10 @@
+## [1.4.8](https://github.com/team-aliens/design-system/compare/v1.4.7...v1.4.8) (2023-03-26)
+
+
+### Bug Fixes
+
+* checkBox size 추가 ([6261d35](https://github.com/team-aliens/design-system/commit/6261d3593ca747e6dfd1971551234022d810badf))
+
 ## [1.4.7](https://github.com/team-aliens/design-system/compare/v1.4.6...v1.4.7) (2023-03-07)
 
 
