@@ -69,5 +69,9 @@ const _Navigation = styled.nav`
   box-shadow: 0 1px 20px rgba(204, 204, 204, 0.24);
   min-height: 100%;
   max-height: 100%;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   overflow: scroll;
 `;

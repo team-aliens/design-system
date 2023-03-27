@@ -17,5 +17,9 @@ export const Content = ({ className, content }: contentPropsType) => {
 const _Content = styled(Text)`
   height: 108px;
   margin-bottom: 33px;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   overflow: scroll;
 `;
