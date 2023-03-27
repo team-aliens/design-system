@@ -1,3 +1,10 @@
+## [1.4.9](https://github.com/team-aliens/design-system/compare/v1.4.8...v1.4.9) (2023-03-27)
+
+
+### Bug Fixes
+
+* 스크롤바 삭제 ([1d55118](https://github.com/team-aliens/design-system/commit/1d551183cbe51ed5d0b4c6aa3f8fd13f2caf4173))
+
 ## [1.4.8](https://github.com/team-aliens/design-system/compare/v1.4.7...v1.4.8) (2023-03-26)
 
 
