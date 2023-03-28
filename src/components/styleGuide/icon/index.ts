@@ -18,3 +18,4 @@ export * from './Gear';
 export * from './Escape';
 export * from './Change';
 export * from './SeeMore';
+export * from './Cancel';
