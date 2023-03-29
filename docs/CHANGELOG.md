@@ -1,3 +1,10 @@
+## [1.4.10](https://github.com/team-aliens/design-system/compare/v1.4.9...v1.4.10) (2023-03-28)
+
+
+### Bug Fixes
+
+* icon 수정 ([7098ec3](https://github.com/team-aliens/design-system/commit/7098ec393a576fe2b19975016f883117045352cb))
+
 ## [1.4.9](https://github.com/team-aliens/design-system/compare/v1.4.8...v1.4.9) (2023-03-27)
 
 
