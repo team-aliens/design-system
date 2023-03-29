@@ -1,3 +1,11 @@
+## [1.4.11](https://github.com/team-aliens/design-system/compare/v1.4.10...v1.4.11) (2023-03-29)
+
+
+### Bug Fixes
+
+* icon className, onClick 추가 ([8d56ec5](https://github.com/team-aliens/design-system/commit/8d56ec5d3c87119443725abd7534a083d396220a))
+* icon color ([a155d1c](https://github.com/team-aliens/design-system/commit/a155d1ce11dfcc440106fdb5f22a9dd5abad0264))
+
 ## [1.4.10](https://github.com/team-aliens/design-system/compare/v1.4.9...v1.4.10) (2023-03-28)
 
 
