@@ -7,6 +7,8 @@ const Cancel = ({ colorKey, size, onClick, className }: iconPropsType) => {
     <svg
       width={size}
       height={size}
+      className={className}
+      onClick={onClick}
       viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
