@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/team-aliens/design-system/compare/v1.4.11...v1.5.0) (2024-04-25)
+
+
+### Features
+
+* 외출 네비게이션 추가 ([34a3df2](https://github.com/team-aliens/design-system/commit/34a3df2d3818320a59604dd26338390037fdcb8c))
+
 ## [1.4.11](https://github.com/team-aliens/design-system/compare/v1.4.10...v1.4.11) (2023-03-29)
 
 
