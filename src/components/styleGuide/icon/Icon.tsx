@@ -22,6 +22,7 @@ import {
   Escape,
   Change,
   SeeMore,
+  Outing,
 } from './index';
 
 const IconList = [
@@ -54,6 +55,7 @@ const IconList = [
   { svg: <Escape />, name: 'escape' },
   { svg: <Change />, name: 'change' },
   { svg: <SeeMore />, name: 'see-more' },
+  { svg: <Outing />, name: 'outing' },
   { svg: <Cancel size={16} colorKey="gray9" />, name: 'cancel' },
 ];
 

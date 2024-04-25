@@ -7,8 +7,16 @@ import { ArchiveBox } from '../styleGuide/icon/ArchiveBox';
 import { Human } from '../styleGuide/icon/Human';
 import { Item } from './Item';
 import { Logo } from '../logo';
+import { Outing } from '../styleGuide/icon';
 
-type NavListType = '홈' | '신청' | '공지' | '설문' | '분실물' | '마이페이지';
+type NavListType =
+  | '홈'
+  | '신청'
+  | '공지'
+  | '설문'
+  | '분실물'
+  | '마이페이지'
+  | '외출';
 
 interface PropsType {
   navList: NavListType[];
@@ -52,6 +60,7 @@ const nameToIconLink = {
     Icon: Human,
   },
   홈: { link: '', Icon: Home },
+  외출: { link: 'outing', Icon: Outing },
 };
 
 const _Filler = styled.div`
