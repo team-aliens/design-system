@@ -1,3 +1,11 @@
+## [1.5.1](https://github.com/team-aliens/design-system/compare/v1.5.0...v1.5.1) (2024-06-18)
+
+
+### Bug Fixes
+
+* 스타일 수정 ([dbfcdd1](https://github.com/team-aliens/design-system/commit/dbfcdd123e1a95ff2782741b26741b443fdd3ab7))
+* 외출 아이콘 수정 ([d36d9d4](https://github.com/team-aliens/design-system/commit/d36d9d4301f066588d54bd417a424e9970f06c2b))
+
 # [1.5.0](https://github.com/team-aliens/design-system/compare/v1.4.11...v1.5.0) (2024-04-25)
 
 
