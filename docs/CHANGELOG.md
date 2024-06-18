@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/team-aliens/design-system/compare/v1.5.1...v1.5.2) (2024-06-18)
+
+
+### Bug Fixes
+
+* 외출 아이콘 수정 ([d6882cc](https://github.com/team-aliens/design-system/commit/d6882ccfd8a17b745615cd1519068047831ba341))
+
 ## [1.5.1](https://github.com/team-aliens/design-system/compare/v1.5.0...v1.5.1) (2024-06-18)
 
 
