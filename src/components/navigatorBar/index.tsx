@@ -60,7 +60,7 @@ const nameToIconLink = {
     Icon: Human,
   },
   홈: { link: '', Icon: Home },
-  외출: { link: 'outing', Icon: Outing },
+  외출: { link: 'outing', Icon: PlusBubble },
 };
 
 const _Filler = styled.div`
