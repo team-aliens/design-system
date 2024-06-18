@@ -69,6 +69,6 @@ const _DropDownBox = styled.div<{ width: number }>`
   display: flex;
   flex-direction: column;
   gap: 5px;
-  z-index: 2;
+  z-index: 999;
   position: relative;
 `;

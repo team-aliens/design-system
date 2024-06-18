@@ -6,9 +6,10 @@ export const Outing = IconDefaultProps(({ size, colorKey }: iconPropsType) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox={`0 0 ${size} ${size}`}
+      viewBox={`0 0 24 24`}
       width={size}
       height={size}
+      fill="none"
     >
       <path
         fill={color[colorKey]}
