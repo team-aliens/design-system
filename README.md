@@ -9,4 +9,3 @@
   - <a href="/docs/usage/installation.md">Installation</a>
 - Distribute
   - <a href="/docs/distribute/chromatic.md">Chromatic</a>
- 
