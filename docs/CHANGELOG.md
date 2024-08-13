@@ -1,3 +1,10 @@
+## [1.5.4](https://github.com/team-aliens/design-system/compare/v1.5.3...v1.5.4) (2024-08-13)
+
+
+### Bug Fixes
+
+* version upgrade ([6c1f733](https://github.com/team-aliens/design-system/commit/6c1f733ac072d9fa4d3b8f4afa6271a32a3a59de))
+
 ## [1.5.3](https://github.com/team-aliens/design-system/compare/v1.5.2...v1.5.3) (2024-08-13)
 
 
