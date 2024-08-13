@@ -40,11 +40,10 @@ export const ItemBox = <T extends string>({
 };
 
 const _DropDownItemsBox = styled.div<{ isOpen: boolean }>`
-  position: absolute;
   top: 54px;
   width: 100%;
   background-color: ${({ theme }) => theme.color.gray1};
-  z-index: 100;
+  z-index: 5;
   @keyframes DropDownOpen {
     from {
       max-height: 0px;
