@@ -44,7 +44,7 @@ const _DropDownItemsBox = styled.div<{ isOpen: boolean }>`
   top: 54px;
   width: 100%;
   background-color: ${({ theme }) => theme.color.gray1};
-  z-index: 5;
+  z-index: 100;
   @keyframes DropDownOpen {
     from {
       max-height: 0px;
