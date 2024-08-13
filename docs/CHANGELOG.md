@@ -1,3 +1,10 @@
+## [1.5.3](https://github.com/team-aliens/design-system/compare/v1.5.2...v1.5.3) (2024-08-13)
+
+
+### Bug Fixes
+
+* 스타일 수정 ([6729d74](https://github.com/team-aliens/design-system/commit/6729d7467481f50311b707802e91fa3b35a20191))
+
 ## [1.5.2](https://github.com/team-aliens/design-system/compare/v1.5.1...v1.5.2) (2024-06-18)
 
 
