@@ -11,6 +11,7 @@ interface propsType extends headerPropsType, contentPropsType {
   buttonList: JSX.Element[];
   close: () => void;
   children?: ReactNode;
+  width?: string;
 }
 
 export const Modal = ({
@@ -21,11 +22,12 @@ export const Modal = ({
   close,
   className,
   children,
+  width = '560px',
 }: propsType) => {
   return (
     <_Background>
       <OutsideClickHandler onOutsideClick={close}>
-        <_Modal className={className}>
+        <_Modal className={className} width={width}>
           <_CloseWrapper onClick={close}>
             <Close size={18} />
           </_CloseWrapper>
@@ -73,8 +75,8 @@ const _BtnWrapper = styled.div`
   }
 `;
 
-const _Modal = styled.div`
-  width: 560px;
+const _Modal = styled.div<{ width: string }>`
+  width: ${({ width }) => width};
   background-color: ${({ theme }) => theme.color.gray1};
   box-shadow: 0 1px 20px rgba(204, 204, 204, 0.24);
   border-radius: 8px;
