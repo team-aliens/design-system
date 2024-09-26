@@ -1,3 +1,5 @@
+## [1.5.5](https://github.com/team-aliens/design-system/compare/v1.5.4...v1.5.5) (2024-09-26)
+
 ## [1.5.4](https://github.com/team-aliens/design-system/compare/v1.5.3...v1.5.4) (2024-08-13)
 
 
