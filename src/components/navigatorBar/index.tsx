@@ -33,8 +33,7 @@ export const NavigatorBar = ({ navList }: PropsType) => {
           type="horizontal"
         />
         {navList.map((name, idx) => {
-          const iconLink = nameToIconLink[name];
-          const { Icon = Home, link = '#' } = iconLink || {};
+          const { Icon, link } = nameToIconLink[name];
           return <Item key={idx} name={name} Icon={Icon} link={link} />;
         })}
       </_Navigation>
@@ -43,7 +42,6 @@ export const NavigatorBar = ({ navList }: PropsType) => {
 };
 
 const nameToIconLink = {
-  홈: { link: '', Icon: Home },
   신청: {
     link: 'apply',
     Icon: PaperPlane,
@@ -52,7 +50,7 @@ const nameToIconLink = {
     link: 'notice',
     Icon: MegaPhone,
   },
-  투표: { link: 'vote', Icon: PlusBubble },
+  설문: { link: 'survey', Icon: PlusBubble },
   분실물: {
     link: 'lost',
     Icon: ArchiveBox,
@@ -61,6 +59,8 @@ const nameToIconLink = {
     link: 'my-page',
     Icon: Human,
   },
+  홈: { link: '', Icon: Home },
+  외출: { link: 'outing', Icon: PlusBubble },
 };
 
 const _Filler = styled.div`
