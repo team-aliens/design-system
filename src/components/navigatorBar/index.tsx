@@ -33,7 +33,8 @@ export const NavigatorBar = ({ navList }: PropsType) => {
           type="horizontal"
         />
         {navList.map((name, idx) => {
-          const { Icon, link } = nameToIconLink[name];
+          const iconLink = nameToIconLink[name] || { link: '#', Icon: Home }; // 기본값 설정
+          const { Icon, link } = iconLink;
           return <Item key={idx} name={name} Icon={Icon} link={link} />;
         })}
       </_Navigation>
