@@ -50,7 +50,7 @@ const nameToIconLink = {
     link: 'notice',
     Icon: MegaPhone,
   },
-  설문: { link: 'survey', Icon: PlusBubble },
+  투표: { link: 'vote', Icon: PlusBubble },
   분실물: {
     link: 'lost',
     Icon: ArchiveBox,
