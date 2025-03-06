@@ -43,6 +43,7 @@ export const NavigatorBar = ({ navList }: PropsType) => {
 };
 
 const nameToIconLink = {
+  홈: { link: '', Icon: Home },
   신청: {
     link: 'apply',
     Icon: PaperPlane,
@@ -60,8 +61,6 @@ const nameToIconLink = {
     link: 'my-page',
     Icon: Human,
   },
-  홈: { link: '', Icon: Home },
-  외출: { link: 'outing', Icon: Outing },
 };
 
 const _Filler = styled.div`
