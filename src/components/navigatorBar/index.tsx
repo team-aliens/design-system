@@ -14,7 +14,7 @@ type NavListType =
   | '신청'
   | '공지'
   | '설문'
-  | '분실물'
+  // | '분실물'
   | '마이페이지'
   | '외출';
 
@@ -51,10 +51,10 @@ const nameToIconLink = {
     Icon: MegaPhone,
   },
   설문: { link: 'survey', Icon: PlusBubble },
-  분실물: {
-    link: 'lost',
-    Icon: ArchiveBox,
-  },
+  // 분실물: {
+  //   link: 'lost',
+  //   Icon: ArchiveBox,
+  // },
   마이페이지: {
     link: 'my-page',
     Icon: Human,
