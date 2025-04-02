@@ -51,8 +51,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-outside-click-handler", "npm:1.3.1"],\
             ["@types/react-router-dom", "npm:5.3.3"],\
             ["@types/styled-components", "npm:5.1.26"],\
-            ["@yarnpkg/pnpify", "npm:4.0.0-rc.34"],\
-            ["@yarnpkg/sdks", "npm:3.0.0-rc.34"],\
+            ["@yarnpkg/pnpify", "npm:4.0.0-rc.48"],\
+            ["@yarnpkg/sdks", "npm:3.0.0-rc.48"],\
             ["babel-loader", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:9.1.0"],\
             ["chromatic", "npm:6.14.0"],\
             ["clean-webpack-plugin", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:4.0.0"],\
@@ -66,7 +66,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:19.0.5"],\
             ["styled-components", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:5.3.6"],\
             ["ts-loader", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:9.4.2"],\
-            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6"],\
+            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f"],\
             ["webpack", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:5.75.0"],\
             ["webpack-bundle-analyzer", "npm:4.7.0"],\
             ["webpack-cli", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:5.0.1"]\
@@ -5965,7 +5965,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["style-loader", "virtual:59856b033f13c9c2bb6b29ee86da6d0af3882ff67bfe963fb1d3229ee226d6b542c7ada0fd804491de7c1e3153938fc7433627252f25c734f3c9dd3be2b658cc#npm:1.3.0"],\
             ["terser-webpack-plugin", "virtual:59856b033f13c9c2bb6b29ee86da6d0af3882ff67bfe963fb1d3229ee226d6b542c7ada0fd804491de7c1e3153938fc7433627252f25c734f3c9dd3be2b658cc#npm:4.2.3"],\
             ["ts-dedent", "npm:2.2.0"],\
-            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6"],\
+            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f"],\
             ["url-loader", "virtual:59856b033f13c9c2bb6b29ee86da6d0af3882ff67bfe963fb1d3229ee226d6b542c7ada0fd804491de7c1e3153938fc7433627252f25c734f3c9dd3be2b658cc#npm:4.1.1"],\
             ["util-deprecate", "npm:1.0.2"],\
             ["webpack", "virtual:5e7f60fd4186dae84bf52d839602856a4796cf3aa6cc7fdd7e7e4a71909a0ec65af45264482468d1a6c3854a55da239f7836b55db0c8a5e90c6a45673787750c#npm:4.46.0"],\
@@ -6035,7 +6035,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["style-loader", "virtual:fc819c85bed088037716677c33f35d8ce7884039f53253bd041e7225974893d1185e242f526885412391949759c4d99ea157ff1235aa77a6e00b3e85e7517791#npm:2.0.0"],\
             ["terser-webpack-plugin", "virtual:fc819c85bed088037716677c33f35d8ce7884039f53253bd041e7225974893d1185e242f526885412391949759c4d99ea157ff1235aa77a6e00b3e85e7517791#npm:5.3.6"],\
             ["ts-dedent", "npm:2.2.0"],\
-            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6"],\
+            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f"],\
             ["util-deprecate", "npm:1.0.2"],\
             ["webpack", "virtual:fc819c85bed088037716677c33f35d8ce7884039f53253bd041e7225974893d1185e242f526885412391949759c4d99ea157ff1235aa77a6e00b3e85e7517791#npm:5.75.0"],\
             ["webpack-dev-middleware", "virtual:fc819c85bed088037716677c33f35d8ce7884039f53253bd041e7225974893d1185e242f526885412391949759c4d99ea157ff1235aa77a6e00b3e85e7517791#npm:4.3.0"],\
@@ -6210,7 +6210,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/webpack", null],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:18.2.0"],\
-            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6"],\
+            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f"],\
             ["webpack", "virtual:fc819c85bed088037716677c33f35d8ce7884039f53253bd041e7225974893d1185e242f526885412391949759c4d99ea157ff1235aa77a6e00b3e85e7517791#npm:5.75.0"]\
           ],\
           "packagePeers": [\
@@ -6266,7 +6266,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:18.2.0"],\
             ["regenerator-runtime", "npm:0.13.11"],\
             ["ts-dedent", "npm:2.2.0"],\
-            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6"],\
+            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f"],\
             ["unfetch", "npm:4.2.0"],\
             ["util-deprecate", "npm:1.0.2"],\
             ["webpack", "virtual:fc819c85bed088037716677c33f35d8ce7884039f53253bd041e7225974893d1185e242f526885412391949759c4d99ea157ff1235aa77a6e00b3e85e7517791#npm:5.75.0"]\
@@ -6311,7 +6311,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:18.2.0"],\
             ["regenerator-runtime", "npm:0.13.11"],\
             ["ts-dedent", "npm:2.2.0"],\
-            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6"],\
+            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f"],\
             ["unfetch", "npm:4.2.0"],\
             ["util-deprecate", "npm:1.0.2"],\
             ["webpack", "virtual:5e7f60fd4186dae84bf52d839602856a4796cf3aa6cc7fdd7e7e4a71909a0ec65af45264482468d1a6c3854a55da239f7836b55db0c8a5e90c6a45673787750c#npm:4.46.0"]\
@@ -6536,7 +6536,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["slash", "npm:3.0.0"],\
             ["telejson", "npm:6.0.8"],\
             ["ts-dedent", "npm:2.2.0"],\
-            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6"],\
+            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f"],\
             ["util-deprecate", "npm:1.0.2"],\
             ["webpack", "virtual:5e7f60fd4186dae84bf52d839602856a4796cf3aa6cc7fdd7e7e4a71909a0ec65af45264482468d1a6c3854a55da239f7836b55db0c8a5e90c6a45673787750c#npm:4.46.0"]\
           ],\
@@ -6622,7 +6622,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["slash", "npm:3.0.0"],\
             ["telejson", "npm:6.0.8"],\
             ["ts-dedent", "npm:2.2.0"],\
-            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6"],\
+            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f"],\
             ["util-deprecate", "npm:1.0.2"],\
             ["watchpack", "npm:2.4.0"],\
             ["webpack", "virtual:5e7f60fd4186dae84bf52d839602856a4796cf3aa6cc7fdd7e7e4a71909a0ec65af45264482468d1a6c3854a55da239f7836b55db0c8a5e90c6a45673787750c#npm:4.46.0"],\
@@ -6767,7 +6767,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["telejson", "npm:6.0.8"],\
             ["terser-webpack-plugin", "virtual:59856b033f13c9c2bb6b29ee86da6d0af3882ff67bfe963fb1d3229ee226d6b542c7ada0fd804491de7c1e3153938fc7433627252f25c734f3c9dd3be2b658cc#npm:4.2.3"],\
             ["ts-dedent", "npm:2.2.0"],\
-            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6"],\
+            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f"],\
             ["url-loader", "virtual:59856b033f13c9c2bb6b29ee86da6d0af3882ff67bfe963fb1d3229ee226d6b542c7ada0fd804491de7c1e3153938fc7433627252f25c734f3c9dd3be2b658cc#npm:4.1.1"],\
             ["util-deprecate", "npm:1.0.2"],\
             ["webpack", "virtual:5e7f60fd4186dae84bf52d839602856a4796cf3aa6cc7fdd7e7e4a71909a0ec65af45264482468d1a6c3854a55da239f7836b55db0c8a5e90c6a45673787750c#npm:4.46.0"],\
@@ -6830,7 +6830,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["telejson", "npm:6.0.8"],\
             ["terser-webpack-plugin", "virtual:fc819c85bed088037716677c33f35d8ce7884039f53253bd041e7225974893d1185e242f526885412391949759c4d99ea157ff1235aa77a6e00b3e85e7517791#npm:5.3.6"],\
             ["ts-dedent", "npm:2.2.0"],\
-            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6"],\
+            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f"],\
             ["util-deprecate", "npm:1.0.2"],\
             ["webpack", "virtual:fc819c85bed088037716677c33f35d8ce7884039f53253bd041e7225974893d1185e242f526885412391949759c4d99ea157ff1235aa77a6e00b3e85e7517791#npm:5.75.0"],\
             ["webpack-dev-middleware", "virtual:fc819c85bed088037716677c33f35d8ce7884039f53253bd041e7225974893d1185e242f526885412391949759c4d99ea157ff1235aa77a6e00b3e85e7517791#npm:4.3.0"],\
@@ -6995,7 +6995,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["regenerator-runtime", "npm:0.13.11"],\
             ["require-from-string", null],\
             ["ts-dedent", "npm:2.2.0"],\
-            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6"],\
+            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f"],\
             ["util-deprecate", "npm:1.0.2"],\
             ["webpack", "virtual:fc819c85bed088037716677c33f35d8ce7884039f53253bd041e7225974893d1185e242f526885412391949759c4d99ea157ff1235aa77a6e00b3e85e7517791#npm:5.75.0"]\
           ],\
@@ -7043,7 +7043,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["micromatch", "npm:4.0.5"],\
             ["react-docgen-typescript", "virtual:8e69fbdcc4ad41ba081c24baf0030bb5e6f6aed6a58709e200bd31620e3aba6110a9df79342fb46c5a0d6bd473e784d7e495bd583daf1e04005c6aa75b9946e8#npm:2.2.2"],\
             ["tslib", "npm:2.4.1"],\
-            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6"],\
+            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f"],\
             ["webpack", "virtual:fc819c85bed088037716677c33f35d8ce7884039f53253bd041e7225974893d1185e242f526885412391949759c4d99ea157ff1235aa77a6e00b3e85e7517791#npm:5.75.0"]\
           ],\
           "packagePeers": [\
@@ -7392,8 +7392,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-outside-click-handler", "npm:1.3.1"],\
             ["@types/react-router-dom", "npm:5.3.3"],\
             ["@types/styled-components", "npm:5.1.26"],\
-            ["@yarnpkg/pnpify", "npm:4.0.0-rc.34"],\
-            ["@yarnpkg/sdks", "npm:3.0.0-rc.34"],\
+            ["@yarnpkg/pnpify", "npm:4.0.0-rc.48"],\
+            ["@yarnpkg/sdks", "npm:3.0.0-rc.48"],\
             ["babel-loader", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:9.1.0"],\
             ["chromatic", "npm:6.14.0"],\
             ["clean-webpack-plugin", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:4.0.0"],\
@@ -7407,7 +7407,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:19.0.5"],\
             ["styled-components", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:5.3.6"],\
             ["ts-loader", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:9.4.2"],\
-            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6"],\
+            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f"],\
             ["webpack", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:5.75.0"],\
             ["webpack-bundle-analyzer", "npm:4.7.0"],\
             ["webpack-cli", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:5.0.1"]\
@@ -7715,6 +7715,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-18.11.18-d61e8a4a20-03f17f9480.zip/node_modules/@types/node/",\
           "packageDependencies": [\
             ["@types/node", "npm:18.11.18"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:18.16.19", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-18.16.19-aada4da69c-63c31f0961.zip/node_modules/@types/node/",\
+          "packageDependencies": [\
+            ["@types/node", "npm:18.16.19"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8493,23 +8500,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:4.0.0-rc.34", {\
-          "packageLocation": "./.yarn/cache/@yarnpkg-core-npm-4.0.0-rc.34-7c1d45e427-bbbfbd2656.zip/node_modules/@yarnpkg/core/",\
+        ["npm:4.0.0-rc.48", {\
+          "packageLocation": "./.yarn/cache/@yarnpkg-core-npm-4.0.0-rc.48-2f6c3bd2d9-f42a81bb7b.zip/node_modules/@yarnpkg/core/",\
           "packageDependencies": [\
-            ["@yarnpkg/core", "npm:4.0.0-rc.34"],\
+            ["@yarnpkg/core", "npm:4.0.0-rc.48"],\
             ["@arcanis/slice-ansi", "npm:1.1.1"],\
             ["@types/semver", "npm:7.3.13"],\
             ["@types/treeify", "npm:1.0.0"],\
-            ["@yarnpkg/fslib", "npm:3.0.0-rc.34"],\
-            ["@yarnpkg/libzip", "virtual:7c1d45e4279d3838ee6d089e869159377d2f6f53bf094d167d4f5958c1a83640de2526e2a1aa202f09f86a536405ba2fb34f2683c56384c50e71ca0ebacef060#npm:3.0.0-rc.34"],\
-            ["@yarnpkg/parsers", "npm:3.0.0-rc.34"],\
-            ["@yarnpkg/shell", "npm:4.0.0-rc.34"],\
+            ["@yarnpkg/fslib", "npm:3.0.0-rc.48"],\
+            ["@yarnpkg/libzip", "virtual:2f6c3bd2d9068acad02d350f738be515d5ec806c023a525bd06d12c0bf473d67b56763656daa261bc60c3d623d19e7dec737510ff07622fa72cc7e0d90983cc4#npm:3.0.0-rc.48"],\
+            ["@yarnpkg/parsers", "npm:3.0.0-rc.48.1"],\
+            ["@yarnpkg/shell", "npm:4.0.0-rc.48"],\
             ["camelcase", "npm:5.3.1"],\
             ["chalk", "npm:3.0.0"],\
             ["ci-info", "npm:3.7.0"],\
-            ["clipanion", "virtual:cbf7078e467aba4e1a4a937a491e412822878bc7fb4fdd75be20353757a3d85d38b6f20fdb156220a9dbc5773d3d9127f443414b12aa687236579fca2d96eabb#npm:3.2.0-rc.14"],\
+            ["clipanion", "virtual:23eb821f2558e2a6ea7930eeb28370ebad2040907996964ca30d008b2af7a8cc8220ea2eaa1329e31e883d8b55bc0d473baf1dc6bfad40a8261e23a2cc7980d4#npm:3.2.1"],\
             ["cross-spawn", "npm:7.0.3"],\
             ["diff", "npm:5.1.0"],\
+            ["dotenv", "npm:16.3.1"],\
             ["globby", "npm:11.1.0"],\
             ["got", "npm:11.8.6"],\
             ["lodash", "npm:4.17.21"],\
@@ -8536,10 +8544,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:3.0.0-rc.34", {\
-          "packageLocation": "./.yarn/cache/@yarnpkg-fslib-npm-3.0.0-rc.34-479bd43c1f-d9cc6ae171.zip/node_modules/@yarnpkg/fslib/",\
+        ["npm:3.0.0-rc.48", {\
+          "packageLocation": "./.yarn/cache/@yarnpkg-fslib-npm-3.0.0-rc.48-325a42249b-658b8c1b68.zip/node_modules/@yarnpkg/fslib/",\
           "packageDependencies": [\
-            ["@yarnpkg/fslib", "npm:3.0.0-rc.34"],\
+            ["@yarnpkg/fslib", "npm:3.0.0-rc.48"],\
             ["tslib", "npm:2.4.1"]\
           ],\
           "linkType": "HARD"\
@@ -8566,20 +8574,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:3.0.0-rc.34", {\
-          "packageLocation": "./.yarn/cache/@yarnpkg-libzip-npm-3.0.0-rc.34-c3baa0cd20-2afaf77629.zip/node_modules/@yarnpkg/libzip/",\
+        ["npm:3.0.0-rc.48", {\
+          "packageLocation": "./.yarn/cache/@yarnpkg-libzip-npm-3.0.0-rc.48-371e43b651-9e699e4315.zip/node_modules/@yarnpkg/libzip/",\
           "packageDependencies": [\
-            ["@yarnpkg/libzip", "npm:3.0.0-rc.34"]\
+            ["@yarnpkg/libzip", "npm:3.0.0-rc.48"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:7c1d45e4279d3838ee6d089e869159377d2f6f53bf094d167d4f5958c1a83640de2526e2a1aa202f09f86a536405ba2fb34f2683c56384c50e71ca0ebacef060#npm:3.0.0-rc.34", {\
-          "packageLocation": "./.yarn/__virtual__/@yarnpkg-libzip-virtual-0737ed58f2/0/cache/@yarnpkg-libzip-npm-3.0.0-rc.34-c3baa0cd20-2afaf77629.zip/node_modules/@yarnpkg/libzip/",\
+        ["virtual:2f6c3bd2d9068acad02d350f738be515d5ec806c023a525bd06d12c0bf473d67b56763656daa261bc60c3d623d19e7dec737510ff07622fa72cc7e0d90983cc4#npm:3.0.0-rc.48", {\
+          "packageLocation": "./.yarn/__virtual__/@yarnpkg-libzip-virtual-4f41111929/0/cache/@yarnpkg-libzip-npm-3.0.0-rc.48-371e43b651-9e699e4315.zip/node_modules/@yarnpkg/libzip/",\
           "packageDependencies": [\
-            ["@yarnpkg/libzip", "virtual:7c1d45e4279d3838ee6d089e869159377d2f6f53bf094d167d4f5958c1a83640de2526e2a1aa202f09f86a536405ba2fb34f2683c56384c50e71ca0ebacef060#npm:3.0.0-rc.34"],\
+            ["@yarnpkg/libzip", "virtual:2f6c3bd2d9068acad02d350f738be515d5ec806c023a525bd06d12c0bf473d67b56763656daa261bc60c3d623d19e7dec737510ff07622fa72cc7e0d90983cc4#npm:3.0.0-rc.48"],\
             ["@types/emscripten", "npm:1.39.6"],\
             ["@types/yarnpkg__fslib", null],\
-            ["@yarnpkg/fslib", "npm:3.0.0-rc.34"],\
+            ["@yarnpkg/fslib", "npm:3.0.0-rc.48"],\
             ["tslib", "npm:2.4.1"]\
           ],\
           "packagePeers": [\
@@ -8599,13 +8607,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@yarnpkg/nm", [\
-        ["npm:4.0.0-rc.34", {\
-          "packageLocation": "./.yarn/cache/@yarnpkg-nm-npm-4.0.0-rc.34-92e76ad94a-6058aa1bc1.zip/node_modules/@yarnpkg/nm/",\
+        ["npm:4.0.0-rc.48", {\
+          "packageLocation": "./.yarn/cache/@yarnpkg-nm-npm-4.0.0-rc.48-7c0f1cc466-b5b91f7f04.zip/node_modules/@yarnpkg/nm/",\
           "packageDependencies": [\
-            ["@yarnpkg/nm", "npm:4.0.0-rc.34"],\
-            ["@yarnpkg/core", "npm:4.0.0-rc.34"],\
-            ["@yarnpkg/fslib", "npm:3.0.0-rc.34"],\
-            ["@yarnpkg/pnp", "npm:4.0.0-rc.34"]\
+            ["@yarnpkg/nm", "npm:4.0.0-rc.48"],\
+            ["@yarnpkg/core", "npm:4.0.0-rc.48"],\
+            ["@yarnpkg/fslib", "npm:3.0.0-rc.48"],\
+            ["@yarnpkg/pnp", "npm:4.0.0-rc.48"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8620,10 +8628,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:3.0.0-rc.34", {\
-          "packageLocation": "./.yarn/cache/@yarnpkg-parsers-npm-3.0.0-rc.34-fd49e1c126-58720f03e4.zip/node_modules/@yarnpkg/parsers/",\
+        ["npm:3.0.0-rc.48.1", {\
+          "packageLocation": "./.yarn/cache/@yarnpkg-parsers-npm-3.0.0-rc.48.1-77a4849f35-c4328cad81.zip/node_modules/@yarnpkg/parsers/",\
           "packageDependencies": [\
-            ["@yarnpkg/parsers", "npm:3.0.0-rc.34"],\
+            ["@yarnpkg/parsers", "npm:3.0.0-rc.48.1"],\
             ["js-yaml", "npm:3.14.1"],\
             ["tslib", "npm:2.4.1"]\
           ],\
@@ -8641,40 +8649,40 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:4.0.0-rc.34", {\
-          "packageLocation": "./.yarn/cache/@yarnpkg-pnp-npm-4.0.0-rc.34-b73da8eab7-c3497f8cf0.zip/node_modules/@yarnpkg/pnp/",\
+        ["npm:4.0.0-rc.48", {\
+          "packageLocation": "./.yarn/cache/@yarnpkg-pnp-npm-4.0.0-rc.48-f1f156c1c9-61e5101359.zip/node_modules/@yarnpkg/pnp/",\
           "packageDependencies": [\
-            ["@yarnpkg/pnp", "npm:4.0.0-rc.34"],\
-            ["@types/node", "npm:18.11.18"],\
-            ["@yarnpkg/fslib", "npm:3.0.0-rc.34"]\
+            ["@yarnpkg/pnp", "npm:4.0.0-rc.48"],\
+            ["@types/node", "npm:18.16.19"],\
+            ["@yarnpkg/fslib", "npm:3.0.0-rc.48"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["@yarnpkg/pnpify", [\
-        ["npm:4.0.0-rc.34", {\
-          "packageLocation": "./.yarn/cache/@yarnpkg-pnpify-npm-4.0.0-rc.34-406893e139-f85a345103.zip/node_modules/@yarnpkg/pnpify/",\
+        ["npm:4.0.0-rc.48", {\
+          "packageLocation": "./.yarn/cache/@yarnpkg-pnpify-npm-4.0.0-rc.48-ebd67e864c-bcc97e2745.zip/node_modules/@yarnpkg/pnpify/",\
           "packageDependencies": [\
-            ["@yarnpkg/pnpify", "npm:4.0.0-rc.34"],\
-            ["@yarnpkg/core", "npm:4.0.0-rc.34"],\
-            ["@yarnpkg/fslib", "npm:3.0.0-rc.34"],\
-            ["@yarnpkg/nm", "npm:4.0.0-rc.34"],\
-            ["clipanion", "virtual:cbf7078e467aba4e1a4a937a491e412822878bc7fb4fdd75be20353757a3d85d38b6f20fdb156220a9dbc5773d3d9127f443414b12aa687236579fca2d96eabb#npm:3.2.0-rc.14"],\
+            ["@yarnpkg/pnpify", "npm:4.0.0-rc.48"],\
+            ["@yarnpkg/core", "npm:4.0.0-rc.48"],\
+            ["@yarnpkg/fslib", "npm:3.0.0-rc.48"],\
+            ["@yarnpkg/nm", "npm:4.0.0-rc.48"],\
+            ["clipanion", "virtual:23eb821f2558e2a6ea7930eeb28370ebad2040907996964ca30d008b2af7a8cc8220ea2eaa1329e31e883d8b55bc0d473baf1dc6bfad40a8261e23a2cc7980d4#npm:3.2.1"],\
             ["tslib", "npm:2.4.1"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["@yarnpkg/sdks", [\
-        ["npm:3.0.0-rc.34", {\
-          "packageLocation": "./.yarn/cache/@yarnpkg-sdks-npm-3.0.0-rc.34-e34ca693fc-a5be1e2779.zip/node_modules/@yarnpkg/sdks/",\
+        ["npm:3.0.0-rc.48", {\
+          "packageLocation": "./.yarn/cache/@yarnpkg-sdks-npm-3.0.0-rc.48-7b3f8f034f-0acbd80758.zip/node_modules/@yarnpkg/sdks/",\
           "packageDependencies": [\
-            ["@yarnpkg/sdks", "npm:3.0.0-rc.34"],\
-            ["@yarnpkg/core", "npm:4.0.0-rc.34"],\
-            ["@yarnpkg/fslib", "npm:3.0.0-rc.34"],\
-            ["@yarnpkg/parsers", "npm:3.0.0-rc.34"],\
+            ["@yarnpkg/sdks", "npm:3.0.0-rc.48"],\
+            ["@yarnpkg/core", "npm:4.0.0-rc.48"],\
+            ["@yarnpkg/fslib", "npm:3.0.0-rc.48"],\
+            ["@yarnpkg/parsers", "npm:3.0.0-rc.48.1"],\
             ["chalk", "npm:3.0.0"],\
-            ["clipanion", "virtual:cbf7078e467aba4e1a4a937a491e412822878bc7fb4fdd75be20353757a3d85d38b6f20fdb156220a9dbc5773d3d9127f443414b12aa687236579fca2d96eabb#npm:3.2.0-rc.14"],\
+            ["clipanion", "virtual:23eb821f2558e2a6ea7930eeb28370ebad2040907996964ca30d008b2af7a8cc8220ea2eaa1329e31e883d8b55bc0d473baf1dc6bfad40a8261e23a2cc7980d4#npm:3.2.1"],\
             ["comment-json", "npm:2.4.2"],\
             ["lodash", "npm:4.17.21"],\
             ["tslib", "npm:2.4.1"]\
@@ -8698,14 +8706,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:4.0.0-rc.34", {\
-          "packageLocation": "./.yarn/cache/@yarnpkg-shell-npm-4.0.0-rc.34-cbf7078e46-e94710242d.zip/node_modules/@yarnpkg/shell/",\
+        ["npm:4.0.0-rc.48", {\
+          "packageLocation": "./.yarn/cache/@yarnpkg-shell-npm-4.0.0-rc.48-23eb821f25-7a5cc1e471.zip/node_modules/@yarnpkg/shell/",\
           "packageDependencies": [\
-            ["@yarnpkg/shell", "npm:4.0.0-rc.34"],\
-            ["@yarnpkg/fslib", "npm:3.0.0-rc.34"],\
-            ["@yarnpkg/parsers", "npm:3.0.0-rc.34"],\
+            ["@yarnpkg/shell", "npm:4.0.0-rc.48"],\
+            ["@yarnpkg/fslib", "npm:3.0.0-rc.48"],\
+            ["@yarnpkg/parsers", "npm:3.0.0-rc.48.1"],\
             ["chalk", "npm:3.0.0"],\
-            ["clipanion", "virtual:cbf7078e467aba4e1a4a937a491e412822878bc7fb4fdd75be20353757a3d85d38b6f20fdb156220a9dbc5773d3d9127f443414b12aa687236579fca2d96eabb#npm:3.2.0-rc.14"],\
+            ["clipanion", "virtual:23eb821f2558e2a6ea7930eeb28370ebad2040907996964ca30d008b2af7a8cc8220ea2eaa1329e31e883d8b55bc0d473baf1dc6bfad40a8261e23a2cc7980d4#npm:3.2.1"],\
             ["cross-spawn", "npm:7.0.3"],\
             ["fast-glob", "npm:3.2.12"],\
             ["micromatch", "npm:4.0.5"],\
@@ -11045,17 +11053,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:3.2.0-rc.14", {\
-          "packageLocation": "./.yarn/cache/clipanion-npm-3.2.0-rc.14-9fa013667a-0bedf6c70d.zip/node_modules/clipanion/",\
+        ["npm:3.2.1", {\
+          "packageLocation": "./.yarn/cache/clipanion-npm-3.2.1-fc9187f56c-448efd122e.zip/node_modules/clipanion/",\
           "packageDependencies": [\
-            ["clipanion", "npm:3.2.0-rc.14"]\
+            ["clipanion", "npm:3.2.1"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:cbf7078e467aba4e1a4a937a491e412822878bc7fb4fdd75be20353757a3d85d38b6f20fdb156220a9dbc5773d3d9127f443414b12aa687236579fca2d96eabb#npm:3.2.0-rc.14", {\
-          "packageLocation": "./.yarn/__virtual__/clipanion-virtual-0d8bf9eb95/0/cache/clipanion-npm-3.2.0-rc.14-9fa013667a-0bedf6c70d.zip/node_modules/clipanion/",\
+        ["virtual:23eb821f2558e2a6ea7930eeb28370ebad2040907996964ca30d008b2af7a8cc8220ea2eaa1329e31e883d8b55bc0d473baf1dc6bfad40a8261e23a2cc7980d4#npm:3.2.1", {\
+          "packageLocation": "./.yarn/__virtual__/clipanion-virtual-2139363bd3/0/cache/clipanion-npm-3.2.1-fc9187f56c-448efd122e.zip/node_modules/clipanion/",\
           "packageDependencies": [\
-            ["clipanion", "virtual:cbf7078e467aba4e1a4a937a491e412822878bc7fb4fdd75be20353757a3d85d38b6f20fdb156220a9dbc5773d3d9127f443414b12aa687236579fca2d96eabb#npm:3.2.0-rc.14"],\
+            ["clipanion", "virtual:23eb821f2558e2a6ea7930eeb28370ebad2040907996964ca30d008b2af7a8cc8220ea2eaa1329e31e883d8b55bc0d473baf1dc6bfad40a8261e23a2cc7980d4#npm:3.2.1"],\
             ["@types/typanion", null],\
             ["typanion", "npm:3.12.1"]\
           ],\
@@ -12446,6 +12454,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["dotenv", [\
+        ["npm:16.3.1", {\
+          "packageLocation": "./.yarn/cache/dotenv-npm-16.3.1-e6d380a398-15d75e7279.zip/node_modules/dotenv/",\
+          "packageDependencies": [\
+            ["dotenv", "npm:16.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:8.6.0", {\
           "packageLocation": "./.yarn/cache/dotenv-npm-8.6.0-2ce3e9f7bb-38e902c80b.zip/node_modules/dotenv/",\
           "packageDependencies": [\
@@ -13522,7 +13537,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["minimatch", "npm:3.1.2"],\
             ["semver", "npm:5.7.1"],\
             ["tapable", "npm:1.1.3"],\
-            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6"],\
+            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f"],\
             ["vue-template-compiler", null],\
             ["webpack", "virtual:5e7f60fd4186dae84bf52d839602856a4796cf3aa6cc7fdd7e7e4a71909a0ec65af45264482468d1a6c3854a55da239f7836b55db0c8a5e90c6a45673787750c#npm:4.46.0"],\
             ["worker-rpc", "npm:0.1.1"]\
@@ -13599,7 +13614,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["schema-utils", "npm:2.7.0"],\
             ["semver", "npm:7.3.8"],\
             ["tapable", "npm:1.1.3"],\
-            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6"],\
+            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f"],\
             ["vue-template-compiler", null],\
             ["webpack", "virtual:5e7f60fd4186dae84bf52d839602856a4796cf3aa6cc7fdd7e7e4a71909a0ec65af45264482468d1a6c3854a55da239f7836b55db0c8a5e90c6a45673787750c#npm:4.46.0"]\
           ],\
@@ -13637,7 +13652,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["schema-utils", "npm:2.7.0"],\
             ["semver", "npm:7.3.8"],\
             ["tapable", "npm:1.1.3"],\
-            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6"],\
+            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f"],\
             ["vue-template-compiler", null],\
             ["webpack", "virtual:fc819c85bed088037716677c33f35d8ce7884039f53253bd041e7225974893d1185e242f526885412391949759c4d99ea157ff1235aa77a6e00b3e85e7517791#npm:5.75.0"]\
           ],\
@@ -20058,7 +20073,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["react-docgen-typescript", "virtual:8e69fbdcc4ad41ba081c24baf0030bb5e6f6aed6a58709e200bd31620e3aba6110a9df79342fb46c5a0d6bd473e784d7e495bd583daf1e04005c6aa75b9946e8#npm:2.2.2"],\
             ["@types/typescript", null],\
-            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6"]\
+            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f"]\
           ],\
           "packagePeers": [\
             "@types/typescript",\
@@ -22771,7 +22786,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["enhanced-resolve", "npm:5.12.0"],\
             ["micromatch", "npm:4.0.5"],\
             ["semver", "npm:7.3.8"],\
-            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6"],\
+            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f"],\
             ["webpack", "virtual:b0d518511dfed8af74ef0d3f20cbd99e96f80fb73f1cbed99970830850498ee6c3564bc4e05770b20cb3e2e8b58f31a0dc4902f2cdcb1a32c4d390e101925948#npm:5.75.0"]\
           ],\
           "packagePeers": [\
@@ -22940,10 +22955,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["typescript", [\
-        ["patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6", {\
-          "packageLocation": "./.yarn/cache/typescript-patch-f4add211bf-2222d2382f.zip/node_modules/typescript/",\
+        ["patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f", {\
+          "packageLocation": "./.yarn/cache/typescript-patch-b0c04ffcae-dfe2ee3b9d.zip/node_modules/typescript/",\
           "packageDependencies": [\
-            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=aae4e6"]\
+            ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=3b564f"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -24295,6 +24310,7 @@ const StringDecoder = require('string_decoder');
 const url = require('url');
 const os = require('os');
 const nodeUtils = require('util');
+const readline = require('readline');
 const assert = require('assert');
 const stream = require('stream');
 const zlib = require('zlib');
@@ -25777,7 +25793,7 @@ const DEFAULT_COMPRESSION_LEVEL = `mixed`;
 function toUnixTimestamp(time) {
   if (typeof time === `string` && String(+time) === time)
     return +time;
-  if (Number.isFinite(time)) {
+  if (typeof time === `number` && Number.isFinite(time)) {
     if (time < 0) {
       return Date.now() / 1e3;
     } else {
@@ -25929,6 +25945,10 @@ class ZipFS extends BasePortableFakeFS {
     this.prepareClose();
     if (!this.lzSource)
       throw new Error(`ZipFS was not created from a Buffer`);
+    if (this.entries.size === 0) {
+      this.discardAndClose();
+      return makeEmptyArchive();
+    }
     try {
       this.libzip.source.keep(this.lzSource);
       if (this.libzip.close(this.zip) === -1)
@@ -26355,7 +26375,7 @@ class ZipFS extends BasePortableFakeFS {
       resolvedP = ppath.resolve(parentP, ppath.basename(resolvedP));
       if (!resolveLastComponent || this.symlinkCount === 0)
         break;
-      const index = this.libzip.name.locate(this.zip, resolvedP.slice(1));
+      const index = this.libzip.name.locate(this.zip, resolvedP.slice(1), 0);
       if (index === -1)
         break;
       if (this.isSymbolicLink(index)) {
@@ -26380,7 +26400,7 @@ class ZipFS extends BasePortableFakeFS {
   allocateUnattachedSource(content) {
     const error = this.libzip.struct.errorS();
     const { buffer, byteLength } = this.allocateBuffer(content);
-    const source = this.libzip.source.fromUnattachedBuffer(buffer, byteLength, 0, true, error);
+    const source = this.libzip.source.fromUnattachedBuffer(buffer, byteLength, 0, 1, error);
     if (source === 0) {
       this.libzip.free(error);
       throw this.makeLibzipError(error);
@@ -26389,7 +26409,7 @@ class ZipFS extends BasePortableFakeFS {
   }
   allocateSource(content) {
     const { buffer, byteLength } = this.allocateBuffer(content);
-    const source = this.libzip.source.fromBuffer(this.zip, buffer, byteLength, 0, true);
+    const source = this.libzip.source.fromBuffer(this.zip, buffer, byteLength, 0, 1);
     if (source === 0) {
       this.libzip.free(buffer);
       throw this.makeLibzipError(this.libzip.getError(this.zip));
@@ -28207,6 +28227,12 @@ class FileHandle {
     } finally {
       this[kUnref]();
     }
+  }
+  readLines(options) {
+    return readline.createInterface({
+      input: this.createReadStream(options),
+      crlfDelay: Infinity
+    });
   }
   async stat(opts) {
     try {
@@ -32817,7 +32843,7 @@ const makeInterface = (libzip) => ({
     locate: libzip.cwrap(`zip_name_locate`, `number`, [`number`, `string`, `number`])
   },
   source: {
-    fromUnattachedBuffer: libzip.cwrap(`zip_source_buffer_create`, `number`, [`number`, `number`, `number`, `number`]),
+    fromUnattachedBuffer: libzip.cwrap(`zip_source_buffer_create`, `number`, [`number`, ...number64, `number`, `number`]),
     fromBuffer: libzip.cwrap(`zip_source_buffer`, `number`, [`number`, `number`, ...number64, `number`]),
     free: libzip.cwrap(`zip_source_free`, null, [`number`]),
     keep: libzip.cwrap(`zip_source_keep`, null, [`number`]),
@@ -32903,6 +32929,9 @@ function getPathForDisplay(p) {
   return npath.normalize(npath.fromPortablePath(p));
 }
 
+const [major, minor] = process.versions.node.split(`.`).map((value) => parseInt(value, 10));
+const WATCH_MODE_MESSAGE_USES_ARRAYS = major > 19 || major === 19 && minor >= 2 || major === 18 && minor >= 13;
+
 const builtinModules = new Set(require$$0.Module.builtinModules || Object.keys(process.binding(`natives`)));
 const isBuiltinModule = (request) => request.startsWith(`node:`) || builtinModules.has(request);
 function readPackageScope(checkPath) {
@@ -32937,15 +32966,20 @@ Instead change the require of ${basename} in ${parentPath} to a dynamic import()
   err.code = `ERR_REQUIRE_ESM`;
   return err;
 }
-
-const shouldReportRequiredModules = process.env.WATCH_REPORT_DEPENDENCIES;
-function reportModuleToWatchMode(filename) {
-  if (shouldReportRequiredModules && process.send) {
-    process.send({ "watch:require": npath.fromPortablePath(VirtualFS.resolveVirtual(npath.toPortablePath(filename))) });
+function reportRequiredFilesToWatchMode(files) {
+  if (process.env.WATCH_REPORT_DEPENDENCIES && process.send) {
+    files = files.map((filename) => npath.fromPortablePath(VirtualFS.resolveVirtual(npath.toPortablePath(filename))));
+    if (WATCH_MODE_MESSAGE_USES_ARRAYS) {
+      process.send({ "watch:require": files });
+    } else {
+      for (const filename of files) {
+        process.send({ "watch:require": filename });
+      }
+    }
   }
 }
+
 function applyPatch(pnpapi, opts) {
-  const defaultCache = {};
   let enableNativeHooks = true;
   process.versions.pnp = String(pnpapi.VERSIONS.std);
   const moduleExports = require$$0__default.default;
@@ -32965,62 +32999,13 @@ function applyPatch(pnpapi, opts) {
   }
   const originalModuleLoad = require$$0.Module._load;
   require$$0.Module._load = function(request, parent, isMain) {
-    if (!enableNativeHooks)
-      return originalModuleLoad.call(require$$0.Module, request, parent, isMain);
-    if (isBuiltinModule(request)) {
-      try {
-        enableNativeHooks = false;
-        return originalModuleLoad.call(require$$0.Module, request, parent, isMain);
-      } finally {
-        enableNativeHooks = true;
+    if (request === `pnpapi`) {
+      const parentApiPath = opts.manager.getApiPathFromParent(parent);
+      if (parentApiPath) {
+        return opts.manager.getApiEntry(parentApiPath, true).instance;
       }
     }
-    const parentApiPath = opts.manager.getApiPathFromParent(parent);
-    const parentApi = parentApiPath !== null ? opts.manager.getApiEntry(parentApiPath, true).instance : null;
-    if (parentApi === null)
-      return originalModuleLoad(request, parent, isMain);
-    if (request === `pnpapi`)
-      return parentApi;
-    const modulePath = require$$0.Module._resolveFilename(request, parent, isMain);
-    const isOwnedByRuntime = parentApi !== null ? parentApi.findPackageLocator(modulePath) !== null : false;
-    const moduleApiPath = isOwnedByRuntime ? parentApiPath : opts.manager.findApiPathFor(npath.dirname(modulePath));
-    const entry = moduleApiPath !== null ? opts.manager.getApiEntry(moduleApiPath) : { instance: null, cache: defaultCache };
-    const cacheEntry = entry.cache[modulePath];
-    if (cacheEntry) {
-      if (cacheEntry.loaded === false && cacheEntry.isLoading !== true) {
-        try {
-          cacheEntry.isLoading = true;
-          if (isMain) {
-            process.mainModule = cacheEntry;
-            cacheEntry.id = `.`;
-          }
-          cacheEntry.load(modulePath);
-        } finally {
-          cacheEntry.isLoading = false;
-        }
-      }
-      return cacheEntry.exports;
-    }
-    const module = new require$$0.Module(modulePath, parent != null ? parent : void 0);
-    module.pnpApiPath = moduleApiPath;
-    reportModuleToWatchMode(modulePath);
-    entry.cache[modulePath] = module;
-    if (isMain) {
-      process.mainModule = module;
-      module.id = `.`;
-    }
-    let hasThrown = true;
-    try {
-      module.isLoading = true;
-      module.load(modulePath);
-      hasThrown = false;
-    } finally {
-      module.isLoading = false;
-      if (hasThrown) {
-        delete require$$0.Module._cache[modulePath];
-      }
-    }
-    return module.exports;
+    return originalModuleLoad.call(require$$0.Module, request, parent, isMain);
   };
   function getIssuerSpecsFromPaths(paths) {
     return paths.map((path) => ({
@@ -33088,7 +33073,7 @@ function applyPatch(pnpapi, opts) {
       const parentDirectory = (parent == null ? void 0 : parent.filename) != null ? npath.dirname(parent.filename) : null;
       const absoluteRequest = npath.isAbsolute(request) ? request : parentDirectory !== null ? npath.resolve(parentDirectory, request) : null;
       if (absoluteRequest !== null) {
-        const apiPath = parentDirectory === npath.dirname(absoluteRequest) && (parent == null ? void 0 : parent.pnpApiPath) ? parent.pnpApiPath : opts.manager.findApiPathFor(absoluteRequest);
+        const apiPath = parent && parentDirectory === npath.dirname(absoluteRequest) ? opts.manager.getApiPathFromParent(parent) : opts.manager.findApiPathFor(absoluteRequest);
         if (apiPath !== null) {
           issuerSpecs.unshift({
             apiPath,
@@ -33247,118 +33232,6 @@ function hydrateRuntimeState(data, { basePath }) {
   };
 }
 
-/**
- * @param {object} exports
- * @param {Set<string>} keys
- */
-function loop(exports, keys) {
-	if (typeof exports === 'string') {
-		return exports;
-	}
-
-	if (exports) {
-		let idx, tmp;
-		if (Array.isArray(exports)) {
-			for (idx=0; idx < exports.length; idx++) {
-				if (tmp = loop(exports[idx], keys)) return tmp;
-			}
-		} else {
-			for (idx in exports) {
-				if (keys.has(idx)) {
-					return loop(exports[idx], keys);
-				}
-			}
-		}
-	}
-}
-
-/**
- * @param {string} name The package name
- * @param {string} entry The target entry, eg "."
- * @param {number} [condition] Unmatched condition?
- */
-function bail(name, entry, condition) {
-	throw new Error(
-		condition
-		? `No known conditions for "${entry}" entry in "${name}" package`
-		: `Missing "${entry}" export in "${name}" package`
-	);
-}
-
-/**
- * @param {string} name the package name
- * @param {string} entry the target path/import
- */
-function toName(name, entry) {
-	return entry === name ? '.'
-		: entry[0] === '.' ? entry
-		: entry.replace(new RegExp('^' + name + '\/'), './');
-}
-
-/**
- * @param {object} pkg package.json contents
- * @param {string} [entry] entry name or import path
- * @param {object} [options]
- * @param {boolean} [options.browser]
- * @param {boolean} [options.require]
- * @param {string[]} [options.conditions]
- * @param {boolean} [options.unsafe]
- */
-function resolve(pkg, entry='.', options={}) {
-	let { name, exports } = pkg;
-
-	if (exports) {
-		let { browser, require, unsafe, conditions=[] } = options;
-
-		let target = toName(name, entry);
-		if (target[0] !== '.') target = './' + target;
-
-		if (typeof exports === 'string') {
-			return target === '.' ? exports : bail(name, target);
-		}
-
-		let allows = new Set(['default', ...conditions]);
-		unsafe || allows.add(require ? 'require' : 'import');
-		unsafe || allows.add(browser ? 'browser' : 'node');
-
-		let key, tmp, isSingle=false;
-
-		for (key in exports) {
-			isSingle = key[0] !== '.';
-			break;
-		}
-
-		if (isSingle) {
-			return target === '.'
-				? loop(exports, allows) || bail(name, target, 1)
-				: bail(name, target);
-		}
-
-		if (tmp = exports[target]) {
-			return loop(tmp, allows) || bail(name, target, 1);
-		}
-
-		for (key in exports) {
-			tmp = key[key.length - 1];
-			if (tmp === '/' && target.startsWith(key)) {
-				return (tmp = loop(exports[key], allows))
-					? (tmp + target.substring(key.length))
-					: bail(name, target, 1);
-			}
-			if (tmp === '*' && target.startsWith(key.slice(0, -1))) {
-				// do not trigger if no *content* to inject
-				if (target.substring(key.length - 1).length > 0) {
-					return (tmp = loop(exports[key], allows))
-						? tmp.replace('*', target.substring(key.length - 1))
-						: bail(name, target, 1);
-				}
-			}
-		}
-
-		return bail(name, target);
-	}
-}
-
 const ArrayIsArray = Array.isArray;
 const JSONStringify = JSON.stringify;
 const ObjectGetOwnPropertyNames = Object.getOwnPropertyNames;
@@ -33416,6 +33289,15 @@ const ERR_INVALID_PACKAGE_CONFIG = createErrorType(
   `ERR_INVALID_PACKAGE_CONFIG`,
   (path, base, message) => {
     return `Invalid package config ${path}${base ? ` while importing ${base}` : ``}${message ? `. ${message}` : ``}`;
+  },
+  Error
+);
+const ERR_PACKAGE_PATH_NOT_EXPORTED = createErrorType(
+  "ERR_PACKAGE_PATH_NOT_EXPORTED",
+  (pkgPath, subpath, base = void 0) => {
+    if (subpath === ".")
+      return `No "exports" main defined in ${pkgPath}package.json${base ? ` imported from ${base}` : ""}`;
+    return `Package subpath '${subpath}' is not defined by "exports" in ${pkgPath}package.json${base ? ` imported from ${base}` : ""}`;
   },
   Error
 );
@@ -33738,12 +33620,121 @@ function patternKeyCompare(a, b) {
     return 1;
   return 0;
 }
-function packageImportsResolve({
-  name,
+function isConditionalExportsMainSugar(exports, packageJSONUrl, base) {
+  if (typeof exports === "string" || ArrayIsArray(exports))
+    return true;
+  if (typeof exports !== "object" || exports === null)
+    return false;
+  const keys = ObjectGetOwnPropertyNames(exports);
+  let isConditionalSugar = false;
+  let i = 0;
+  for (let j = 0; j < keys.length; j++) {
+    const key = keys[j];
+    const curIsConditionalSugar = key === "" || key[0] !== ".";
+    if (i++ === 0) {
+      isConditionalSugar = curIsConditionalSugar;
+    } else if (isConditionalSugar !== curIsConditionalSugar) {
+      throw new ERR_INVALID_PACKAGE_CONFIG(
+        url.fileURLToPath(packageJSONUrl),
+        base,
+        `"exports" cannot contain some keys starting with '.' and some not. The exports object must either be an object of package subpath keys or an object of main entry condition name keys only.`
+      );
+    }
+  }
+  return isConditionalSugar;
+}
+function throwExportsNotFound(subpath, packageJSONUrl, base) {
+  throw new ERR_PACKAGE_PATH_NOT_EXPORTED(
+    url.fileURLToPath(new URL(".", packageJSONUrl)),
+    subpath,
+    base && url.fileURLToPath(base)
+  );
+}
+const emittedPackageWarnings = /* @__PURE__ */ new Set();
+function emitTrailingSlashPatternDeprecation(match, pjsonUrl, base) {
+  const pjsonPath = url.fileURLToPath(pjsonUrl);
+  if (emittedPackageWarnings.has(pjsonPath + "|" + match))
+    return;
+  emittedPackageWarnings.add(pjsonPath + "|" + match);
+  process.emitWarning(
+    `Use of deprecated trailing slash pattern mapping "${match}" in the "exports" field module resolution of the package at ${pjsonPath}${base ? ` imported from ${url.fileURLToPath(base)}` : ""}. Mapping specifiers ending in "/" is no longer supported.`,
+    "DeprecationWarning",
+    "DEP0155"
+  );
+}
+function packageExportsResolve({
+  packageJSONUrl,
+  packageSubpath,
+  exports,
   base,
-  conditions,
-  readFileSyncFn
+  conditions
 }) {
+  if (isConditionalExportsMainSugar(exports, packageJSONUrl, base))
+    exports = { ".": exports };
+  if (ObjectPrototypeHasOwnProperty(exports, packageSubpath) && !StringPrototypeIncludes(packageSubpath, "*") && !StringPrototypeEndsWith(packageSubpath, "/")) {
+    const target = exports[packageSubpath];
+    const resolveResult = resolvePackageTarget(
+      packageJSONUrl,
+      target,
+      "",
+      packageSubpath,
+      base,
+      false,
+      false,
+      conditions
+    );
+    if (resolveResult == null) {
+      throwExportsNotFound(packageSubpath, packageJSONUrl, base);
+    }
+    return resolveResult;
+  }
+  let bestMatch = "";
+  let bestMatchSubpath;
+  const keys = ObjectGetOwnPropertyNames(exports);
+  for (let i = 0; i < keys.length; i++) {
+    const key = keys[i];
+    const patternIndex = StringPrototypeIndexOf(key, "*");
+    if (patternIndex !== -1 && StringPrototypeStartsWith(
+      packageSubpath,
+      StringPrototypeSlice(key, 0, patternIndex)
+    )) {
+      if (StringPrototypeEndsWith(packageSubpath, "/"))
+        emitTrailingSlashPatternDeprecation(
+          packageSubpath,
+          packageJSONUrl,
+          base
+        );
+      const patternTrailer = StringPrototypeSlice(key, patternIndex + 1);
+      if (packageSubpath.length >= key.length && StringPrototypeEndsWith(packageSubpath, patternTrailer) && patternKeyCompare(bestMatch, key) === 1 && StringPrototypeLastIndexOf(key, "*") === patternIndex) {
+        bestMatch = key;
+        bestMatchSubpath = StringPrototypeSlice(
+          packageSubpath,
+          patternIndex,
+          packageSubpath.length - patternTrailer.length
+        );
+      }
+    }
+  }
+  if (bestMatch) {
+    const target = exports[bestMatch];
+    const resolveResult = resolvePackageTarget(
+      packageJSONUrl,
+      target,
+      bestMatchSubpath,
+      bestMatch,
+      base,
+      true,
+      false,
+      conditions
+    );
+    if (resolveResult == null) {
+      throwExportsNotFound(packageSubpath, packageJSONUrl, base);
+    }
+    return resolveResult;
+  }
+  throwExportsNotFound(packageSubpath, packageJSONUrl, base);
+}
+function packageImportsResolve({ name, base, conditions, readFileSyncFn }) {
   if (name === "#" || StringPrototypeStartsWith(name, "#/") || StringPrototypeEndsWith(name, "/")) {
     const reason = "is not a valid internal imports specifier name";
     throw new ERR_INVALID_MODULE_SPECIFIER(name, reason, url.fileURLToPath(base));
@@ -33810,6 +33801,291 @@ function packageImportsResolve({
     }
   }
   throwImportNotDefined(name, packageJSONUrl, base);
+}
+
+const flagSymbol = Symbol('arg flag');
+
+class ArgError extends Error {
+	constructor(msg, code) {
+		super(msg);
+		this.name = 'ArgError';
+		this.code = code;
+
+		Object.setPrototypeOf(this, ArgError.prototype);
+	}
+}
+
+function arg(
+	opts,
+	{
+		argv = process.argv.slice(2),
+		permissive = false,
+		stopAtPositional = false
+	} = {}
+) {
+	if (!opts) {
+		throw new ArgError(
+			'argument specification object is required',
+			'ARG_CONFIG_NO_SPEC'
+		);
+	}
+
+	const result = { _: [] };
+
+	const aliases = {};
+	const handlers = {};
+
+	for (const key of Object.keys(opts)) {
+		if (!key) {
+			throw new ArgError(
+				'argument key cannot be an empty string',
+				'ARG_CONFIG_EMPTY_KEY'
+			);
+		}
+
+		if (key[0] !== '-') {
+			throw new ArgError(
+				`argument key must start with '-' but found: '${key}'`,
+				'ARG_CONFIG_NONOPT_KEY'
+			);
+		}
+
+		if (key.length === 1) {
+			throw new ArgError(
+				`argument key must have a name; singular '-' keys are not allowed: ${key}`,
+				'ARG_CONFIG_NONAME_KEY'
+			);
+		}
+
+		if (typeof opts[key] === 'string') {
+			aliases[key] = opts[key];
+			continue;
+		}
+
+		let type = opts[key];
+		let isFlag = false;
+
+		if (
+			Array.isArray(type) &&
+			type.length === 1 &&
+			typeof type[0] === 'function'
+		) {
+			const [fn] = type;
+			type = (value, name, prev = []) => {
+				prev.push(fn(value, name, prev[prev.length - 1]));
+				return prev;
+			};
+			isFlag = fn === Boolean || fn[flagSymbol] === true;
+		} else if (typeof type === 'function') {
+			isFlag = type === Boolean || type[flagSymbol] === true;
+		} else {
+			throw new ArgError(
+				`type missing or not a function or valid array type: ${key}`,
+				'ARG_CONFIG_VAD_TYPE'
+			);
+		}
+
+		if (key[1] !== '-' && key.length > 2) {
+			throw new ArgError(
+				`short argument keys (with a single hyphen) must have only one character: ${key}`,
+				'ARG_CONFIG_SHORTOPT_TOOLONG'
+			);
+		}
+
+		handlers[key] = [type, isFlag];
+	}
+
+	for (let i = 0, len = argv.length; i < len; i++) {
+		const wholeArg = argv[i];
+
+		if (stopAtPositional && result._.length > 0) {
+			result._ = result._.concat(argv.slice(i));
+			break;
+		}
+
+		if (wholeArg === '--') {
+			result._ = result._.concat(argv.slice(i + 1));
+			break;
+		}
+
+		if (wholeArg.length > 1 && wholeArg[0] === '-') {
+			/* eslint-disable operator-linebreak */
+			const separatedArguments =
+				wholeArg[1] === '-' || wholeArg.length === 2
+					? [wholeArg]
+					: wholeArg
+							.slice(1)
+							.split('')
+							.map((a) => `-${a}`);
+			/* eslint-enable operator-linebreak */
+
+			for (let j = 0; j < separatedArguments.length; j++) {
+				const arg = separatedArguments[j];
+				const [originalArgName, argStr] =
+					arg[1] === '-' ? arg.split(/=(.*)/, 2) : [arg, undefined];
+
+				let argName = originalArgName;
+				while (argName in aliases) {
+					argName = aliases[argName];
+				}
+
+				if (!(argName in handlers)) {
+					if (permissive) {
+						result._.push(arg);
+						continue;
+					} else {
+						throw new ArgError(
+							`unknown or unexpected option: ${originalArgName}`,
+							'ARG_UNKNOWN_OPTION'
+						);
+					}
+				}
+
+				const [type, isFlag] = handlers[argName];
+
+				if (!isFlag && j + 1 < separatedArguments.length) {
+					throw new ArgError(
+						`option requires argument (but was followed by another short argument): ${originalArgName}`,
+						'ARG_MISSING_REQUIRED_SHORTARG'
+					);
+				}
+
+				if (isFlag) {
+					result[argName] = type(true, argName, result[argName]);
+				} else if (argStr === undefined) {
+					if (
+						argv.length < i + 2 ||
+						(argv[i + 1].length > 1 &&
+							argv[i + 1][0] === '-' &&
+							!(
+								argv[i + 1].match(/^-?\d*(\.(?=\d))?\d*$/) &&
+								(type === Number ||
+									// eslint-disable-next-line no-undef
+									(typeof BigInt !== 'undefined' && type === BigInt))
+							))
+					) {
+						const extended =
+							originalArgName === argName ? '' : ` (alias for ${argName})`;
+						throw new ArgError(
+							`option requires argument: ${originalArgName}${extended}`,
+							'ARG_MISSING_REQUIRED_LONGARG'
+						);
+					}
+
+					result[argName] = type(argv[i + 1], argName, result[argName]);
+					++i;
+				} else {
+					result[argName] = type(argStr, argName, result[argName]);
+				}
+			}
+		} else {
+			result._.push(wholeArg);
+		}
+	}
+
+	return result;
+}
+
+arg.flag = (fn) => {
+	fn[flagSymbol] = true;
+	return fn;
+};
+
+// Utility types
+arg.COUNT = arg.flag((v, name, existingCount) => (existingCount || 0) + 1);
+
+// Expose error class
+arg.ArgError = ArgError;
+
+var arg_1 = arg;
+
+/**
+  @license
+  The MIT License (MIT)
+
+  Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+*/
+function getOptionValue(opt) {
+  parseOptions();
+  return options[opt];
+}
+let options;
+function parseOptions() {
+  if (!options) {
+    options = {
+      "--conditions": [],
+      ...parseArgv(getNodeOptionsEnvArgv()),
+      ...parseArgv(process.execArgv)
+    };
+  }
+}
+function parseArgv(argv) {
+  return arg_1(
+    {
+      "--conditions": [String],
+      "-C": "--conditions"
+    },
+    {
+      argv,
+      permissive: true
+    }
+  );
+}
+function getNodeOptionsEnvArgv() {
+  const errors = [];
+  const envArgv = ParseNodeOptionsEnvVar(process.env.NODE_OPTIONS || "", errors);
+  if (errors.length !== 0) ;
+  return envArgv;
+}
+function ParseNodeOptionsEnvVar(node_options, errors) {
+  const env_argv = [];
+  let is_in_string = false;
+  let will_start_new_arg = true;
+  for (let index = 0; index < node_options.length; ++index) {
+    let c = node_options[index];
+    if (c === "\\" && is_in_string) {
+      if (index + 1 === node_options.length) {
+        errors.push("invalid value for NODE_OPTIONS (invalid escape)\n");
+        return env_argv;
+      } else {
+        c = node_options[++index];
+      }
+    } else if (c === " " && !is_in_string) {
+      will_start_new_arg = true;
+      continue;
+    } else if (c === '"') {
+      is_in_string = !is_in_string;
+      continue;
+    }
+    if (will_start_new_arg) {
+      env_argv.push(c);
+      will_start_new_arg = false;
+    } else {
+      env_argv[env_argv.length - 1] += c;
+    }
+  }
+  if (is_in_string) {
+    errors.push("invalid value for NODE_OPTIONS (unterminated string)\n");
+  }
+  return env_argv;
 }
 
 function makeApi(runtimeState, opts) {
@@ -33925,8 +34201,12 @@ function makeApi(runtimeState, opts) {
         return true;
     return false;
   }
-  const defaultExportsConditions = /* @__PURE__ */ new Set([`default`, `node`, `require`]);
-  function applyNodeExportsResolution(unqualifiedPath, conditions = defaultExportsConditions) {
+  const defaultExportsConditions = /* @__PURE__ */ new Set([
+    `node`,
+    `require`,
+    ...getOptionValue(`--conditions`)
+  ]);
+  function applyNodeExportsResolution(unqualifiedPath, conditions = defaultExportsConditions, issuer) {
     const locator = findPackageLocator(ppath.join(unqualifiedPath, `internal.js`), {
       resolveIgnored: true,
       includeDiscardFromLookup: true
@@ -33942,6 +34222,8 @@ function makeApi(runtimeState, opts) {
     if (!opts.fakeFs.existsSync(manifestPath))
       return null;
     const pkgJson = JSON.parse(opts.fakeFs.readFileSync(manifestPath, `utf8`));
+    if (pkgJson.exports == null)
+      return null;
     let subpath = ppath.contains(packageLocation, unqualifiedPath);
     if (subpath === null) {
       throw makeError(
@@ -33949,25 +34231,25 @@ function makeApi(runtimeState, opts) {
         `unqualifiedPath doesn't contain the packageLocation (this is probably an internal error)`
       );
     }
-    if (!isRelativeRegexp.test(subpath))
+    if (subpath !== `.` && !isRelativeRegexp.test(subpath))
       subpath = `./${subpath}`;
-    let resolvedExport;
     try {
-      resolvedExport = resolve(pkgJson, ppath.normalize(subpath), {
-        conditions,
-        unsafe: true
+      const resolvedExport = packageExportsResolve({
+        packageJSONUrl: url.pathToFileURL(npath.fromPortablePath(manifestPath)),
+        packageSubpath: subpath,
+        exports: pkgJson.exports,
+        base: issuer ? url.pathToFileURL(npath.fromPortablePath(issuer)) : null,
+        conditions
       });
+      return npath.toPortablePath(url.fileURLToPath(resolvedExport));
     } catch (error) {
       throw makeError(
         ErrorCode.EXPORTS_RESOLUTION_FAILED,
         error.message,
         { unqualifiedPath: getPathForDisplay(unqualifiedPath), locator, pkgJson, subpath: getPathForDisplay(subpath), conditions },
-        `ERR_PACKAGE_PATH_NOT_EXPORTED`
+        error.code
       );
     }
-    if (typeof resolvedExport === `string`)
-      return ppath.join(packageLocation, resolvedExport);
-    return null;
   }
   function applyNodeExtensionResolution(unqualifiedPath, candidates, { extensions }) {
     let stat;
@@ -34344,10 +34626,10 @@ Required by: ${issuerLocator.name}@${issuerLocator.reference} (via ${issuerForDi
     }
     return ppath.normalize(unqualifiedPath);
   }
-  function resolveUnqualifiedExport(request, unqualifiedPath, conditions = defaultExportsConditions) {
+  function resolveUnqualifiedExport(request, unqualifiedPath, conditions = defaultExportsConditions, issuer) {
     if (isStrictRegExp.test(request))
       return unqualifiedPath;
-    const unqualifiedExportPath = applyNodeExportsResolution(unqualifiedPath, conditions);
+    const unqualifiedExportPath = applyNodeExportsResolution(unqualifiedPath, conditions, issuer);
     if (unqualifiedExportPath) {
       return ppath.normalize(unqualifiedExportPath);
     } else {
@@ -34361,6 +34643,7 @@ Required by: ${issuerLocator.name}@${issuerLocator.reference} (via ${issuerForDi
     if (qualifiedPath) {
       return ppath.normalize(qualifiedPath);
     } else {
+      reportRequiredFilesToWatchMode(candidates.map((candidate) => npath.fromPortablePath(candidate)));
       const unqualifiedPathForDisplay = getPathForDisplay(unqualifiedPath);
       const containingPackage = findPackageLocator(unqualifiedPath);
       if (containingPackage) {
@@ -34414,7 +34697,7 @@ ${candidates.map((candidate) => `Not found: ${getPathForDisplay(candidate)}
       conditions: (_a = opts2.conditions) != null ? _a : defaultExportsConditions,
       readFileSyncFn: tryReadFile
     });
-    if (resolved instanceof URL) {
+    if (resolved instanceof url.URL) {
       return resolveUnqualified(npath.toPortablePath(url.fileURLToPath(resolved)), { extensions: opts2.extensions });
     } else {
       if (resolved.startsWith(`#`))
@@ -34433,7 +34716,7 @@ ${candidates.map((candidate) => `Not found: ${getPathForDisplay(candidate)}
       if (unqualifiedPath === null)
         return null;
       const isIssuerIgnored = () => issuer !== null ? isPathIgnored(issuer) : false;
-      const remappedPath = (!considerBuiltins || !isBuiltinModule(request)) && !isIssuerIgnored() ? resolveUnqualifiedExport(request, unqualifiedPath, conditions) : unqualifiedPath;
+      const remappedPath = (!considerBuiltins || !isBuiltinModule(request)) && !isIssuerIgnored() ? resolveUnqualifiedExport(request, unqualifiedPath, conditions, issuer) : unqualifiedPath;
       return resolveUnqualified(remappedPath, { extensions });
     } catch (error) {
       if (Object.prototype.hasOwnProperty.call(error, `pnpCode`))
@@ -34511,7 +34794,6 @@ function makeManager(pnpapi, opts) {
   const initialApiStats = opts.fakeFs.statSync(npath.toPortablePath(initialApiPath));
   const apiMetadata = /* @__PURE__ */ new Map([
     [initialApiPath, {
-      cache: require$$0.Module._cache,
       instance: pnpapi,
       stats: initialApiStats,
       lastRefreshCheck: Date.now()
@@ -34543,7 +34825,6 @@ function makeManager(pnpapi, opts) {
       }
     } else {
       apiMetadata.set(pnpApiPath, apiEntry = {
-        cache: {},
         instance: loadApiInstance(pnpApiPath),
         stats: opts.fakeFs.statSync(pnpApiPath),
         lastRefreshCheck: Date.now()
@@ -34613,19 +34894,16 @@ ${controlSegment}
     } while (curr !== PortablePath.root);
     return addToCacheAndReturn(start, curr, null);
   }
+  const moduleToApiPathCache = /* @__PURE__ */ new WeakMap();
   function getApiPathFromParent(parent) {
     if (parent == null)
       return initialApiPath;
-    if (typeof parent.pnpApiPath === `undefined`) {
-      if (parent.filename !== null) {
-        return parent.pnpApiPath = findApiPathFor(parent.filename);
-      } else {
-        return initialApiPath;
-      }
-    }
-    if (parent.pnpApiPath !== null)
-      return parent.pnpApiPath;
-    return null;
+    let apiPath = moduleToApiPathCache.get(parent);
+    if (typeof apiPath !== `undefined`)
+      return apiPath;
+    apiPath = parent.filename ? findApiPathFor(parent.filename) : null;
+    moduleToApiPathCache.set(parent, apiPath);
+    return apiPath;
   }
   return {
     getApiPathFromParent,
