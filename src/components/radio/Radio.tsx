@@ -6,7 +6,7 @@ interface PropsType {
   disabled?: boolean;
 }
 
-/** radio 여러개 있을 때 처리를 딱히 안해둠 (사용할 때 고민해봅시다) */
+/** radio 여러개 있을 때 처리를 딱히 안해둠 (사용할 때 고민해봅시다) name 속성을 추가하는 형태로 해야할듯*/
 export const Radio = ({ className, disabled = false }: PropsType) => {
   const [isChecked, setIsChecked] = useState<boolean>(false);
   return (
