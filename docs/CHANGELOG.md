@@ -1,3 +1,15 @@
+# [1.6.0](https://github.com/team-aliens/design-system/compare/v1.5.5...v1.6.0) (2025-06-01)
+
+
+### Bug Fixes
+
+* navigator icon 에러 수정 ([c12ad97](https://github.com/team-aliens/design-system/commit/c12ad9718aee938fcc8b484e7cf827e94d71dad6))
+
+
+### Features
+
+* navitator nameToLink 부분 수정 ([b54d2f6](https://github.com/team-aliens/design-system/commit/b54d2f6487b44203e717d8e781f19c19f79e7bc9))
+
 ## [1.5.5](https://github.com/team-aliens/design-system/compare/v1.5.4...v1.5.5) (2024-09-26)
 
 ## [1.5.4](https://github.com/team-aliens/design-system/compare/v1.5.3...v1.5.4) (2024-08-13)
