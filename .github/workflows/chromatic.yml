@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 16
       - uses: actions/checkout@v1
       - run: yarn config set nodeLinker "node-modules"
       - run: yarn install --immutable
