@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/team-aliens/design-system/compare/v1.6.1...v1.6.2) (2025-10-14)
+
+
+### Bug Fixes
+
+* npm-release 수정 ([319dc33](https://github.com/team-aliens/design-system/commit/319dc3378bc3cf216c6f8c3cbd278a640452c694))
+
 ## [1.6.1](https://github.com/team-aliens/design-system/compare/v1.6.0...v1.6.1) (2025-10-14)
 
 
