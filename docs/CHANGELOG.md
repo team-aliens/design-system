@@ -1,3 +1,13 @@
+## [1.6.1](https://github.com/team-aliens/design-system/compare/v1.6.0...v1.6.1) (2025-10-14)
+
+
+### Bug Fixes
+
+* npm release ([d8062e5](https://github.com/team-aliens/design-system/commit/d8062e537b84c96ce020d0e42a2bb7da5b8ee101))
+* npm release ([c3232ce](https://github.com/team-aliens/design-system/commit/c3232ce4ea127fd152c60c81114a033b09f5c63d))
+* npm release ([a31191c](https://github.com/team-aliens/design-system/commit/a31191c957af62efb9a82d433af5838c95c8b0c8))
+* type error ([647a24b](https://github.com/team-aliens/design-system/commit/647a24b3dd6ddd41d1d4579de70385c7fa21de99))
+
 # [1.6.0](https://github.com/team-aliens/design-system/compare/v1.5.5...v1.6.0) (2025-06-01)
 
 
