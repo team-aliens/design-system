@@ -1,21 +1,19 @@
 import styled, { css } from 'styled-components';
-import { useState } from 'react';
 
 interface PropsType {
   className?: string;
   disabled?: boolean;
+  isChecked: boolean;
 }
 
 /** radio 여러개 있을 때 처리를 딱히 안해둠 (사용할 때 고민해봅시다) name 속성을 추가하는 형태로 해야할듯*/
-export const Radio = ({ className, disabled = false }: PropsType) => {
-  const [isChecked, setIsChecked] = useState<boolean>(false);
+export const Radio = ({
+  className,
+  disabled = false,
+  isChecked,
+}: PropsType) => {
   return (
-    <_Radio
-      className={className}
-      onClick={() => !disabled && setIsChecked(!isChecked)}
-      disabled={disabled}
-      isChecked={isChecked}
-    >
+    <_Radio className={className} disabled={disabled} isChecked={isChecked}>
       <_Inner disabled={disabled} isChecked={isChecked} />
     </_Radio>
   );

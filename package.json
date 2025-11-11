@@ -17,7 +17,7 @@
     "dist"
   ],
   "scripts": {
-    "storybook": "start-storybook -p 6006",
+    "storybook": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "webpack && tsc --declaration",
     "release": "auto shipit --base-branch=main",
