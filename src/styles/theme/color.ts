@@ -19,6 +19,10 @@ export const color = {
   error: '#ff4646',
   errorDarken1: '#c23535',
   errorDarken2: '#852424',
+} as const;
+
+
+export const teacherColor = {
   system: {
     bg: "#F2F4F6",
     button: "#B0B6C1",
@@ -58,7 +62,7 @@ export const color = {
     Button: "#FFFFFF",
     disButton: "#B1D0FE"
   }
-} as const;
+} as const
 
 export const {
   primaryLighten1,
@@ -78,11 +82,8 @@ export const {
   error,
   errorLighten1,
   errorLighten2,
-  system,
-  gray,
-  blue,
-  red,
-  etc
 } = color;
+
+export const { system, gray, blue, red, etc } = teacherColor;
 
 export type colorKeyOfType = keyof typeof color;
