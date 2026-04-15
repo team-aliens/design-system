@@ -1,4 +1,3 @@
-// StatusBadge.stories.tsx
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { StatusBadge } from './StatusBadge';
 
