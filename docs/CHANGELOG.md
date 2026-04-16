@@ -1,3 +1,22 @@
+# [1.8.0](https://github.com/team-aliens/design-system/compare/v1.7.0...v1.8.0) (2026-04-16)
+
+
+### Bug Fixes
+
+* 빌드 오류 수정 ([3a26b0a](https://github.com/team-aliens/design-system/commit/3a26b0a4d40bd65698d54e6ba1c2242464813d7e))
+* 주석 제거 ([2391452](https://github.com/team-aliens/design-system/commit/2391452b6ff9923531dec117f75beb6081755521))
+
+
+### Features
+
+* ActionButton, TagButton 추가 ([0ab7875](https://github.com/team-aliens/design-system/commit/0ab7875b37447770c833f391569d70c8718974c8))
+* color styles 추가 ([152025c](https://github.com/team-aliens/design-system/commit/152025ce6941e5c9bb3b8e5bbdb258fb8c87fdbc))
+* npm 자동 배포 테스트 ([f1b8195](https://github.com/team-aliens/design-system/commit/f1b81955981be165812bccd9cae5e2e960b86fa6))
+* StatusBadge, TypeBadge 추가 ([993c30c](https://github.com/team-aliens/design-system/commit/993c30c5d2e771eeb138616dd97000084c6a78f1))
+* table 컴포넌트 추가 및 badge 수정 ([0cdf281](https://github.com/team-aliens/design-system/commit/0cdf281e0530576d87d0cf8b5fd2930cca0c2d9d))
+* teacherColor 내보내기 ([7b6826e](https://github.com/team-aliens/design-system/commit/7b6826ebf3b4b45fea6f5be24581f9a569502b31))
+* 헤더 컴포넌트 추가 ([fcbe262](https://github.com/team-aliens/design-system/commit/fcbe26276167f9040ab9ad9824ea4eb0243a26d8))
+
 # [1.7.0](https://github.com/team-aliens/design-system/compare/v1.6.3...v1.7.0) (2025-11-11)
 
 
