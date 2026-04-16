@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { theme } from '../../../styles/theme';
 
-type Status = 'FIRST_APPROVED' | 'FINAL_APPROVED' | 'REJECTED' | 'PENDING';
+export type Status = 'FIRST_APPROVED' | 'FINAL_APPROVED' | 'REJECTED' | 'PENDING';
 
 interface StatusBadgeProps {
   status: Status;
@@ -41,9 +41,11 @@ const STATUS_LABELS: Record<Status, string> = {
 };
 
 const StyledStatusBadge = styled.span<{ $status: Status }>`
+  width: 124px;
+  height: 47px;
   display: inline-flex;
   align-items: center;
-  padding: 10px 20px;
+  justify-content: center;
   border-radius: 2000px;
   font-size: ${theme.font.headlineS};
   background: ${({ $status }) => STATUS_STYLES[$status].background};

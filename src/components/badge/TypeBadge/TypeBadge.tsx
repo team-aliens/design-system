@@ -7,12 +7,14 @@ interface TypeBadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
 }
 
 const StyledBadge = styled.span`
+  height: 47px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 10px 20px;
   border-radius: 2000px;
-  font-size: ${theme.font.headlineS};  
+  font-size: ${theme.font.headlineS};
+  line-height: 29px;
   background-color: ${theme.teacherColor.blue[50]}; 
   color: ${theme.teacherColor.blue[200]};           
   border: 1px solid ${theme.teacherColor.blue[200]}; 
