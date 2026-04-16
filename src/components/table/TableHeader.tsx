@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { theme } from '../../styles/theme';
 import { TableVariant } from './types';
 import { CheckBox } from '../checkBox';
-import { GRID_TEMPLATE } from './constants'
+import { GRID_TEMPLATE } from './constants';
 
 interface TableHeaderProps {
   variant: TableVariant;
@@ -11,12 +11,37 @@ interface TableHeaderProps {
 }
 
 const COLUMNS: Record<TableVariant, string[]> = {
-  HEAD_TEACHER:      ['학번이름', '신청날짜', '유형', '담당 선생님', '신청사유', '기간'],
-  GENERAL_TEACHER:  ['학번이름', '신청날짜', '유형', '신청사유', '기간', '상태'],
-  DORMITORY_TEACHER: ['학번이름', '신청날짜', '유형', '담당 선생님', '신청사유', '기간'],
+  HEAD_TEACHER: [
+    '학번이름',
+    '신청날짜',
+    '유형',
+    '담당 선생님',
+    '신청사유',
+    '기간',
+  ],
+  GENERAL_TEACHER: [
+    '학번이름', 
+    '신청날짜', 
+    '유형', 
+    '신청사유', 
+    '기간', 
+    '상태'
+  ],
+  DORMITORY_TEACHER: [
+    '학번이름',
+    '신청날짜',
+    '유형',
+    '담당 선생님',
+    '신청사유',
+    '기간',
+  ],
 };
 
-export function TableHeader({ variant, allChecked, onAllCheck }: TableHeaderProps) {
+export function TableHeader({
+  variant,
+  allChecked,
+  onAllCheck,
+}: TableHeaderProps) {
   return (
     <StyledHeader $variant={variant}>
       {variant !== 'DORMITORY_TEACHER' && (

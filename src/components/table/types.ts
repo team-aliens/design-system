@@ -1,6 +1,9 @@
 import { Status } from '../badge/StatusBadge/StatusBadge';
 
-export type TableVariant = 'HEAD_TEACHER' | 'GENERAL_TEACHER' | 'DORMITORY_TEACHER';
+export type TableVariant =
+  | 'HEAD_TEACHER'
+  | 'GENERAL_TEACHER'
+  | 'DORMITORY_TEACHER';
 
 interface BaseStudyRequest {
   application_id: string;

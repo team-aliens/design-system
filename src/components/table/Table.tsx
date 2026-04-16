@@ -11,11 +11,11 @@ export function Table(props: TableProps) {
   const selectedIds = checkableProps?.selectedIds ?? [];
 
   const allChecked =
-  checkableProps !== null &&
-  selectedIds.length > 0 &&
-  (checkableProps.data as { application_id: string }[]).every((item) =>
-    selectedIds.includes(item.application_id)
-  );
+    checkableProps !== null &&
+    selectedIds.length > 0 &&
+    (checkableProps.data as { application_id: string }[]).every((item) =>
+      selectedIds.includes(item.application_id)
+    );
 
   const handleAllCheck = () => {
     if (!checkableProps) return;
@@ -63,7 +63,9 @@ export function Table(props: TableProps) {
               key={item.application_id}
               variant={variant}
               data={item}
-              checked={checkableProps!.selectedIds.includes(item.application_id)}
+              checked={checkableProps!.selectedIds.includes(
+                item.application_id
+              )}
               onCheck={handleCheck}
               onRowClick={onRowClick}
             />

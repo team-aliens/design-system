@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Table } from './Table';
-import { GeneralStudyRequest, HeadStudyRequest, DormitoryStudyRequest } from './types';
+import {
+  GeneralStudyRequest,
+  HeadStudyRequest,
+  DormitoryStudyRequest,
+} from './types';
 
 export default {
   title: 'component/Table',
