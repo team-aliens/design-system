@@ -21,6 +21,49 @@ export const color = {
   errorDarken2: '#852424',
 } as const;
 
+
+export const teacherColor = {
+  system: {
+    bg: "#F2F4F6",
+    button: "#B0B6C1",
+    container: "#FFFFFF",
+    hover: "#8D929A",
+    pressed: "#71757B"
+  },
+  gray: {
+    50: "#FFFFFF",
+    100: "#F9F9F9",
+    200: "#EEEEEE",
+    300: "#DDDDDD",
+    400: "#999999",
+    500: "#555555",
+    600: "#343434",
+    700: "#202020",
+    800: "#121212",
+    900: "#101010"
+  },
+  blue: {
+    50: "#E7F0FF",
+    100: "#B1D0FE",
+    200: "#65A2FE",
+    300: "#0F6EFE",
+    400: "#0C58CB",
+    500: "#052453",
+  },
+  red: {
+    50: "#FFE7E7",
+    100: "#FEB1B1",
+    200: "#FE6565",
+    300: "#FE0F0F",
+    400: "#CB0C0C",
+    500: "#530505",
+  },
+  etc: {
+    Button: "#FFFFFF",
+    disButton: "#B1D0FE"
+  }
+} as const
+
 export const {
   primaryLighten1,
   primaryLighten2,
@@ -31,6 +74,7 @@ export const {
   gray2,
   gray3,
   gray4,
+  gray5,
   gray6,
   gray8,
   errorDarken1,
@@ -39,5 +83,7 @@ export const {
   errorLighten1,
   errorLighten2,
 } = color;
+
+export const { system, gray, blue, red, etc } = teacherColor;
 
 export type colorKeyOfType = keyof typeof color;

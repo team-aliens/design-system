@@ -2,12 +2,13 @@ import styled from 'styled-components';
 import { Text } from '../styleGuide/text/Text';
 
 export interface headerPropsType {
+  className?: string;
   title?: string;
 }
 
-export const Header = ({ title }: headerPropsType) => {
+export const Header = ({ className, title }: headerPropsType) => {
   return (
-    <_Wrapper margin={['bottom', 37]} size="titleM">
+    <_Wrapper className={className} margin={['bottom', 37]} size="titleM">
       {title}
     </_Wrapper>
   );

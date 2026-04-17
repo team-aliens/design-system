@@ -1,12 +1,13 @@
 import { Text } from '../styleGuide/text/Text';
 
 interface PropsType {
+  className?: string;
   label: string;
 }
 
-export const Label = ({ label }: PropsType) => {
+export const Label = ({ label, className }: PropsType) => {
   return (
-    <Text size="bodyM" color="gray6">
+    <Text className={className} size="bodyM" color="gray6">
       {label}
     </Text>
   );

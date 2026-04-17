@@ -10,6 +10,7 @@ import {
   gray2,
   gray3,
   gray4,
+  gray5,
   gray6,
   gray8,
   errorDarken1,
@@ -31,7 +32,7 @@ interface propsType extends marginCssType {
   color?: colorType;
   children?: ReactNode;
   disabled?: boolean;
-  Icon?: ({ ...args }) => JSX.Element;
+  Icon?: JSX.Element;
   onClick?: () => void;
   clickType?: 'submit' | 'button';
 }
@@ -59,7 +60,7 @@ export const Button = ({
       type={clickType}
       margin={margin}
     >
-      {Icon && <Icon size={18} colorKey={iconColorToKey(kind, color)} />}
+      {Icon && <Icon.type size={18} colorKey={iconColorToKey(kind, color)} />}
       {children}
     </_Wrapper>
   );
@@ -84,10 +85,8 @@ const _Wrapper = styled.button<propsType>`
         return '100%';
     }
   }};
-  margin: ${({ margin }) => marginToCss({ margin })};
-  ${({ color, disabled, kind }) => {
-    return cssGenerator(kind, color, disabled);
-  }};
+  ${({ margin }) => marginToCss({ margin })};
+  ${({ color, disabled, kind }) => cssGenerator(kind, color, disabled)};
 `;
 
 const iconColorToKey = (kind: kindType, color: colorType) => {
@@ -128,7 +127,7 @@ const cssGenerator = (kind: kindType, color: colorType, disabled: boolean) => {
               background: ${!disabled && gray4};
             }
             :active {
-              background: ${!disabled && errorDarken2};
+              background: ${!disabled && gray5};
             }
           `;
         case 'error':
@@ -146,7 +145,6 @@ const cssGenerator = (kind: kindType, color: colorType, disabled: boolean) => {
           `;
       }
     case 'outline':
-    case 'text':
       switch (color) {
         case 'primary':
           return css`
@@ -175,7 +173,7 @@ const cssGenerator = (kind: kindType, color: colorType, disabled: boolean) => {
             color: ${gray6};
             opacity: ${disabled ? 0.5 : 1};
             cursor: ${disabled && 'no-drop'};
-            border: 1px solid ${kind === 'outline' ? gray4 : 'transparent'};
+            border: 1px solid ${gray4};
             :hover {
               border: ${!disabled && `1px solid ${gray4}`};
               background-color: ${!disabled && gray2};
@@ -191,7 +189,7 @@ const cssGenerator = (kind: kindType, color: colorType, disabled: boolean) => {
             color: ${error};
             cursor: ${disabled && 'no-drop'};
             opacity: ${disabled ? 0.5 : 1};
-            border: 1px solid ${kind === 'outline' ? error : 'transparent'};
+            border: 1px solid ${error};
             :hover {
               background-color: ${!disabled && error};
               color: ${!disabled && gray1};
@@ -202,6 +200,48 @@ const cssGenerator = (kind: kindType, color: colorType, disabled: boolean) => {
             :active {
               background: ${!disabled && errorDarken1};
               color: ${!disabled && gray1};
+            }
+          `;
+      }
+    case 'text':
+      switch (color) {
+        case 'primary':
+          return css`
+            color: ${primaryDarken2};
+            opacity: ${disabled ? 0.5 : 1};
+            cursor: ${disabled && 'no-drop'};
+            border: 1px solid ${gray2};
+            :hover {
+              background-color: ${!disabled && gray2};
+            }
+            :active {
+              background-color: ${!disabled && gray3};
+            }
+          `;
+        case 'gray':
+          return css`
+            background-color: ${gray1};
+            color: ${gray6};
+            opacity: ${disabled ? 0.5 : 1};
+            cursor: ${disabled && 'no-drop'};
+            :hover {
+              background-color: ${!disabled && gray2};
+            }
+            :active {
+              background-color: ${!disabled && gray3};
+            }
+          `;
+        case 'error':
+          return css`
+            background-color: ${gray1};
+            color: ${error};
+            cursor: ${disabled && 'no-drop'};
+            opacity: ${disabled ? 0.5 : 1};
+            :hover {
+              background-color: ${!disabled && gray2};
+            }
+            :active {
+              background: ${!disabled && gray3};
             }
           `;
       }

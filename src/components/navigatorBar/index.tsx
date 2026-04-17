@@ -5,10 +5,18 @@ import { PaperPlane } from '../styleGuide/icon/PaperPlane';
 import { PlusBubble } from '../styleGuide/icon/PlusBubble';
 import { ArchiveBox } from '../styleGuide/icon/ArchiveBox';
 import { Human } from '../styleGuide/icon/Human';
-import { Text } from '../styleGuide/text/Text';
 import { Item } from './Item';
+import { Logo } from '../logo';
+import { Outing } from '../styleGuide/icon';
 
-type NavListType = '홈' | '신청' | '공지' | '설문' | '분실문' | '마이페이지';
+type NavListType =
+  | '홈'
+  | '신청'
+  | '공지'
+  | '설문'
+  // | '분실물'
+  | '마이페이지'
+  | '외출';
 
 interface PropsType {
   navList: NavListType[];
@@ -18,9 +26,12 @@ export const NavigatorBar = ({ navList }: PropsType) => {
   return (
     <_Filler>
       <_Navigation>
-        <Text margin={['bottom', 30]} size="headlineL" color="primary">
-          DMS
-        </Text>
+        <Logo
+          margin={['bottom', 48]}
+          width={113}
+          height={40}
+          type="horizontal"
+        />
         {navList.map((name, idx) => {
           const { Icon, link } = nameToIconLink[name];
           return <Item key={idx} name={name} Icon={Icon} link={link} />;
@@ -40,15 +51,16 @@ const nameToIconLink = {
     Icon: MegaPhone,
   },
   설문: { link: 'survey', Icon: PlusBubble },
-  분실문: {
-    link: 'lost',
-    Icon: ArchiveBox,
-  },
+  // 분실물: {
+  //   link: 'lost',
+  //   Icon: ArchiveBox,
+  // },
   마이페이지: {
     link: 'my-page',
     Icon: Human,
   },
   홈: { link: '', Icon: Home },
+  외출: { link: 'outing', Icon: PlusBubble },
 };
 
 const _Filler = styled.div`
@@ -66,5 +78,9 @@ const _Navigation = styled.nav`
   box-shadow: 0 1px 20px rgba(204, 204, 204, 0.24);
   min-height: 100%;
   max-height: 100%;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   overflow: scroll;
 `;

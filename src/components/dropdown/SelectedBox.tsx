@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Arrow } from '../styleGuide/icon';
 
 interface PropsType<T> {
+  className?: string;
   disable?: boolean;
   setIsOpen: Dispatch<SetStateAction<boolean>>;
   placeholder: string;
@@ -16,15 +17,21 @@ export const SelectedBox = <T extends string>({
   placeholder,
   text,
   isOpen,
+  className,
 }: PropsType<T>) => {
   return (
     <_DropDownSelectedBox
+      className={className}
       disable={disable}
       onClick={() => !disable && setIsOpen(!isOpen)}
       isPlaceholder={text === placeholder}
     >
-      <p>{text}</p>
-      <Arrow colorKey={'gray5'} direction={isOpen ? 'top' : 'bottom'} />
+      <p className={className}>{text}</p>
+      <Arrow
+        className={className}
+        colorKey={'gray5'}
+        direction={isOpen ? 'top' : 'bottom'}
+      />
     </_DropDownSelectedBox>
   );
 };

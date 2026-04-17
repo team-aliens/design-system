@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Text } from '../text/Text';
+import Cancel from './Cancel';
 import {
   Add,
   Arrow,
@@ -19,6 +20,9 @@ import {
   ArchiveBox,
   Gear,
   Escape,
+  Change,
+  SeeMore,
+  Outing,
 } from './index';
 
 const IconList = [
@@ -49,6 +53,10 @@ const IconList = [
   { svg: <Success />, name: 'success' },
   { svg: <Gear />, name: 'gear' },
   { svg: <Escape />, name: 'escape' },
+  { svg: <Change />, name: 'change' },
+  { svg: <SeeMore />, name: 'see-more' },
+  { svg: <Outing />, name: 'outing' },
+  { svg: <Cancel size={16} colorKey="gray9" />, name: 'cancel' },
 ];
 
 export const Icon = () => {

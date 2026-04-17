@@ -7,12 +7,13 @@ import { marginCssType, _Wrapper } from '../../utils/distance';
 
 interface PropsType extends marginCssType, errorMsgPropsType, labelPropsType {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  type?: 'text' | 'password';
+  type?: 'text' | 'password' | 'number';
   placeholder?: string;
   width?: number;
   name: string;
   className?: string;
-  value: string;
+  value: string | number;
+  limit?: number;
 }
 
 /** input 에러 상태일 때에는 포커싱이 파란색..? */
@@ -27,23 +28,38 @@ export const Input = ({
   value,
   className,
   margin,
+  limit,
 }: PropsType) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isInputClicked, setIsInputClicked] = useState<boolean>(false);
   return (
     <_Wrapper margin={margin} className={className}>
-      <Label label={label} />
-      <_InputWrapper width={width}>
+      <Label className={className} label={label} />
+      <_InputWrapper className={className} width={width}>
         <_Input
+          className={className}
+          onWheel={(e) => {
+            //@ts-ignore
+            document.activeElement.blur();
+          }}
+          onFocus={() => {
+            setIsInputClicked(true);
+          }}
+          onBlur={() => {
+            setIsInputClicked(false);
+          }}
           onChange={onChange}
           type={(isOpen && 'text') || type}
           errorMsg={errorMsg}
-          placeholder={placeholder}
+          placeholder={isInputClicked ? '' : placeholder}
           value={value}
+          maxLength={limit}
           name={name}
         />
         {type == 'password' && (
-          <_IconBox>
+          <_IconBox className={className}>
             <Eye
+              className={className}
               onClick={() => setIsOpen(!isOpen)}
               colorKey="gray5"
               state={isOpen}
@@ -51,7 +67,7 @@ export const Input = ({
           </_IconBox>
         )}
       </_InputWrapper>
-      <ErrorMsg errorMsg={errorMsg} />
+      <ErrorMsg className={className} errorMsg={errorMsg} />
     </_Wrapper>
   );
 };
@@ -68,16 +84,16 @@ const _Input = styled.input<{ errorMsg: string }>`
   padding: 16px 9px;
   ${({ theme }) => theme.font.bodyM}
   border-radius: 4px;
-  border: 1px solid
+  outline: 1px solid
     ${({ theme, errorMsg }) =>
       typeof errorMsg === 'undefined' || errorMsg === ''
         ? theme.color.gray5
         : theme.color.error};
   :focus {
-    border: 2px solid ${({ theme }) => theme.color.primary};
+    outline: 2px solid ${({ theme }) => theme.color.primary};
   }
   :active {
-    border: 2px solid ${({ theme }) => theme.color.primary};
+    outline: 2px solid ${({ theme }) => theme.color.primary};
   }
 `;
 

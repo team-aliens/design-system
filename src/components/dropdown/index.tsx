@@ -39,9 +39,10 @@ export const DropDown = <T extends string>({
   return (
     <_Wrapper margin={margin} className={className}>
       <OutsideClickHandler onOutsideClick={() => setIsOpen(false)}>
-        {label && <Label label={label} />}
-        <_DropDownBox width={width}>
+        {label && <Label className={className} label={label} />}
+        <_DropDownBox className={className} width={width}>
           <SelectedBox
+            className={className}
             disable={disable}
             setIsOpen={setIsOpen}
             placeholder={placeholder}
@@ -49,6 +50,7 @@ export const DropDown = <T extends string>({
             isOpen={isOpen}
           />
           <ItemBox
+            className={className}
             items={items}
             onChange={onChange}
             isOpen={isOpen}
@@ -67,6 +69,6 @@ const _DropDownBox = styled.div<{ width: number }>`
   display: flex;
   flex-direction: column;
   gap: 5px;
-  z-index: 2;
+  z-index: 99;
   position: relative;
 `;

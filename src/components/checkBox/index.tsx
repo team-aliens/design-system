@@ -9,7 +9,8 @@ interface PropsType extends marginCssType {
   disabled?: boolean;
   label?: string;
   status: boolean;
-  checkSetState: Dispatch<SetStateAction<boolean>>;
+  size?: number;
+  onChange: (status: boolean) => void;
 }
 
 /** checkBox 여러개 있을 때 처리를 딱히 안해둠 (사용할 때 고민해봅시다) */
@@ -18,17 +19,18 @@ export const CheckBox = ({
   disabled = false,
   label,
   status,
-  checkSetState,
+  onChange,
+  size = 24,
   margin,
 }: PropsType) => {
   return (
     <_Wrapper
       className={className}
       disabled={disabled}
-      onClick={() => !disabled && checkSetState(!status)}
+      onClick={() => !disabled && onChange(!status)}
       margin={margin}
     >
-      <Box status={status} disabled={disabled} />
+      <Box size={size} status={status} disabled={disabled} />
       {label && <Label label={label} disabled={disabled} />}
     </_Wrapper>
   );
@@ -38,7 +40,9 @@ interface WrapperProps extends marginCssType {
   disabled: boolean;
 }
 
-const _Wrapper = styled.span<WrapperProps>`
+const _Wrapper = styled.div<WrapperProps>`
+  display: flex;
+  align-items: center;
   cursor: ${({ disabled }) => (disabled ? 'no-drop' : 'pointer')};
-  margin: ${({ margin }) => marginToCss({ margin })};
+  ${({ margin }) => marginToCss({ margin })};
 `;

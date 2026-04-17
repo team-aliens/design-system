@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { Fragment, ReactNode } from 'react';
 import OutsideClickHandler from 'react-outside-click-handler';
 import styled from 'styled-components';
 import { Close } from '../styleGuide/icon/Close';
@@ -6,10 +6,12 @@ import { Content, contentPropsType } from './Content';
 import { Header, headerPropsType } from './Header';
 
 interface propsType extends headerPropsType, contentPropsType {
+  className?: string;
   inputList?: JSX.Element[];
   buttonList: JSX.Element[];
   close: () => void;
   children?: ReactNode;
+  width?: string;
 }
 
 export const Modal = ({
@@ -18,20 +20,30 @@ export const Modal = ({
   inputList,
   buttonList,
   close,
+  className,
   children,
+  width = '560px',
 }: propsType) => {
   return (
     <_Background>
       <OutsideClickHandler onOutsideClick={close}>
-        <_Modal>
+        <_Modal className={className} width={width}>
           <_CloseWrapper onClick={close}>
             <Close size={18} />
           </_CloseWrapper>
-          <Header title={title} />
-          {content && <Content content={content} />}
-          <_InputWrapper>{inputList?.map((input) => input)}</_InputWrapper>
+          <Header className={className} title={title} />
+          {content && <Content className={className} content={content} />}
+          <_InputWrapper className={className}>
+            {inputList?.map((input, idx) => (
+              <Fragment key={idx}>{input}</Fragment>
+            ))}
+          </_InputWrapper>
           {children}
-          <_BtnWrapper>{buttonList.map((Btn) => Btn)}</_BtnWrapper>
+          <_BtnWrapper className={className}>
+            {buttonList.map((Btn, idx) => (
+              <Fragment key={idx}>{Btn}</Fragment>
+            ))}
+          </_BtnWrapper>
         </_Modal>
       </OutsideClickHandler>
     </_Background>
@@ -63,8 +75,8 @@ const _BtnWrapper = styled.div`
   }
 `;
 
-const _Modal = styled.div`
-  width: 560px;
+const _Modal = styled.div<{ width: string }>`
+  width: ${({ width }) => width};
   background-color: ${({ theme }) => theme.color.gray1};
   box-shadow: 0 1px 20px rgba(204, 204, 204, 0.24);
   border-radius: 8px;
