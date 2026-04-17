@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/team-aliens/design-system/compare/v1.9.0...v1.10.0) (2026-04-17)
+
+
+### Features
+
+* modal 컴포넌트 추가 ([b768b77](https://github.com/team-aliens/design-system/commit/b768b770aa7cff83ab46822b4cce49e58e617a6b))
+
 # [1.9.0](https://github.com/team-aliens/design-system/compare/v1.8.0...v1.9.0) (2026-04-17)
 
 
