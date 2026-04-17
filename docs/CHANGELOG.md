@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/team-aliens/design-system/compare/v1.8.0...v1.9.0) (2026-04-17)
+
+
+### Features
+
+* 로그인 컴포넌트 및 페이지 추가 ([97399e6](https://github.com/team-aliens/design-system/commit/97399e603a860ecd8016e67bf49c21b6eed22660))
+
 # [1.8.0](https://github.com/team-aliens/design-system/compare/v1.7.0...v1.8.0) (2026-04-16)
 
 
