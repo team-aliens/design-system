@@ -1,9 +1,9 @@
 /** line height가 없을 때엔 undefined px이 뜸 */
 const fontToCss = (sz: number, wt: number, lh?: number) =>
   `
-  font-size: ${sz}px;
   font-weight: ${wt};
   line-height: ${lh}px;
+  font-size: ${sz}px;
 `;
 
 export const font = {
@@ -19,7 +19,6 @@ export const font = {
   captionM: fontToCss(12, 400),
   overlineM: fontToCss(10, 700),
   BtnM: fontToCss(14, 700),
-  loginM: fontToCss(20, 500, 20),
 } as const;
 
 export type fontKeyOfType = keyof typeof font;
