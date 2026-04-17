@@ -19,6 +19,7 @@ export const font = {
   captionM: fontToCss(12, 400),
   overlineM: fontToCss(10, 700),
   BtnM: fontToCss(14, 700),
+  loginM: fontToCss(20, 500),
 } as const;
 
 export type fontKeyOfType = keyof typeof font;
