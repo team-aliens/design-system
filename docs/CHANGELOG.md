@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/team-aliens/design-system/compare/v1.10.0...v1.11.0) (2026-04-20)
+
+
+### Features
+
+* 컴포넌트 디자인 수정 ([d4f967e](https://github.com/team-aliens/design-system/commit/d4f967e05d21e023058559cf53ab927dfba6dff1))
+
 # [1.10.0](https://github.com/team-aliens/design-system/compare/v1.9.0...v1.10.0) (2026-04-17)
 
 
