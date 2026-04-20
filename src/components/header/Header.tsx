@@ -21,9 +21,9 @@ export function Header({ variant, onLogout }: HeaderProps) {
   return (
     <StyledHeader>
       <Left>
-        <Logo onClick={()=>navigate('/')}>
-          <img src={TeacherLogo} alt="logo"/>
-          <Title>새벽자습 관리페이지</Title>
+        <Logo onClick={() => navigate('/')}>
+          <img src={TeacherLogo} alt="logo" />
+          <Title>새벽 자습 관리페이지</Title>
         </Logo>
         {variant === 'HEAD_TEACHER' && (
           <Nav>
@@ -36,7 +36,7 @@ export function Header({ variant, onLogout }: HeaderProps) {
         )}
       </Left>
       <LogoutButton onClick={onLogout}>
-        <img src={LogOut} alt="logout"/>
+        <img src={LogOut} alt="logout" />
         로그아웃
       </LogoutButton>
     </StyledHeader>
@@ -67,8 +67,7 @@ const Logo = styled.div`
 `;
 
 const Title = styled.span`
-  font-size: ${theme.font.headlineM};
-  font-weight: 700;
+  ${theme.font.headlineM};
   color: ${theme.teacherColor.gray[600]};
   white-space: nowrap;
 `;
@@ -80,19 +79,13 @@ const Nav = styled.nav`
 `;
 
 const StyledNavLink = styled(NavLink)`
-  font-size: ${theme.font.headlineS};
-  font-weight: 500;
+  ${theme.font.headlineS};
   color: ${theme.teacherColor.gray[400]};
   text-decoration: none;
   transition: color 0.15s ease;
 
   &.active {
     color: ${theme.teacherColor.gray[600]};
-    font-weight: 600;
-  }
-
-  &:hover {
-    color: ${theme.teacherColor.gray[500]};
   }
 `;
 
@@ -102,8 +95,7 @@ const LogoutButton = styled.button`
   gap: 6px;
   border: none;
   background: none;
-  font-size: ${theme.font.headlineS};
-  font-weight: 500;
+  ${theme.font.headlineS};
   color: ${theme.teacherColor.gray[600]};
   cursor: pointer;
 `;

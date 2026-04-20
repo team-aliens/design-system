@@ -19,14 +19,7 @@ const COLUMNS: Record<TableVariant, string[]> = {
     '신청사유',
     '기간',
   ],
-  GENERAL_TEACHER: [
-    '학번이름', 
-    '신청날짜', 
-    '유형', 
-    '신청사유', 
-    '기간', 
-    '상태'
-  ],
+  GENERAL_TEACHER: ['학번이름', '신청날짜', '유형', '신청사유', '기간', '상태'],
   DORMITORY_TEACHER: [
     '학번이름',
     '신청날짜',
@@ -70,24 +63,7 @@ const StyledHeader = styled.div<{ $variant: TableVariant }>`
 `;
 
 const Cell = styled.div`
-  font-size: ${theme.font.headlineS};
+  ${theme.font.headlineS};
   color: ${theme.teacherColor.blue[200]};
   white-space: nowrap;
-`;
-
-const Th = styled.th`
-  padding: 0 40px;
-  font-size: ${theme.font.headlineS};
-  font-weight: 600;
-  color: ${theme.teacherColor.blue[200]};
-  text-align: left;
-  white-space: nowrap;
-
-  &:first-child {
-    padding-left: 40px;
-  }
-
-  &:last-child {
-    padding-right: 40px;
-  }
 `;

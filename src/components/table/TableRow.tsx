@@ -92,7 +92,7 @@ const StyledRow = styled.div<{ $variant: TableVariant }>`
 `;
 
 const Cell = styled.div<{ $color?: string }>`
-  font-size: ${theme.font.headlineS};
+  ${theme.font.headlineS};
   color: ${({ $color }) => $color ?? 'inherit'};
   white-space: nowrap;
   overflow: hidden;
