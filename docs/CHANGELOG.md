@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/team-aliens/design-system/compare/v1.11.0...v1.12.0) (2026-04-20)
+
+
+### Features
+
+* 새벽 자습 메뉴 추가 ([da556b7](https://github.com/team-aliens/design-system/commit/da556b7052b45e13716bf91a583de771220fa58c))
+
 # [1.11.0](https://github.com/team-aliens/design-system/compare/v1.10.0...v1.11.0) (2026-04-20)
 
 
