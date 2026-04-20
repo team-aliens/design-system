@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { DaybreakModal } from '.';
-import { title } from 'process';
 
 const meta: Meta<typeof DaybreakModal> = {
   title: 'component/dayBreakModal/DaybreakModal',

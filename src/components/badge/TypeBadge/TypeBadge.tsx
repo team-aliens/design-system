@@ -13,18 +13,13 @@ const StyledBadge = styled.span`
   justify-content: center;
   padding: 10px 20px;
   border-radius: 2000px;
-  font-size: ${theme.font.headlineS};
-  line-height: 29px;
-  background-color: ${theme.teacherColor.blue[50]}; 
-  color: ${theme.teacherColor.blue[200]};           
-  border: 1px solid ${theme.teacherColor.blue[200]}; 
+  ${theme.font.headlineS};
+  background-color: ${theme.teacherColor.blue[50]};
+  color: ${theme.teacherColor.blue[200]};
+  border: 1px solid ${theme.teacherColor.blue[200]};
   white-space: nowrap;
 `;
 
 export function TypeBadge({ label, ...props }: TypeBadgeProps) {
-  return (
-    <StyledBadge {...props}>
-      {label}
-    </StyledBadge>
-  );
+  return <StyledBadge {...props}>{label}</StyledBadge>;
 }

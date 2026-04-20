@@ -11,15 +11,15 @@ export const font = {
   headlineM: fontToCss(30, 500, 42),
   headlineS: fontToCss(24, 500, 34),
   titleL: fontToCss(22, 700, 34),
-  titleM: fontToCss(20, 700, 32),
-  titleS: fontToCss(18, 700, 28),
+  titleM: fontToCss(20, 700, 34),
+  titleS: fontToCss(20, 500, 34),
+  titleLS: fontToCss(18, 700, 28),
   bodyL: fontToCss(18, 400, 28),
   bodyM: fontToCss(16, 400, 26),
   bodyS: fontToCss(14, 400, 22),
   captionM: fontToCss(12, 400),
   overlineM: fontToCss(10, 700),
   BtnM: fontToCss(14, 700),
-  loginM: fontToCss(20, 500),
 } as const;
 
 export type fontKeyOfType = keyof typeof font;

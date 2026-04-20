@@ -38,12 +38,12 @@ const _Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
 `;
 
 const _LoginInputLabel = styled.label`
   ${theme.font.headlineS};
   color: ${theme.teacherColor.gray[800]};
+  margin-bottom: 10px;
 `;
 
 const _LoginInput = styled.input`
@@ -51,7 +51,7 @@ const _LoginInput = styled.input`
   height: 60px;
   padding: 18px 24px;
   border-radius: 16px;
-  ${theme.font.loginM};
+  ${theme.font.titleS};
   background: ${theme.teacherColor.gray[100]};
   border: 1px solid ${theme.teacherColor.gray[300]};
   color: ${theme.teacherColor.gray[600]};

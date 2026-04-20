@@ -20,11 +20,11 @@ const _LoginButton = styled.button`
   padding: 15px 24px;
   border-radius: 12px;
   ${theme.font.headlineS};
-  background: ${theme.teacherColor.blue[200]};
+  background: ${theme.teacherColor.blue[300]};
   color: ${theme.teacherColor.gray[50]};
 
   :hover {
-    background-color: ${theme.teacherColor.blue[300]};
+    background-color: ${theme.teacherColor.blue[200]};
   }
 
   :disabled {

@@ -10,21 +10,24 @@ export const Content = ({ content, textCount }: ContentPropsType) => {
   const countLabel = `${textCount}/200`;
   return (
     <_Wrapper>
-      <_Contnet>{content}</_Contnet>
+      <_Content>{content}</_Content>
       <_CountLabel>{countLabel}</_CountLabel>
     </_Wrapper>
   );
 };
 
 const _Wrapper = styled.div`
-  position: relative;
   width: 312px;
   height: 288px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 `;
 
-const _Contnet = styled.div`
+const _Content = styled.div`
   width: 100%;
   height: 100%;
+  margin-bottom: 10px;
   white-space: pre-wrap;
   word-break: break-all;
 
@@ -34,15 +37,11 @@ const _Contnet = styled.div`
   }
   overflow: scroll;
 
-  font-size: ${theme.font.titleM};
-  font-weight: 500;
+  ${theme.font.titleS};
   color: ${theme.teacherColor.blue[500]};
 `;
 
 const _CountLabel = styled.span`
-  position: absolute;
-  bottom: 0;
-  right: 0;
   font-size: ${theme.font.captionM};
   font-weight: 500;
   color: ${theme.teacherColor.blue[200]};
