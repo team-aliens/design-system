@@ -6,6 +6,7 @@ type InputType = 'ID' | 'PW';
 
 interface LoginInputProps {
   type: InputType;
+  value: string;
   onChange?: (
     e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>
   ) => void;
@@ -27,12 +28,12 @@ const MODE_CONFIG: Record<
   },
 };
 
-export const LoginInput = ({ type }: LoginInputProps) => {
+export const LoginInput = ({ type, value }: LoginInputProps) => {
   const { label, htmlType, placeholder } = MODE_CONFIG[type];
   return (
     <_Wrapper>
       <_LoginInputLabel>{label}</_LoginInputLabel>
-      <_LoginInput type={htmlType} placeholder={placeholder} />
+      <_LoginInput value={value} type={htmlType} placeholder={placeholder} />
     </_Wrapper>
   );
 };
