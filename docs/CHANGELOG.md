@@ -1,3 +1,10 @@
+## [1.13.1](https://github.com/team-aliens/design-system/compare/v1.13.0...v1.13.1) (2026-04-22)
+
+
+### Bug Fixes
+
+* LoginInput, LoginPage 컴포넌트 프로퍼티 수정 ([c5d378c](https://github.com/team-aliens/design-system/commit/c5d378c0c3fd6656af6bc1c8233cc49f3eb87e64))
+
 # [1.13.0](https://github.com/team-aliens/design-system/compare/v1.12.0...v1.13.0) (2026-04-22)
 
 
