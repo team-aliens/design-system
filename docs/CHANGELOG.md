@@ -1,3 +1,10 @@
+## [1.14.1](https://github.com/team-aliens/design-system/compare/v1.14.0...v1.14.1) (2026-04-22)
+
+
+### Bug Fixes
+
+* Login 컴포넌트 프로퍼티 수정 ([9724b15](https://github.com/team-aliens/design-system/commit/9724b15d045a214de4c3f0f49866a3c8ab805d5f))
+
 # [1.14.0](https://github.com/team-aliens/design-system/compare/v1.13.1...v1.14.0) (2026-04-22)
 
 
