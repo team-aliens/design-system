@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { theme } from '../../../styles/theme';
+import { ChangeEvent } from 'react';
 import { Logo } from '../../logo/index';
 import { LoginInput } from '../LoginInput/LoginInput';
 import { LoginButton } from '../LoginButton/LoginButton';
@@ -8,7 +9,9 @@ import LoginBg from '../../../assets/loginBg.svg';
 const HEADER_TITLE = `새벽 자습 관리 \n페이지에 오신걸 환영합니다`;
 
 interface LoginPageProps {
-  onChange: () => void;
+  onChange: (
+    e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>
+  ) => void;
   onClick: () => void;
 }
 
