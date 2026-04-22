@@ -1,3 +1,15 @@
+# [1.13.0](https://github.com/team-aliens/design-system/compare/v1.12.0...v1.13.0) (2026-04-22)
+
+
+### Bug Fixes
+
+* svg 관련 webpack.config.js 수정 ([1785241](https://github.com/team-aliens/design-system/commit/1785241d3fb88b8b3e6fc81dc4053940766603c3))
+
+
+### Features
+
+* index.ts 파일에 컴포넌트 export 추가 ([dd698be](https://github.com/team-aliens/design-system/commit/dd698beac47c8dbeecbcd7380a2e1abe72dde152))
+
 # [1.12.0](https://github.com/team-aliens/design-system/compare/v1.11.0...v1.12.0) (2026-04-20)
 
 
