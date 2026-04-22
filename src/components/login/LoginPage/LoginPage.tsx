@@ -35,8 +35,18 @@ export const LoginPage = ({ value, onChange, onClick }: LoginPageProps) => {
 
           <_LoginForm>
             <_InputGroup>
-              <LoginInput type="ID" value={value} onChange={onChange} />
-              <LoginInput type="PW" value={value} onChange={onChange} />
+              <LoginInput
+                name="account_id"
+                type="ID"
+                value={value}
+                onChange={onChange}
+              />
+              <LoginInput
+                name="password"
+                type="PW"
+                value={value}
+                onChange={onChange}
+              />
             </_InputGroup>
             <LoginButton label="로그인" onClick={onClick} />
           </_LoginForm>
