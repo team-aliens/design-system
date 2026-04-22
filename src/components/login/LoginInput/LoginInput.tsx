@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 import { theme } from '../../../styles/theme';
+import { ChangeEvent } from 'react';
 
 type InputType = 'ID' | 'PW';
 
 interface LoginInputProps {
   type: InputType;
-  onChange?: () => void;
+  onChange?: (
+    e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>
+  ) => void;
 }
 
 const MODE_CONFIG: Record<
