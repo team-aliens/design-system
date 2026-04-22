@@ -24,5 +24,5 @@ export * from './components/header/Header';
 export * from './components/login/LoginPage/LoginPage';
 export * from './components/table/index';
 export * from './components/daybreakModal/index';
-export * from './components/badge/TypeBadge/TypeBadge';
-export * from './components/badge/StatusBadge/StatusBadge';
+export * from './components/button/TagButton/TagButton';
+export * from './components/button/ActionButton/ActionButton';
