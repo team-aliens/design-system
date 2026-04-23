@@ -1,3 +1,91 @@
+## [1.14.2](https://github.com/team-aliens/design-system/compare/v1.14.1...v1.14.2) (2026-04-23)
+
+
+### Bug Fixes
+
+* Login 컴포넌트 수정 ([a952f31](https://github.com/team-aliens/design-system/commit/a952f311d2a4e0a40bcac7f08f037cc70572d55e))
+* LoginPage 프로퍼티 수정 ([e4e1b6c](https://github.com/team-aliens/design-system/commit/e4e1b6c991e1cb48fa3f03e8c17c778a85519586))
+
+## [1.14.1](https://github.com/team-aliens/design-system/compare/v1.14.0...v1.14.1) (2026-04-22)
+
+
+### Bug Fixes
+
+* Login 컴포넌트 프로퍼티 수정 ([9724b15](https://github.com/team-aliens/design-system/commit/9724b15d045a214de4c3f0f49866a3c8ab805d5f))
+
+# [1.14.0](https://github.com/team-aliens/design-system/compare/v1.13.1...v1.14.0) (2026-04-22)
+
+
+### Features
+
+* 컴포넌트 export 추가 ([da384fa](https://github.com/team-aliens/design-system/commit/da384fa60d215882a1ab1e7ad188bc2dc87633b2))
+
+## [1.13.1](https://github.com/team-aliens/design-system/compare/v1.13.0...v1.13.1) (2026-04-22)
+
+
+### Bug Fixes
+
+* LoginInput, LoginPage 컴포넌트 프로퍼티 수정 ([c5d378c](https://github.com/team-aliens/design-system/commit/c5d378c0c3fd6656af6bc1c8233cc49f3eb87e64))
+
+# [1.13.0](https://github.com/team-aliens/design-system/compare/v1.12.0...v1.13.0) (2026-04-22)
+
+
+### Bug Fixes
+
+* svg 관련 webpack.config.js 수정 ([1785241](https://github.com/team-aliens/design-system/commit/1785241d3fb88b8b3e6fc81dc4053940766603c3))
+
+
+### Features
+
+* index.ts 파일에 컴포넌트 export 추가 ([dd698be](https://github.com/team-aliens/design-system/commit/dd698beac47c8dbeecbcd7380a2e1abe72dde152))
+
+# [1.12.0](https://github.com/team-aliens/design-system/compare/v1.11.0...v1.12.0) (2026-04-20)
+
+
+### Features
+
+* 새벽 자습 메뉴 추가 ([da556b7](https://github.com/team-aliens/design-system/commit/da556b7052b45e13716bf91a583de771220fa58c))
+
+# [1.11.0](https://github.com/team-aliens/design-system/compare/v1.10.0...v1.11.0) (2026-04-20)
+
+
+### Features
+
+* 컴포넌트 디자인 수정 ([d4f967e](https://github.com/team-aliens/design-system/commit/d4f967e05d21e023058559cf53ab927dfba6dff1))
+
+# [1.10.0](https://github.com/team-aliens/design-system/compare/v1.9.0...v1.10.0) (2026-04-17)
+
+
+### Features
+
+* modal 컴포넌트 추가 ([b768b77](https://github.com/team-aliens/design-system/commit/b768b770aa7cff83ab46822b4cce49e58e617a6b))
+
+# [1.9.0](https://github.com/team-aliens/design-system/compare/v1.8.0...v1.9.0) (2026-04-17)
+
+
+### Features
+
+* 로그인 컴포넌트 및 페이지 추가 ([97399e6](https://github.com/team-aliens/design-system/commit/97399e603a860ecd8016e67bf49c21b6eed22660))
+
+# [1.8.0](https://github.com/team-aliens/design-system/compare/v1.7.0...v1.8.0) (2026-04-16)
+
+
+### Bug Fixes
+
+* 빌드 오류 수정 ([3a26b0a](https://github.com/team-aliens/design-system/commit/3a26b0a4d40bd65698d54e6ba1c2242464813d7e))
+* 주석 제거 ([2391452](https://github.com/team-aliens/design-system/commit/2391452b6ff9923531dec117f75beb6081755521))
+
+
+### Features
+
+* ActionButton, TagButton 추가 ([0ab7875](https://github.com/team-aliens/design-system/commit/0ab7875b37447770c833f391569d70c8718974c8))
+* color styles 추가 ([152025c](https://github.com/team-aliens/design-system/commit/152025ce6941e5c9bb3b8e5bbdb258fb8c87fdbc))
+* npm 자동 배포 테스트 ([f1b8195](https://github.com/team-aliens/design-system/commit/f1b81955981be165812bccd9cae5e2e960b86fa6))
+* StatusBadge, TypeBadge 추가 ([993c30c](https://github.com/team-aliens/design-system/commit/993c30c5d2e771eeb138616dd97000084c6a78f1))
+* table 컴포넌트 추가 및 badge 수정 ([0cdf281](https://github.com/team-aliens/design-system/commit/0cdf281e0530576d87d0cf8b5fd2930cca0c2d9d))
+* teacherColor 내보내기 ([7b6826e](https://github.com/team-aliens/design-system/commit/7b6826ebf3b4b45fea6f5be24581f9a569502b31))
+* 헤더 컴포넌트 추가 ([fcbe262](https://github.com/team-aliens/design-system/commit/fcbe26276167f9040ab9ad9824ea4eb0243a26d8))
+
 # [1.7.0](https://github.com/team-aliens/design-system/compare/v1.6.3...v1.7.0) (2025-11-11)
 
 
