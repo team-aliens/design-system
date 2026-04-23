@@ -29,7 +29,12 @@ const MODE_CONFIG: Record<
   },
 };
 
-export const LoginInput = ({ name, type, value }: LoginInputProps) => {
+export const LoginInput = ({
+  name,
+  type,
+  value,
+  onChange,
+}: LoginInputProps) => {
   const { label, htmlType, placeholder } = MODE_CONFIG[type];
   return (
     <_Wrapper>
@@ -39,6 +44,7 @@ export const LoginInput = ({ name, type, value }: LoginInputProps) => {
         value={value}
         type={htmlType}
         placeholder={placeholder}
+        onChange={onChange}
       />
     </_Wrapper>
   );
