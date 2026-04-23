@@ -9,7 +9,10 @@ import LoginBg from '../../../assets/loginBg.svg';
 const HEADER_TITLE = `새벽 자습 관리 \n페이지에 오신걸 환영합니다`;
 
 interface LoginPageProps {
-  value: string;
+  value: {
+    account_id: string;
+    password: string;
+  };
   onChange: (
     e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>
   ) => void;
@@ -38,13 +41,13 @@ export const LoginPage = ({ value, onChange, onClick }: LoginPageProps) => {
               <LoginInput
                 name="account_id"
                 type="ID"
-                value={value}
+                value={value.account_id}
                 onChange={onChange}
               />
               <LoginInput
                 name="password"
                 type="PW"
-                value={value}
+                value={value.password}
                 onChange={onChange}
               />
             </_InputGroup>
