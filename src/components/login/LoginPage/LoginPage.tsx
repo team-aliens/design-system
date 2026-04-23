@@ -41,13 +41,13 @@ export const LoginPage = ({ value, onChange, onClick }: LoginPageProps) => {
               <LoginInput
                 name="account_id"
                 type="ID"
-                value={value.account_id}
+                value={value?.account_id}
                 onChange={onChange}
               />
               <LoginInput
                 name="password"
                 type="PW"
-                value={value.password}
+                value={value?.password}
                 onChange={onChange}
               />
             </_InputGroup>

@@ -17,5 +17,10 @@ export default meta;
 type Story = StoryObj<typeof LoginPage>;
 
 export const Default: Story = {
-  args: {},
+  args: {
+    value: {
+      account_id: '',
+      password: '',
+    },
+  },
 };
