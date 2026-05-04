@@ -1,3 +1,10 @@
+## [1.14.3](https://github.com/team-aliens/design-system/compare/v1.14.2...v1.14.3) (2026-05-04)
+
+
+### Bug Fixes
+
+* Header, ActionButton 컴포넌트 수정 ([1f087ce](https://github.com/team-aliens/design-system/commit/1f087ce66c89da90b0b5916d6c3baaf506effe18))
+
 ## [1.14.2](https://github.com/team-aliens/design-system/compare/v1.14.1...v1.14.2) (2026-04-23)
 
 
