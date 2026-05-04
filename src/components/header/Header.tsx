@@ -28,7 +28,7 @@ export function Header({ variant, onLogout }: HeaderProps) {
         {variant === 'HEAD_TEACHER' && (
           <Nav>
             {NAV_ITEMS.map(({ label, path }) => (
-              <StyledNavLink key={path} to={`study-apply${path}`}>
+              <StyledNavLink key={path} to={`/study-apply${path}`}>
                 {label}
               </StyledNavLink>
             ))}
