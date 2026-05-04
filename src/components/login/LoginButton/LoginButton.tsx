@@ -22,6 +22,8 @@ const _LoginButton = styled.button`
   ${theme.font.headlineS};
   background: ${theme.teacherColor.blue[300]};
   color: ${theme.teacherColor.gray[50]};
+  cursor: pointer;
+  user-select: none;
 
   :hover {
     background-color: ${theme.teacherColor.blue[200]};

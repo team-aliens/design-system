@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { theme } from '../../../styles/theme' 
+import { theme } from '../../../styles/theme';
 
 type Variant = 'approve' | 'reject';
 
@@ -16,7 +16,7 @@ const variantStyles: Record<Variant, ReturnType<typeof css>> = {
     color: ${theme.teacherColor.blue[300]};
     border-color: ${theme.teacherColor.blue[300]};
     &:hover:not(:disabled) {
-      background: ${theme.teacherColor.blue[100]}
+      background: ${theme.teacherColor.blue[100]};
     }
   `,
   reject: css`
@@ -37,7 +37,7 @@ const LABELS: Record<Variant, string> = {
 const StyledActionButton = styled.button<{ $variant: Variant }>`
   display: inline-flex;
   align-items: center;
-  padding: 15.5px 32px;
+  padding: 10px 32px;
   border-radius: 12px;
   border: 2px solid;
   font-size: ${theme.font.headlineS};
@@ -53,10 +53,19 @@ const StyledActionButton = styled.button<{ $variant: Variant }>`
   }
 `;
 
-export function ActionButton({ label, variant, disabled, onClick }: ActionButtonProps) {
-  const displayLabel = (variant === 'approve' && label) ? label : LABELS[variant];
+export function ActionButton({
+  label,
+  variant,
+  disabled,
+  onClick,
+}: ActionButtonProps) {
+  const displayLabel = variant === 'approve' && label ? label : LABELS[variant];
   return (
-    <StyledActionButton $variant={variant} disabled={disabled} onClick={onClick}>
+    <StyledActionButton
+      $variant={variant}
+      disabled={disabled}
+      onClick={onClick}
+    >
       {displayLabel}
     </StyledActionButton>
   );
