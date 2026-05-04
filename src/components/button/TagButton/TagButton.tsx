@@ -12,7 +12,7 @@ interface TagButtonProps {
 const StyledTagButton = styled.button<{ $active?: boolean }>`
   display: inline-flex;
   align-items: center;
-  padding: 15.5px 32px;
+  padding: 10px 32px;
   border-radius: 12px;
   border: 2px solid ${({ $active }) => ($active ? theme.teacherColor.blue[300] : theme.teacherColor.gray[500])};
   background: ${({ $active }) => ($active ? theme.teacherColor.blue[300] : theme.teacherColor.gray[50])};
