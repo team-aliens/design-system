@@ -1,3 +1,10 @@
+## [1.14.4](https://github.com/team-aliens/design-system/compare/v1.14.3...v1.14.4) (2026-05-04)
+
+
+### Bug Fixes
+
+* TagButton 컴포넌트 스타일 수정 ([7eca54c](https://github.com/team-aliens/design-system/commit/7eca54c5fd2972351bc6a9c2a91f273f63a59e83))
+
 ## [1.14.3](https://github.com/team-aliens/design-system/compare/v1.14.2...v1.14.3) (2026-05-04)
 
 
