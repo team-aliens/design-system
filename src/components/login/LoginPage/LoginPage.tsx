@@ -62,7 +62,7 @@ export const LoginPage = ({ value, onChange, onClick }: LoginPageProps) => {
 const _PageWrapper = styled.div`
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-image: url(${LoginBg});
   background-size: cover;
   background-position: center;
