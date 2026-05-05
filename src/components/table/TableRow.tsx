@@ -63,7 +63,7 @@ export function TableRow(props: TableRowProps) {
       >
         {data.reason}
       </Cell>
-      <Cell $color={theme.teacherColor.gray[400]}>
+      <Cell $color={theme.teacherColor.gray[400]} style={{ fontSize: '23px' }}>
         {`${data.start_date} ~ ${data.end_date}`}
       </Cell>
       {variant === 'GENERAL_TEACHER' && (

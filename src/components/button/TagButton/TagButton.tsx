@@ -14,17 +14,23 @@ const StyledTagButton = styled.button<{ $active?: boolean }>`
   align-items: center;
   padding: 10px 32px;
   border-radius: 12px;
-  border: 2px solid ${({ $active }) => ($active ? theme.teacherColor.blue[300] : theme.teacherColor.gray[500])};
-  background: ${({ $active }) => ($active ? theme.teacherColor.blue[300] : theme.teacherColor.gray[50])};
-  color: ${({ $active }) => ($active ? theme.teacherColor.gray[50] : theme.teacherColor.blue[500])};
+  border: 2px solid
+    ${({ $active }) =>
+      $active ? theme.teacherColor.blue[300] : theme.teacherColor.gray[500]};
+  background: ${({ $active }) =>
+    $active ? theme.teacherColor.blue[300] : theme.teacherColor.gray[50]};
+  color: ${({ $active }) =>
+    $active ? theme.teacherColor.gray[50] : theme.teacherColor.blue[500]};
   font-size: ${theme.font.headlineS};
   cursor: pointer;
   transition: all 0.15s ease;
   user-select: none;
 
   &:hover:not(:disabled) {
-    border-color: ${({ $active }) => ($active ? theme.teacherColor.gray[500] : theme.teacherColor.gray[400])};
-    background: ${({ $active }) => ($active ? theme.teacherColor.gray[50] : theme.teacherColor.gray[100])};
+    border-color: ${({ $active }) =>
+      $active ? null : theme.teacherColor.gray[400]};
+    background: ${({ $active }) =>
+      $active ? null : theme.teacherColor.gray[100]};
   }
 
   &:disabled {
@@ -33,7 +39,12 @@ const StyledTagButton = styled.button<{ $active?: boolean }>`
   }
 `;
 
-export function TagButton({ label, active, disabled, onClick }: TagButtonProps) {
+export function TagButton({
+  label,
+  active,
+  disabled,
+  onClick,
+}: TagButtonProps) {
   return (
     <StyledTagButton $active={active} disabled={disabled} onClick={onClick}>
       {label}
