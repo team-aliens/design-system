@@ -1,3 +1,10 @@
+## [1.14.5](https://github.com/team-aliens/design-system/compare/v1.14.4...v1.14.5) (2026-05-05)
+
+
+### Bug Fixes
+
+* TagButton hover 시 background-color 변경, LoginPage 배경 깨짐 수정 ([88cad77](https://github.com/team-aliens/design-system/commit/88cad77d836b17b4626ba63d9e6bd526037e716f))
+
 ## [1.14.4](https://github.com/team-aliens/design-system/compare/v1.14.3...v1.14.4) (2026-05-04)
 
 
