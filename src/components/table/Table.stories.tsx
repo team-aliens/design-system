@@ -25,7 +25,7 @@ const baseData = {
 
 const generalData: GeneralStudyRequest[] = [
   { ...baseData, status: 'FIRST_APPROVED' },
-  { ...baseData, application_id: '2', status: 'FINAL_APPROVED' },
+  { ...baseData, application_id: '2', status: 'SECOND_APPROVED' },
   { ...baseData, application_id: '3', status: 'REJECTED' },
   { ...baseData, application_id: '4', status: 'PENDING' },
 ];
