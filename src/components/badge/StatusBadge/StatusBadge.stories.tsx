@@ -14,7 +14,7 @@ export const FirstApproved = Template.bind({});
 FirstApproved.args = { status: 'FIRST_APPROVED' };
 
 export const FinalApproved = Template.bind({});
-FinalApproved.args = { status: 'FINAL_APPROVED' };
+FinalApproved.args = { status: 'SECOND_APPROVED' };
 
 export const Rejected = Template.bind({});
 Rejected.args = { status: 'REJECTED' };

@@ -60,6 +60,7 @@ const _LoginInputLabel = styled.label`
   ${theme.font.headlineS};
   color: ${theme.teacherColor.gray[800]};
   margin-bottom: 10px;
+  cursor: default;
 `;
 
 const _LoginInput = styled.input`
