@@ -1,3 +1,11 @@
+## [1.14.6](https://github.com/team-aliens/design-system/compare/v1.14.5...v1.14.6) (2026-05-08)
+
+
+### Bug Fixes
+
+* LoginPage 엔터 활성화 및 label 커서, StatusBadge Status 타입 수정 ([a692c78](https://github.com/team-aliens/design-system/commit/a692c78de87b0449b64496a73e9a5a5aa5b0e602))
+* Table status 타입 수정 ([2f008c6](https://github.com/team-aliens/design-system/commit/2f008c6de3693b5b3f39ea8454f896cf6bb8db77))
+
 ## [1.14.5](https://github.com/team-aliens/design-system/compare/v1.14.4...v1.14.5) (2026-05-05)
 
 
