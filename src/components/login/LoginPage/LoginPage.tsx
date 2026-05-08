@@ -20,6 +20,10 @@ interface LoginPageProps {
 }
 
 export const LoginPage = ({ value, onChange, onClick }: LoginPageProps) => {
+  const handleFormSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    onClick();
+  };
   return (
     <_PageWrapper>
       <_ContentArea>
@@ -36,7 +40,7 @@ export const LoginPage = ({ value, onChange, onClick }: LoginPageProps) => {
             <_Description>계속하려면 계정에 로그인하세요</_Description>
           </_HeaderSection>
 
-          <_LoginForm>
+          <_LoginForm onSubmit={handleFormSubmit}>
             <_InputGroup>
               <LoginInput
                 name="account_id"
@@ -51,7 +55,10 @@ export const LoginPage = ({ value, onChange, onClick }: LoginPageProps) => {
                 onChange={onChange}
               />
             </_InputGroup>
-            <LoginButton label="로그인" onClick={onClick} />
+            <LoginButton
+              label="로그인"
+              disabled={!value.account_id || !value.password}
+            />
           </_LoginForm>
         </_LoginSection>
       </_ContentArea>
@@ -60,7 +67,6 @@ export const LoginPage = ({ value, onChange, onClick }: LoginPageProps) => {
 };
 
 const _PageWrapper = styled.div`
-  position: relative;
   width: 100vw;
   height: 100%;
   background-image: url(${LoginBg});
@@ -100,7 +106,7 @@ const _Description = styled.span`
   color: ${theme.teacherColor.gray[400]};
 `;
 
-const _LoginForm = styled.div`
+const _LoginForm = styled.form`
   display: flex;
   flex-direction: column;
   gap: 100px;

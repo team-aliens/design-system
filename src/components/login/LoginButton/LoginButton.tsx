@@ -4,12 +4,11 @@ import { theme } from '../../../styles/theme';
 interface LoginButtonProps {
   label: string;
   disabled?: boolean;
-  onClick?: () => void;
 }
 
-export const LoginButton = ({ label, disabled, onClick }: LoginButtonProps) => {
+export const LoginButton = ({ label, disabled }: LoginButtonProps) => {
   return (
-    <_LoginButton disabled={disabled} onClick={onClick}>
+    <_LoginButton type="submit" disabled={disabled}>
       {label}
     </_LoginButton>
   );

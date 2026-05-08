@@ -3,7 +3,7 @@ import { theme } from '../../../styles/theme';
 
 export type Status =
   | 'FIRST_APPROVED'
-  | 'FINAL_APPROVED'
+  | 'SECOND_APPROVED'
   | 'REJECTED'
   | 'PENDING';
 
@@ -20,7 +20,7 @@ const STATUS_STYLES: Record<
     color: theme.teacherColor.blue[200],
     border: `1px solid ${theme.teacherColor.blue[200]}`,
   },
-  FINAL_APPROVED: {
+  SECOND_APPROVED: {
     background: theme.teacherColor.blue[50],
     color: theme.teacherColor.blue[400],
     border: `1px solid ${theme.teacherColor.blue[400]}`,
@@ -39,7 +39,7 @@ const STATUS_STYLES: Record<
 
 const STATUS_LABELS: Record<Status, string> = {
   FIRST_APPROVED: '1차 승인',
-  FINAL_APPROVED: '최종 승인',
+  SECOND_APPROVED: '최종 승인',
   REJECTED: '거절됨',
   PENDING: '요청 중',
 };
