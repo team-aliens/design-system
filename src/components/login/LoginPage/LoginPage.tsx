@@ -68,6 +68,7 @@ export const LoginPage = ({ value, onChange, onClick }: LoginPageProps) => {
 
 const _PageWrapper = styled.div`
   width: 100vw;
+  min-height: 100vh;
   height: 100%;
   background-image: url(${LoginBg});
   background-size: cover;
@@ -76,6 +77,7 @@ const _PageWrapper = styled.div`
 
 const _ContentArea = styled.section`
   width: 720px;
+  min-height: 100vh;
   height: 100%;
   display: flex;
   flex-direction: column;
