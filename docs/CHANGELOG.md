@@ -1,3 +1,10 @@
+## [1.14.7](https://github.com/team-aliens/design-system/compare/v1.14.6...v1.14.7) (2026-05-26)
+
+
+### Bug Fixes
+
+* LoginPage 하단 공백 수정 ([de34494](https://github.com/team-aliens/design-system/commit/de34494e1759d9cab7eefa7efe9bf57c79826de1))
+
 ## [1.14.6](https://github.com/team-aliens/design-system/compare/v1.14.5...v1.14.6) (2026-05-08)
 
 
