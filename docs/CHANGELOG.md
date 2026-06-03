@@ -1,3 +1,10 @@
+## [1.14.8](https://github.com/team-aliens/design-system/compare/v1.14.7...v1.14.8) (2026-06-03)
+
+
+### Bug Fixes
+
+* update github actions checkout ref to main ([40cc7df](https://github.com/team-aliens/design-system/commit/40cc7df722f028d4d3972eb9adb6ca13fdf3754f))
+
 ## [1.14.7](https://github.com/team-aliens/design-system/compare/v1.14.6...v1.14.7) (2026-05-26)
 
 
