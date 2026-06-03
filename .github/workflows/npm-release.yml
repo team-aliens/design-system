@@ -11,14 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: github action checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
+
         with:
           fetch-depth: 0
 
-      - name: use Node 16
-        uses: actions/setup-node@v4
+      - name: use Node 20
+        uses: actions/setup-node@v4.4.0
         with:
-          node-version: 16
+          node-version: 20
 
       - name: Install dependencies
         run: yarn install --immutable
