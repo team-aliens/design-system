@@ -1,3 +1,14 @@
+## [1.14.9](https://github.com/team-aliens/design-system/compare/v1.14.8...v1.14.9) (2026-06-20)
+
+
+### Bug Fixes
+
+* migrate to npm trusted publishing ([46a0b07](https://github.com/team-aliens/design-system/commit/46a0b07230d3992763fe870b7cc7138bf865dc1b))
+* migrate to npm trusted publishing ([73c8afd](https://github.com/team-aliens/design-system/commit/73c8afd6d9e9a11381024a3a4de92a65550a8c85))
+* node version 수정 ([f2b4820](https://github.com/team-aliens/design-system/commit/f2b48201a944130fe7410a0d6dd074f355549277))
+* trigger cd ([9f2e8f0](https://github.com/team-aliens/design-system/commit/9f2e8f0b3da5286c9a06dc207e60eda415333cdf))
+* upgrade semantic-release and npm plugin for trusted publishing ([b4d6959](https://github.com/team-aliens/design-system/commit/b4d6959e16c60d4e87e1731f19d96a9ad591f605))
+
 ## [1.14.8](https://github.com/team-aliens/design-system/compare/v1.14.7...v1.14.8) (2026-06-03)
 
 
