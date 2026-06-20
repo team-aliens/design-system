@@ -1,3 +1,11 @@
+## [1.14.10](https://github.com/team-aliens/design-system/compare/v1.14.9...v1.14.10) (2026-06-20)
+
+
+### Bug Fixes
+
+* npm release 권한 업데이트 ([5f1b67c](https://github.com/team-aliens/design-system/commit/5f1b67ccdd0f9ac7b88c7f27ed81d94f5554e2f2))
+* trigger cd ([4f44b6a](https://github.com/team-aliens/design-system/commit/4f44b6a6963cefc848340518d849698726009ab8))
+
 ## [1.14.9](https://github.com/team-aliens/design-system/compare/v1.14.8...v1.14.9) (2026-06-20)
 
 
