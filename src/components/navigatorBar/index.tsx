@@ -8,6 +8,7 @@ import { Human } from '../styleGuide/icon/Human';
 import { Item } from './Item';
 import { Logo } from '../logo';
 import { Outing } from '../styleGuide/icon';
+import { Daybreak } from '../styleGuide/icon/Daybreak';
 
 type NavListType =
   | '홈'
@@ -16,7 +17,8 @@ type NavListType =
   | '설문'
   // | '분실물'
   | '마이페이지'
-  | '외출';
+  | '외출'
+  | '새벽자습';
 
 interface PropsType {
   navList: NavListType[];
@@ -58,6 +60,10 @@ const nameToIconLink = {
   마이페이지: {
     link: 'my-page',
     Icon: Human,
+  },
+  새벽자습: {
+    link: 'daybreak',
+    Icon: Daybreak,
   },
   홈: { link: '', Icon: Home },
   외출: { link: 'outing', Icon: PlusBubble },
