@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { Link, useLocation } from 'react-router-dom';
 import { Text } from '../styleGuide/text/Text';
-import { NavVariant } from './index';
+import type { NavVariant } from './index';
 
 interface propsType {
   variant: NavVariant;
