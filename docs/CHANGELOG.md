@@ -1,3 +1,11 @@
+## [1.17.1](https://github.com/team-aliens/design-system/compare/v1.17.0...v1.17.1) (2026-09-02)
+
+
+### Bug Fixes
+
+* Item type import 수정 ([e5d8bda](https://github.com/team-aliens/design-system/commit/e5d8bdab189cc9c094503f05fe03556b8088d8e7))
+* Navigator 컴포넌트 수정 ([ac1b8c7](https://github.com/team-aliens/design-system/commit/ac1b8c737a64a469989d4f9a809232f3e5a62981))
+
 # [1.17.0](https://github.com/team-aliens/design-system/compare/v1.16.0...v1.17.0) (2026-09-02)
 
 
