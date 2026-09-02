@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/team-aliens/design-system/compare/v1.15.0...v1.16.0) (2026-09-02)
+
+
+### Features
+
+* HistoryTable, HistorySlider 컴포넌트 추가 ([aba0efb](https://github.com/team-aliens/design-system/commit/aba0efbccbdd4047bbca241400970a59e13d4079))
+
 # [1.15.0](https://github.com/team-aliens/design-system/compare/v1.14.10...v1.15.0) (2026-09-02)
 
 
