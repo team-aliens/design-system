@@ -13,10 +13,9 @@ const StyledBadge = styled.span`
   justify-content: center;
   padding: 10px 20px;
   border-radius: 2000px;
-  ${theme.font.headlineS};
+  ${theme.font.titleLS};
   background-color: ${theme.teacherColor.blue[50]};
   color: ${theme.teacherColor.blue[200]};
-  border: 1px solid ${theme.teacherColor.blue[200]};
   white-space: nowrap;
 `;
 

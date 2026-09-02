@@ -12,20 +12,12 @@ interface ActionButtonProps {
 
 const variantStyles: Record<Variant, ReturnType<typeof css>> = {
   approve: css`
-    background: ${theme.teacherColor.blue[50]};
-    color: ${theme.teacherColor.blue[300]};
+    background: ${theme.teacherColor.blue[300]};
     border-color: ${theme.teacherColor.blue[300]};
-    &:hover:not(:disabled) {
-      background: ${theme.teacherColor.blue[100]};
-    }
   `,
   reject: css`
-    background: ${theme.teacherColor.red[50]};
-    color: ${theme.teacherColor.red[200]};
+    background: ${theme.teacherColor.red[200]};
     border-color: ${theme.teacherColor.red[200]};
-    &:hover:not(:disabled) {
-      background: ${theme.teacherColor.red[100]};
-    }
   `,
 };
 
@@ -37,10 +29,11 @@ const LABELS: Record<Variant, string> = {
 const StyledActionButton = styled.button<{ $variant: Variant }>`
   display: inline-flex;
   align-items: center;
-  padding: 10px 32px;
+  padding: 10px 24px;
   border-radius: 12px;
-  border: 2px solid;
-  font-size: ${theme.font.headlineS};
+  border: 1px solid;
+  ${theme.font.titleS};
+  color: ${theme.teacherColor.gray[50]};
   cursor: pointer;
   transition: all 0.15s ease;
   user-select: none;
