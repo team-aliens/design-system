@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/team-aliens/design-system/compare/v1.14.10...v1.15.0) (2026-09-02)
+
+
+### Features
+
+* 새벽 자습 관련 컴포넌트 색상, 폰트 변경 ([0b84c8c](https://github.com/team-aliens/design-system/commit/0b84c8c1b131fab046e777e0b7267ee66e4cd8bc))
+
 ## [1.14.10](https://github.com/team-aliens/design-system/compare/v1.14.9...v1.14.10) (2026-06-20)
 
 
