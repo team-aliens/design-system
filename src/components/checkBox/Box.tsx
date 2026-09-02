@@ -1,14 +1,17 @@
 import styled, { css } from 'styled-components';
+import { theme } from '../../styles/theme';
+import { CheckBoxVariant } from './index';
 
 interface PropsType {
   disabled?: boolean;
   status: boolean;
   size?: number;
+  variant?: CheckBoxVariant;
 }
 
-export const Box = ({ size, disabled, status }: PropsType) => {
+export const Box = ({ size, disabled, status, variant }: PropsType) => {
   return (
-    <_Wrapper size={size} disabled={disabled} status={status}>
+    <_Wrapper size={size} disabled={disabled} status={status} variant={variant}>
       {status && (
         <svg
           width="15"
@@ -17,7 +20,11 @@ export const Box = ({ size, disabled, status }: PropsType) => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path d="M1 4L5.31482 8.5L13.5 1" stroke="white" stroke-width="2" />
+          <path
+            d="M1 4L5.31482 8.5L13.5 1"
+            stroke="currentColor"
+            stroke-width="2"
+          />
         </svg>
       )}
     </_Wrapper>
@@ -32,8 +39,31 @@ const _Wrapper = styled.span<PropsType>`
   border-radius: 2px;
   width: ${({ size }) => `${size}px`};
   height: ${({ size }) => `${size}px`};
-  ${({ status, disabled, theme }) => {
-    const { gray2, primaryLighten1, gray3, gray5, primary } = theme.color;
+  color: white;
+  ${({ status, disabled, theme, variant }) => {
+    const { gray, blue } = theme.teacherColor;
+    const { primaryLighten1, primary } = theme.color;
+    if (status && !disabled && variant === 'teacherRow') {
+      return css`
+        color: ${blue[300]};
+        border: 2px solid ${blue[300]};
+      `;
+    }
+    if (!status && !disabled && variant === 'teacherRow') {
+      return css`
+        border: 2px solid ${gray[500]};
+      `;
+    }
+    if (status && !disabled && variant === 'teacherHeader') {
+      return css`
+        border: 2px solid ${gray[50]};
+      `;
+    }
+    if (!status && !disabled && variant === 'teacherHeader') {
+      return css`
+        border: 2px solid ${gray[50]};
+      `;
+    }
     if (status && disabled) {
       return css`
         background-color: ${primaryLighten1};
@@ -46,13 +76,13 @@ const _Wrapper = styled.span<PropsType>`
     }
     if (!status && disabled) {
       return css`
-        background-color: ${gray2};
-        border: 2px solid ${gray3};
+        background-color: ${gray[100]};
+        border: 2px solid ${gray[200]};
       `;
     }
     if (!status && !disabled) {
       return css`
-        border: 2px solid ${gray5};
+        border: 2px solid ${gray[500]};
       `;
     }
   }}

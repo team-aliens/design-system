@@ -39,7 +39,11 @@ export function TableHeader({
     <StyledHeader $variant={variant}>
       {variant !== 'DORMITORY_TEACHER' && (
         <Cell>
-          <CheckBox status={allChecked} onChange={onAllCheck} />
+          <CheckBox
+            variant="teacherHeader"
+            status={allChecked}
+            onChange={onAllCheck}
+          />
         </Cell>
       )}
       {COLUMNS[variant].map((col) => (
@@ -54,16 +58,17 @@ const StyledHeader = styled.div<{ $variant: TableVariant }>`
   grid-template-columns: ${({ $variant }) => GRID_TEMPLATE[$variant]};
   align-items: center;
   padding: 0 40px;
-  gap: 60px;
+  gap: 40px;
   height: 80px;
-  background: ${theme.teacherColor.blue[50]};
+  background: ${theme.teacherColor.blue[300]};
   border: 1px solid ${theme.teacherColor.blue[100]};
-  border-top-right-radius: 40px;
-  border-top-left-radius: 40px;
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
 `;
 
 const Cell = styled.div`
-  ${theme.font.headlineS};
-  color: ${theme.teacherColor.blue[200]};
+  text-align: center;
+  ${theme.font.bodyL};
+  color: ${theme.teacherColor.gray[50]};
   white-space: nowrap;
 `;

@@ -51,7 +51,7 @@ const StyledStatusBadge = styled.span<{ $status: Status }>`
   align-items: center;
   justify-content: center;
   border-radius: 2000px;
-  ${theme.font.headlineS};
+  ${theme.font.titleLS};
   background: ${({ $status }) => STATUS_STYLES[$status].background};
   color: ${({ $status }) => STATUS_STYLES[$status].color};
   border: ${({ $status }) => STATUS_STYLES[$status].border ?? 'none'};

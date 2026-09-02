@@ -40,6 +40,7 @@ export function TableRow(props: TableRowProps) {
       {variant !== 'DORMITORY_TEACHER' && (
         <Cell onClick={(e) => e.stopPropagation()}>
           <CheckBox
+            variant="teacherRow"
             status={props.checked}
             onChange={() => props.onCheck(data.application_id)}
           />
@@ -63,7 +64,7 @@ export function TableRow(props: TableRowProps) {
       >
         {data.reason}
       </Cell>
-      <Cell $color={theme.teacherColor.gray[400]} style={{ fontSize: '23px' }}>
+      <Cell $color={theme.teacherColor.gray[400]}>
         {`${data.start_date} ~ ${data.end_date}`}
       </Cell>
       {variant === 'GENERAL_TEACHER' && (
@@ -80,9 +81,8 @@ const StyledRow = styled.div<{ $variant: TableVariant }>`
   grid-template-columns: ${({ $variant }) => GRID_TEMPLATE[$variant]};
   align-items: center;
   padding: 0 40px;
-  gap: 60px;
+  gap: 40px;
   height: 80px;
-  border-bottom: 1px solid ${theme.teacherColor.blue[50]};
   cursor: pointer;
   transition: background 0.15s ease;
 
@@ -92,7 +92,8 @@ const StyledRow = styled.div<{ $variant: TableVariant }>`
 `;
 
 const Cell = styled.div<{ $color?: string }>`
-  ${theme.font.headlineS};
+  text-align: center;
+  ${theme.font.titleLS};
   color: ${({ $color }) => $color ?? 'inherit'};
   white-space: nowrap;
   overflow: hidden;

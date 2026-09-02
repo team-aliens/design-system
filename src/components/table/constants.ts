@@ -2,12 +2,12 @@ import { TableVariant } from './types';
 
 const COL = {
   CHECKBOX: '28px',
-  STUDENT: '132px',
-  DATE: '128px',
+  STUDENT: '120px',
+  DATE: '120px',
   TYPE: '180px',
-  TEACHER: '110px',
+  TEACHER: '90px',
   REASON: '1fr',
-  PERIOD: '276px',
+  PERIOD: '220px',
   STATUS: '124px',
 } as const;
 
