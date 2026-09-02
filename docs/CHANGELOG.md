@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/team-aliens/design-system/compare/v1.16.0...v1.17.0) (2026-09-02)
+
+
+### Features
+
+* DropDownFilter, ApprovalModal 컴포넌트 추가 ([b1b0f29](https://github.com/team-aliens/design-system/commit/b1b0f29083f8f8bf5aace1d5c87538c4a3f6f604))
+
 # [1.16.0](https://github.com/team-aliens/design-system/compare/v1.15.0...v1.16.0) (2026-09-02)
 
 
