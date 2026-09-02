@@ -26,3 +26,6 @@ export * from './components/table/index';
 export * from './components/daybreakModal/index';
 export * from './components/button/TagButton/TagButton';
 export * from './components/button/ActionButton/ActionButton';
+export * from './components/sideBar/HistorySidebar';
+export * from './components/modal/ApprovalModal';
+export * from './components/dropdown/DropDownFilter';
