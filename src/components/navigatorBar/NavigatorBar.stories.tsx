@@ -1,7 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { NavigatorBar } from '.';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import React from 'react';
+import { MemoryRouter } from 'react-router-dom';
 
 export default {
   title: 'component/navigator',
@@ -9,17 +8,23 @@ export default {
 } as ComponentMeta<typeof NavigatorBar>;
 
 const Template: ComponentStory<typeof NavigatorBar> = (args) => (
-  <BrowserRouter>
-    <Routes>
-      <Route path="*" element={<NavigatorBar {...args} />} />
-    </Routes>
-  </BrowserRouter>
+  <MemoryRouter initialEntries={['/approval']}>
+    <NavigatorBar {...args} />
+  </MemoryRouter>
 );
 
 export const navigator = Template.bind({});
 
 navigator.args = {
   // navList: ['홈', '신청', '공지', '설문', '분실물', '마이페이지'],
-  navList: ['홈', '신청', '공지', '설문', '마이페이지', '새벽자습'],
-  pathname: '/',
+  navList: [
+    '홈',
+    '신청',
+    '공지',
+    '설문',
+    '마이페이지',
+    '새벽자습',
+    '승인/반려',
+  ],
+  variant: 'teacher',
 };

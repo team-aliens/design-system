@@ -9,6 +9,9 @@ import { Item } from './Item';
 import { Logo } from '../logo';
 import { Outing } from '../styleGuide/icon';
 import { Daybreak } from '../styleGuide/icon/Daybreak';
+import { Document } from '../styleGuide/icon/Document';
+
+export type NavVariant = 'teacher' | 'admin';
 
 type NavListType =
   | '홈'
@@ -18,13 +21,15 @@ type NavListType =
   // | '분실물'
   | '마이페이지'
   | '외출'
-  | '새벽자습';
+  | '새벽자습'
+  | '승인/반려';
 
 interface PropsType {
+  variant: NavVariant;
   navList: NavListType[];
 }
 
-export const NavigatorBar = ({ navList }: PropsType) => {
+export const NavigatorBar = ({ variant = 'admin', navList }: PropsType) => {
   return (
     <_Filler>
       <_Navigation>
@@ -36,7 +41,15 @@ export const NavigatorBar = ({ navList }: PropsType) => {
         />
         {navList.map((name, idx) => {
           const { Icon, link } = nameToIconLink[name];
-          return <Item key={idx} name={name} Icon={Icon} link={link} />;
+          return (
+            <Item
+              key={idx}
+              name={name}
+              variant={variant}
+              Icon={Icon}
+              link={link}
+            />
+          );
         })}
       </_Navigation>
     </_Filler>
@@ -44,29 +57,33 @@ export const NavigatorBar = ({ navList }: PropsType) => {
 };
 
 const nameToIconLink = {
-  신청: {
+  '신청': {
     link: 'apply',
     Icon: PaperPlane,
   },
-  공지: {
+  '공지': {
     link: 'notice',
     Icon: MegaPhone,
   },
-  설문: { link: 'survey', Icon: PlusBubble },
+  '설문': { link: 'survey', Icon: PlusBubble },
   // 분실물: {
   //   link: 'lost',
   //   Icon: ArchiveBox,
   // },
-  마이페이지: {
+  '마이페이지': {
     link: 'my-page',
     Icon: Human,
   },
-  새벽자습: {
+  '새벽자습': {
     link: 'daybreak',
     Icon: Daybreak,
   },
-  홈: { link: '', Icon: Home },
-  외출: { link: 'outing', Icon: PlusBubble },
+  '승인/반려': {
+    link: 'approval',
+    Icon: Document,
+  },
+  '홈': { link: '', Icon: Home },
+  '외출': { link: 'outing', Icon: PlusBubble },
 };
 
 const _Filler = styled.div`
