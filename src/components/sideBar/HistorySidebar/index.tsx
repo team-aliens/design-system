@@ -32,10 +32,16 @@ export function HistorySidebar({ data, close }: HistorySidebarProps) {
                   type={selectedHistory.type_name}
                   status={selectedHistory.status}
                 />
-                <ReasonBox reason={selectedHistory.reason} />
+                <_Section>
+                  <_SectionLabel>사유</_SectionLabel>
+                  <ReasonBox reason={selectedHistory.reason} />
+                </_Section>
               </>
             )}
-            <HistoryTable data={data} onRowClick={handleRowClick} />
+            <_Section>
+              <_SectionLabel>이력</_SectionLabel>
+              <HistoryTable data={data} onRowClick={handleRowClick} />
+            </_Section>
           </_Content>
         </_SideBar>
       </OutsideClickHandler>
@@ -71,4 +77,15 @@ const _Content = styled.div`
   flex-direction: column;
   gap: 28px;
   overflow: hidden;
+`;
+
+const _Section = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
+
+const _SectionLabel = styled.span`
+  ${theme.font.titleM}
+  color: ${theme.teacherColor.gray[600]};
 `;
