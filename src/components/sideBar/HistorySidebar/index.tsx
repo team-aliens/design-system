@@ -36,6 +36,7 @@ export function HistorySidebar({
                   studentName={selectedHistory.student_name}
                   teacherName={selectedHistory.teacher_name}
                   type={selectedHistory.type_name}
+                  status={selectedHistory.status}
                 />
                 <ReasonBox reason={selectedHistory.reason} />
               </>
