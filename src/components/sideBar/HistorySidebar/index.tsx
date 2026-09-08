@@ -4,6 +4,7 @@ import { theme } from '../../../styles/theme';
 import OutsideClickHandler from 'react-outside-click-handler';
 import { HistorySidebarProps } from './types';
 import { Header } from './Header';
+import { ApplicationInfo } from './ApplicationInfo';
 import { ReasonBox } from './ReasonBox';
 import { HistoryTable } from '../../table/HistoryTable/index';
 
@@ -22,15 +23,19 @@ export function HistorySidebar({ data, close }: HistorySidebarProps) {
     <_Background>
       <OutsideClickHandler onOutsideClick={close}>
         <_SideBar>
-          <_Content>
+          {selectedHistory && (
+            <Header
+              studentName={selectedHistory.student_name}
+              status={selectedHistory.status}
+            />
+          )}
+          <_Body>
             {selectedHistory && (
               <>
-                <Header
+                <ApplicationInfo
                   createdAt={selectedHistory.created_at}
-                  studentName={selectedHistory.student_name}
                   teacherName={selectedHistory.teacher_name}
                   type={selectedHistory.type_name}
-                  status={selectedHistory.status}
                 />
                 <_Section>
                   <_SectionLabel>사유</_SectionLabel>
@@ -42,7 +47,7 @@ export function HistorySidebar({ data, close }: HistorySidebarProps) {
               <_SectionLabel>이력</_SectionLabel>
               <HistoryTable data={data} onRowClick={handleRowClick} />
             </_Section>
-          </_Content>
+          </_Body>
         </_SideBar>
       </OutsideClickHandler>
     </_Background>
@@ -67,12 +72,13 @@ const _SideBar = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
+  gap: 56px;
   box-sizing: border-box;
   padding: 80px 32px 40px;
   background: ${theme.teacherColor.gray[50]};
 `;
 
-const _Content = styled.div`
+const _Body = styled.div`
   min-height: 0;
   flex: 1;
   display: flex;
