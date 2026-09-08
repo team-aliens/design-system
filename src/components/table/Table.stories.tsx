@@ -42,6 +42,7 @@ const dormitoryData: DormitoryStudyRequest[] = [
   { ...baseData, application_id: '3', teacher_name: '서무성' },
 ];
 
+/** PENDING인 행만 선택할 수 있고, 나머지는 회색 체크 박스로 잠긴다 */
 export const GeneralTeacher: ComponentStory<typeof Table> = () => {
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   return (
