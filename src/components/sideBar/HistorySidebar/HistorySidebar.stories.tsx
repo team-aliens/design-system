@@ -18,6 +18,7 @@ const data: StudyHistoryRequest[] = [
     student_name: '정일웅',
     student_gcn: '2312',
     teacher_name: '정은진',
+    status: 'FIRST_APPROVED',
   },
   {
     application_id: '2',
