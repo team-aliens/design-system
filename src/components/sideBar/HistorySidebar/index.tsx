@@ -9,44 +9,45 @@ import { ReasonBox } from './ReasonBox';
 import { HistoryTable } from '../../table/HistoryTable/index';
 
 export function HistorySidebar({ data, close }: HistorySidebarProps) {
-  const [selectedId, setSelectedId] = useState<string | undefined>(
-    data[0]?.application_id
-  );
-  const selectedHistory =
-    data.find((item) => item.application_id === selectedId) ?? data[0];
+  // null이면 목록 뷰(펼쳐 들어온 신청 + 이력 표), 값이 있으면 그 이력의 상세 뷰
+  const [viewedId, setViewedId] = useState<string | null>(null);
 
-  const handleRowClick = (id: string) => {
-    setSelectedId(id);
-  };
+  const openedApplication = data[0];
+  const viewedApplication =
+    (viewedId && data.find((item) => item.application_id === viewedId)) ||
+    openedApplication;
 
   return (
     <_Background>
       <OutsideClickHandler onOutsideClick={close}>
         <_SideBar>
-          {selectedHistory && (
+          {viewedApplication && (
             <Header
-              studentName={selectedHistory.student_name}
-              status={selectedHistory.status}
+              studentName={viewedApplication.student_name}
+              status={viewedId ? undefined : openedApplication.status}
+              onBack={viewedId ? () => setViewedId(null) : undefined}
             />
           )}
           <_Body>
-            {selectedHistory && (
+            {viewedApplication && (
               <>
                 <ApplicationInfo
-                  createdAt={selectedHistory.created_at}
-                  teacherName={selectedHistory.teacher_name}
-                  type={selectedHistory.type_name}
+                  createdAt={viewedApplication.created_at}
+                  teacherName={viewedApplication.teacher_name}
+                  type={viewedApplication.type_name}
                 />
                 <_Section>
                   <_SectionLabel>사유</_SectionLabel>
-                  <ReasonBox reason={selectedHistory.reason} />
+                  <ReasonBox reason={viewedApplication.reason} />
                 </_Section>
               </>
             )}
-            <_Section>
-              <_SectionLabel>이력</_SectionLabel>
-              <HistoryTable data={data} onRowClick={handleRowClick} />
-            </_Section>
+            {!viewedId && (
+              <_Section>
+                <_SectionLabel>이력</_SectionLabel>
+                <HistoryTable data={data} onRowClick={setViewedId} />
+              </_Section>
+            )}
           </_Body>
         </_SideBar>
       </OutsideClickHandler>
