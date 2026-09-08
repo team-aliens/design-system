@@ -1,4 +1,5 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { within, userEvent } from '@storybook/testing-library';
 import { HistorySidebar } from '.';
 import { StudyHistoryRequest } from './types';
 
@@ -71,6 +72,20 @@ export const Default = Template.bind({});
 Default.args = {
   data,
   close: () => undefined,
+};
+
+/**
+ * 이력 표에서 항목을 누른 상태.
+ * 이력 표가 사라지고 그 신청의 정보/사유만 남으며, 이름 위 뒤로가기로 목록 뷰에 돌아온다.
+ */
+export const DetailView = Template.bind({});
+DetailView.args = {
+  data,
+  close: () => undefined,
+};
+DetailView.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  await userEvent.click(await canvas.findByText('정보처리기능사 실기 준비'));
 };
 
 /** status를 넘기지 않으면 이름 옆 뱃지를 그리지 않는다 */
