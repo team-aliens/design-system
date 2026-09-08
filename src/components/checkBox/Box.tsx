@@ -41,8 +41,15 @@ const _Wrapper = styled.span<PropsType>`
   height: ${({ size }) => `${size}px`};
   color: white;
   ${({ status, disabled, theme, variant }) => {
-    const { gray, blue } = theme.teacherColor;
+    const { gray, blue, system } = theme.teacherColor;
     const { primaryLighten1, primary } = theme.color;
+    // 상태가 확정돼 더 이상 선택할 수 없는 행: 회색 체크 박스로 잠근다
+    if (disabled && (variant === 'teacherRow' || variant === 'teacherHeader')) {
+      return css`
+        color: ${system.button};
+        border: 2px solid ${system.button};
+      `;
+    }
     if (status && !disabled && variant === 'teacherRow') {
       return css`
         color: ${blue[300]};

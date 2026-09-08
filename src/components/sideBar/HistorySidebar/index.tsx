@@ -6,14 +6,8 @@ import { HistorySidebarProps } from './types';
 import { Header } from './Header';
 import { ReasonBox } from './ReasonBox';
 import { HistoryTable } from '../../table/HistoryTable/index';
-import { ActionButton } from '../../button/ActionButton/ActionButton';
 
-export function HistorySidebar({
-  data,
-  close,
-  onApprove,
-  onReject,
-}: HistorySidebarProps) {
+export function HistorySidebar({ data, close }: HistorySidebarProps) {
   const [selectedId, setSelectedId] = useState<string | undefined>(
     data[0]?.application_id
   );
@@ -36,16 +30,19 @@ export function HistorySidebar({
                   studentName={selectedHistory.student_name}
                   teacherName={selectedHistory.teacher_name}
                   type={selectedHistory.type_name}
+                  status={selectedHistory.status}
                 />
-                <ReasonBox reason={selectedHistory.reason} />
+                <_Section>
+                  <_SectionLabel>사유</_SectionLabel>
+                  <ReasonBox reason={selectedHistory.reason} />
+                </_Section>
               </>
             )}
-            <HistoryTable data={data} onRowClick={handleRowClick} />
+            <_Section>
+              <_SectionLabel>이력</_SectionLabel>
+              <HistoryTable data={data} onRowClick={handleRowClick} />
+            </_Section>
           </_Content>
-          <_BtnWrapper>
-            <ActionButton variant="approve" label="승인" onClick={onApprove} />
-            <ActionButton variant="reject" label="거절" onClick={onReject} />
-          </_BtnWrapper>
         </_SideBar>
       </OutsideClickHandler>
     </_Background>
@@ -57,7 +54,7 @@ const _Background = styled.div`
   background: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   position: fixed;
   left: 0;
   top: 0;
@@ -76,19 +73,26 @@ const _SideBar = styled.div`
 `;
 
 const _Content = styled.div`
+  min-height: 0;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 28px;
   overflow: hidden;
 `;
 
-const _BtnWrapper = styled.div`
+const _Section = styled.div`
+  min-height: 0;
   display: flex;
-  justify-content: flex-end;
-  flex-shrink: 0;
+  flex-direction: column;
   gap: 10px;
-  margin-top: 5px;
-  padding: 10px 0;
-  border-top: 1px solid ${theme.teacherColor.gray[200]};
-  background: ${theme.teacherColor.gray[50]};
+
+  &:last-child {
+    flex: 1;
+  }
+`;
+
+const _SectionLabel = styled.span`
+  ${theme.font.titleM}
+  color: ${theme.teacherColor.gray[600]};
 `;
