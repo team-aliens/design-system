@@ -73,6 +73,8 @@ const _SideBar = styled.div`
 `;
 
 const _Content = styled.div`
+  min-height: 0;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -80,9 +82,14 @@ const _Content = styled.div`
 `;
 
 const _Section = styled.div`
+  min-height: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  &:last-child {
+    flex: 1;
+  }
 `;
 
 const _SectionLabel = styled.span`
