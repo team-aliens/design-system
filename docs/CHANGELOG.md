@@ -1,3 +1,24 @@
+# [1.18.0](https://github.com/team-aliens/design-system/compare/v1.17.1...v1.18.0) (2026-09-08)
+
+
+### Bug Fixes
+
+* HistorySidebar 이력 목록이 남은 높이를 채우도록 조정 ([c8c98d2](https://github.com/team-aliens/design-system/commit/c8c98d28e914318e6e55b7633ca7496faa1a313e))
+* HistorySidebar 패널을 화면 가운데가 아닌 우측에 붙임 ([49df755](https://github.com/team-aliens/design-system/commit/49df755c532ca2f31deb9fc0a2d2b328f947781e))
+* 테이블 선택이 선택 가능한 행만 다루도록 제한 ([9814909](https://github.com/team-aliens/design-system/commit/98149091c84ba044260d4af77b2ad84de2a243a9))
+
+
+### Features
+
+* HistorySidebar 하단 승인/거절 버튼 영역 제거 ([2c1e2a2](https://github.com/team-aliens/design-system/commit/2c1e2a2605daa6535be64de247225940184c27e2))
+* HistorySidebar 헤더에 상태 뱃지 노출 ([1cc39d0](https://github.com/team-aliens/design-system/commit/1cc39d0321041c7c48724facb9cc093a8a60da14))
+* HistorySidebar가 선택한 신청의 상태를 헤더로 전달 ([decbacb](https://github.com/team-aliens/design-system/commit/decbacb313797caa48659c49db49ff6a4fadf775))
+* HistorySidebar에 사유/이력 섹션 라벨 추가 ([8d3f5ee](https://github.com/team-aliens/design-system/commit/8d3f5ee6b1d8bcd13a3dec3025fa43b925e2a2dd))
+* StudyHistoryRequest에 신청 상태 필드 추가 ([3f2128d](https://github.com/team-aliens/design-system/commit/3f2128df403c8aa9c6bcffa2d95e16539c3455c9))
+* 신청 상태 뱃지 StatusChip 추가 ([321def8](https://github.com/team-aliens/design-system/commit/321def87144497b99d099d5ecb61694fa74b82ac))
+* 요청 중이 아닌 신청 행의 체크박스를 잠금 상태로 렌더 ([da1c3ca](https://github.com/team-aliens/design-system/commit/da1c3cac73b827b1473bce5c7c85ad2f67807777))
+* 체크박스 disabled 상태에 teacher 회색 스타일 추가 ([2fbf1f6](https://github.com/team-aliens/design-system/commit/2fbf1f6fb748f7527aec697c44622ee5291b5fef))
+
 ## [1.17.1](https://github.com/team-aliens/design-system/compare/v1.17.0...v1.17.1) (2026-09-02)
 
 
