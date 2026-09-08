@@ -21,6 +21,4 @@ export interface StudyHistoryRequest {
 export interface HistorySidebarProps {
   data: StudyHistoryRequest[];
   close: () => void;
-  onApprove: () => void;
-  onReject: () => void;
 }
