@@ -48,7 +48,7 @@ const _Background = styled.div`
   background: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   position: fixed;
   left: 0;
   top: 0;
