@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 import { theme } from '../../../styles/theme';
+import { StatusChip } from './StatusChip';
+import { StudyStatus } from './types';
 
 interface HeaderProps {
   studentName: string;
   createdAt: string;
   teacherName: string;
   type: string;
+  status?: StudyStatus;
 }
 
 export function Header({
@@ -13,10 +16,14 @@ export function Header({
   createdAt,
   teacherName,
   type,
+  status,
 }: HeaderProps) {
   return (
     <_Wrapper>
-      <_Title>{studentName}</_Title>
+      <_TitleRow>
+        <_Title>{studentName}</_Title>
+        {status && <StatusChip status={status} />}
+      </_TitleRow>
       <_InfoGrid>
         <_InfoItem>
           <_Label>신청날짜</_Label>
@@ -39,6 +46,12 @@ const _Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 56px;
+`;
+
+const _TitleRow = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 16px;
 `;
 
 const _Title = styled.h2`
