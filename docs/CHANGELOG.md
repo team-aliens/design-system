@@ -1,3 +1,18 @@
+# [1.19.0](https://github.com/team-aliens/design-system/compare/v1.18.0...v1.19.0) (2026-09-08)
+
+
+### Bug Fixes
+
+* 뒤로가기 버튼을 이름과 56px 간격의 형제 요소로 배치 ([0b0fa54](https://github.com/team-aliens/design-system/commit/0b0fa54947b1c37a0eba349a4edb638ffb180c41))
+
+
+### Features
+
+* HistorySidebar 헤더에 뒤로가기 버튼 추가 ([6f1396f](https://github.com/team-aliens/design-system/commit/6f1396fe3994a74134c52fcac5f2d9c39b1976e5))
+* 뒤로가기 버튼을 BackButton 컴포넌트로 분리 ([6699592](https://github.com/team-aliens/design-system/commit/6699592fe71e95a8f27d7d8ad6abf2e017fda3aa))
+* 신청 정보를 그리는 ApplicationInfo 컴포넌트 추가 ([171de0e](https://github.com/team-aliens/design-system/commit/171de0e81e101b0bba66dd804edb0166b1ee92fc))
+* 이력 항목을 누르면 해당 신청 상세 뷰로 전환 ([fbbc3be](https://github.com/team-aliens/design-system/commit/fbbc3be6e94be7b14485cc6f7bfadf917e0937a1))
+
 # [1.18.0](https://github.com/team-aliens/design-system/compare/v1.17.1...v1.18.0) (2026-09-08)
 
 
