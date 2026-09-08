@@ -35,13 +35,18 @@ type TableRowProps =
 export function TableRow(props: TableRowProps) {
   const { variant, data, onRowClick } = props;
 
+  // 요청 중(PENDING)인 신청만 선택해서 상태를 바꿀 수 있다
+  const locked =
+    variant === 'GENERAL_TEACHER' && props.data.status !== 'PENDING';
+
   return (
     <StyledRow $variant={variant}>
       {variant !== 'DORMITORY_TEACHER' && (
         <Cell onClick={(e) => e.stopPropagation()}>
           <CheckBox
             variant="teacherRow"
-            status={props.checked}
+            status={locked || props.checked}
+            disabled={locked}
             onChange={() => props.onCheck(data.application_id)}
           />
         </Cell>
