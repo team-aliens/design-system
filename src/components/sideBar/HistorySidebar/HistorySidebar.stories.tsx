@@ -64,6 +64,4 @@ export const Default = Template.bind({});
 Default.args = {
   data,
   close: () => undefined,
-  onApprove: () => undefined,
-  onReject: () => undefined,
 };
