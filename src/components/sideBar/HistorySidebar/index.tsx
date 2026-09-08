@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { theme } from '../../../styles/theme';
 import OutsideClickHandler from 'react-outside-click-handler';
 import { HistorySidebarProps } from './types';
+import { BackButton } from './BackButton';
 import { Header } from './Header';
 import { ApplicationInfo } from './ApplicationInfo';
 import { ReasonBox } from './ReasonBox';
@@ -21,11 +22,11 @@ export function HistorySidebar({ data, close }: HistorySidebarProps) {
     <_Background>
       <OutsideClickHandler onOutsideClick={close}>
         <_SideBar>
+          {viewedId && <BackButton onClick={() => setViewedId(null)} />}
           {viewedApplication && (
             <Header
               studentName={viewedApplication.student_name}
               status={viewedId ? undefined : openedApplication.status}
-              onBack={viewedId ? () => setViewedId(null) : undefined}
             />
           )}
           <_Body>
