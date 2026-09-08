@@ -10,28 +10,35 @@ export function Table(props: TableProps) {
 
   const selectedIds = checkableProps?.selectedIds ?? [];
 
+  // GENERAL_TEACHER는 요청 중(PENDING)인 신청만 선택할 수 있다
+  const selectableIds = (
+    (checkableProps?.data ?? []) as {
+      application_id: string;
+      status?: string;
+    }[]
+  )
+    .filter(
+      (item) => variant !== 'GENERAL_TEACHER' || item.status === 'PENDING'
+    )
+    .map((item) => item.application_id);
+
   const allChecked =
     checkableProps !== null &&
-    selectedIds.length > 0 &&
-    (checkableProps.data as { application_id: string }[]).every((item) =>
-      selectedIds.includes(item.application_id)
-    );
+    selectableIds.length > 0 &&
+    selectableIds.every((id) => selectedIds.includes(id));
 
   const handleAllCheck = () => {
     if (!checkableProps) return;
     if (allChecked) {
       checkableProps.onSelectChange([]);
     } else {
-      checkableProps.onSelectChange(
-        (checkableProps.data as { application_id: string }[]).map(
-          (item) => item.application_id
-        )
-      );
+      checkableProps.onSelectChange(selectableIds);
     }
   };
 
   const handleCheck = (id: string) => {
     if (!checkableProps) return;
+    if (!selectableIds.includes(id)) return;
     if (selectedIds.includes(id)) {
       checkableProps.onSelectChange(selectedIds.filter((v) => v !== id));
     } else {
