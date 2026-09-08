@@ -6,14 +6,8 @@ import { HistorySidebarProps } from './types';
 import { Header } from './Header';
 import { ReasonBox } from './ReasonBox';
 import { HistoryTable } from '../../table/HistoryTable/index';
-import { ActionButton } from '../../button/ActionButton/ActionButton';
 
-export function HistorySidebar({
-  data,
-  close,
-  onApprove,
-  onReject,
-}: HistorySidebarProps) {
+export function HistorySidebar({ data, close }: HistorySidebarProps) {
   const [selectedId, setSelectedId] = useState<string | undefined>(
     data[0]?.application_id
   );
@@ -43,10 +37,6 @@ export function HistorySidebar({
             )}
             <HistoryTable data={data} onRowClick={handleRowClick} />
           </_Content>
-          <_BtnWrapper>
-            <ActionButton variant="approve" label="승인" onClick={onApprove} />
-            <ActionButton variant="reject" label="거절" onClick={onReject} />
-          </_BtnWrapper>
         </_SideBar>
       </OutsideClickHandler>
     </_Background>
@@ -81,15 +71,4 @@ const _Content = styled.div`
   flex-direction: column;
   gap: 28px;
   overflow: hidden;
-`;
-
-const _BtnWrapper = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  flex-shrink: 0;
-  gap: 10px;
-  margin-top: 5px;
-  padding: 10px 0;
-  border-top: 1px solid ${theme.teacherColor.gray[200]};
-  background: ${theme.teacherColor.gray[50]};
 `;
