@@ -23,4 +23,6 @@ export interface HistorySidebarProps {
   close: () => void;
   /** 이력을 아직 받는 중이면 내용 자리에 자리표시를 그린다 */
   isLoading?: boolean;
+  /** 이력 목록 끝까지 스크롤했을 때 호출된다. 다음 장을 불러오는 데 쓴다 */
+  onReachEnd?: () => void;
 }
