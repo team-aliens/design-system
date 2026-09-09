@@ -95,6 +95,19 @@ WithoutStatus.args = {
   close: () => undefined,
 };
 
+/** 사유가 길어도 박스 높이는 그대로고 안에서 스크롤된다 */
+export const LongReason = Template.bind({});
+LongReason.args = {
+  data: [
+    {
+      ...data[0],
+      reason: '새벽자습 신청 사유 예시. '.repeat(40),
+    },
+    ...data.slice(1),
+  ],
+  close: () => undefined,
+};
+
 /** 이력을 받는 동안: 패널은 먼저 뜨고 내용 자리에 자리표시가 깔린다 */
 export const Loading = Template.bind({});
 Loading.args = {
