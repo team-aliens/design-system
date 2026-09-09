@@ -7,9 +7,14 @@ import { BackButton } from './BackButton';
 import { Header } from './Header';
 import { ApplicationInfo } from './ApplicationInfo';
 import { ReasonBox } from './ReasonBox';
+import { LoadingContent } from './LoadingContent';
 import { HistoryTable } from '../../table/HistoryTable/index';
 
-export function HistorySidebar({ data, close }: HistorySidebarProps) {
+export function HistorySidebar({
+  data,
+  close,
+  isLoading,
+}: HistorySidebarProps) {
   // null이면 목록 뷰(펼쳐 들어온 신청 + 이력 표), 값이 있으면 그 이력의 상세 뷰
   const [viewedId, setViewedId] = useState<string | null>(null);
 
@@ -18,31 +23,38 @@ export function HistorySidebar({ data, close }: HistorySidebarProps) {
     (viewedId && data.find((item) => item.application_id === viewedId)) ||
     openedApplication;
 
+  // 이력이 아직 없으면 패널만 먼저 띄우고 내용 자리에 자리표시를 그린다
+  if (isLoading || !viewedApplication) {
+    return (
+      <_Background>
+        <OutsideClickHandler onOutsideClick={close}>
+          <_SideBar>
+            <LoadingContent />
+          </_SideBar>
+        </OutsideClickHandler>
+      </_Background>
+    );
+  }
+
   return (
     <_Background>
       <OutsideClickHandler onOutsideClick={close}>
         <_SideBar>
           {viewedId && <BackButton onClick={() => setViewedId(null)} />}
-          {viewedApplication && (
-            <Header
-              studentName={viewedApplication.student_name}
-              status={viewedId ? undefined : openedApplication.status}
-            />
-          )}
+          <Header
+            studentName={viewedApplication.student_name}
+            status={viewedId ? undefined : openedApplication.status}
+          />
           <_Body>
-            {viewedApplication && (
-              <>
-                <ApplicationInfo
-                  createdAt={viewedApplication.created_at}
-                  teacherName={viewedApplication.teacher_name}
-                  type={viewedApplication.type_name}
-                />
-                <_Section>
-                  <_SectionLabel>사유</_SectionLabel>
-                  <ReasonBox reason={viewedApplication.reason} />
-                </_Section>
-              </>
-            )}
+            <ApplicationInfo
+              createdAt={viewedApplication.created_at}
+              teacherName={viewedApplication.teacher_name}
+              type={viewedApplication.type_name}
+            />
+            <_Section>
+              <_SectionLabel>사유</_SectionLabel>
+              <ReasonBox reason={viewedApplication.reason} />
+            </_Section>
             {!viewedId && (
               <_Section>
                 <_SectionLabel>이력</_SectionLabel>
