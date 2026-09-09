@@ -95,6 +95,17 @@ WithoutStatus.args = {
   close: () => undefined,
 };
 
+/** 이력이 많으면 목록을 끝까지 내렸을 때 다음 장을 요청한다 */
+export const ManyHistories = Template.bind({});
+ManyHistories.args = {
+  data: Array.from({ length: 24 }, (_, index) => ({
+    ...data[index % data.length],
+    application_id: `history-${index}`,
+  })),
+  onReachEnd: () => console.log('다음 장 요청'),
+  close: () => undefined,
+};
+
 /** 사유가 길어도 박스 높이는 그대로고 안에서 스크롤된다 */
 export const LongReason = Template.bind({});
 LongReason.args = {
