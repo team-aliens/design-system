@@ -21,4 +21,6 @@ export interface StudyHistoryRequest {
 export interface HistorySidebarProps {
   data: StudyHistoryRequest[];
   close: () => void;
+  /** 이력을 아직 받는 중이면 내용 자리에 자리표시를 그린다 */
+  isLoading?: boolean;
 }
