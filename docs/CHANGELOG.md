@@ -1,3 +1,13 @@
+# [1.20.0](https://github.com/team-aliens/design-system/compare/v1.19.0...v1.20.0) (2026-09-09)
+
+
+### Features
+
+* HistorySidebar 로딩 자리표시 LoadingContent 추가 ([0b472bb](https://github.com/team-aliens/design-system/commit/0b472bba6080726bb876b7c274af7a560f5959b7))
+* HistorySidebar에 isLoading prop 추가 ([96dc68b](https://github.com/team-aliens/design-system/commit/96dc68b361a63dffcfb9252eccccf142cee44a7e))
+* 로딩 자리표시용 Skeleton 컴포넌트 추가 ([df4e558](https://github.com/team-aliens/design-system/commit/df4e5588b46fe317b64a440ea75a8b369b527f89))
+* 이력을 받는 동안 HistorySidebar에 자리표시 표시 ([275a156](https://github.com/team-aliens/design-system/commit/275a1567ae035ff21fb30461954c57e405052216))
+
 # [1.19.0](https://github.com/team-aliens/design-system/compare/v1.18.0...v1.19.0) (2026-09-08)
 
 
