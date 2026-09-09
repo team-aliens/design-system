@@ -95,6 +95,14 @@ WithoutStatus.args = {
   close: () => undefined,
 };
 
+/** 이력을 받는 동안: 패널은 먼저 뜨고 내용 자리에 자리표시가 깔린다 */
+export const Loading = Template.bind({});
+Loading.args = {
+  data: [],
+  isLoading: true,
+  close: () => undefined,
+};
+
 /** 이력이 없으면 표 영역이 비어 있다 */
 export const SingleApplication = Template.bind({});
 SingleApplication.args = {
