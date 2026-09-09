@@ -1,3 +1,14 @@
+# [1.21.0](https://github.com/team-aliens/design-system/compare/v1.20.1...v1.21.0) (2026-09-09)
+
+
+### Features
+
+* HistorySidebar가 이력 목록의 다음 장 요청을 전달 ([702ac3c](https://github.com/team-aliens/design-system/commit/702ac3c8cd70b342112fc576b9efec72592b7143))
+* HistorySidebar에 onReachEnd prop 추가 ([bf71a52](https://github.com/team-aliens/design-system/commit/bf71a52d5551aa51667a415d3f65ddaefbae3de5))
+* HistoryTable 끝까지 스크롤하면 다음 장을 요청 ([e41900e](https://github.com/team-aliens/design-system/commit/e41900e7a6602202a61660d99161b301cc3762e5))
+* HistoryTable에 onReachEnd prop 추가 ([87c6c78](https://github.com/team-aliens/design-system/commit/87c6c78f364a5d0bba8e371f3fb4ebb47b7c6a03))
+* 스크롤 끝 도달을 알리는 useReachEnd 훅 추가 ([77a8fdc](https://github.com/team-aliens/design-system/commit/77a8fdc7ad97ebda00d02cf25769f760f5f9f514))
+
 ## [1.20.1](https://github.com/team-aliens/design-system/compare/v1.20.0...v1.20.1) (2026-09-09)
 
 
