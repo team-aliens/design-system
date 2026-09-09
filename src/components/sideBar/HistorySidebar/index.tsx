@@ -14,6 +14,7 @@ export function HistorySidebar({
   data,
   close,
   isLoading,
+  onReachEnd,
 }: HistorySidebarProps) {
   // null이면 목록 뷰(펼쳐 들어온 신청 + 이력 표), 값이 있으면 그 이력의 상세 뷰
   const [viewedId, setViewedId] = useState<string | null>(null);
@@ -58,7 +59,11 @@ export function HistorySidebar({
             {!viewedId && (
               <_Section>
                 <_SectionLabel>이력</_SectionLabel>
-                <HistoryTable data={data} onRowClick={setViewedId} />
+                <HistoryTable
+                  data={data}
+                  onRowClick={setViewedId}
+                  onReachEnd={onReachEnd}
+                />
               </_Section>
             )}
           </_Body>

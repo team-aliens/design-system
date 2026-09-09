@@ -2,9 +2,11 @@ import styled from 'styled-components';
 import { TableHeader } from './TableHeader';
 import { TableRow } from './TableRow';
 import { HistoryTableProps } from './types';
+import { useReachEnd } from '../../../hooks/useReachEnd';
 
 export function HistoryTable(props: HistoryTableProps) {
-  const { data, onRowClick } = props;
+  const { data, onRowClick, onReachEnd } = props;
+  const sentinelRef = useReachEnd(onReachEnd);
 
   return (
     <StyledTable>
@@ -17,6 +19,7 @@ export function HistoryTable(props: HistoryTableProps) {
             onRowClick={onRowClick}
           />
         ))}
+        {onReachEnd && <div ref={sentinelRef} />}
       </RowContainer>
     </StyledTable>
   );
