@@ -1,3 +1,10 @@
+## [1.20.1](https://github.com/team-aliens/design-system/compare/v1.20.0...v1.20.1) (2026-09-09)
+
+
+### Bug Fixes
+
+* 사유 박스 높이를 내용과 무관하게 184px로 고정 ([e2feb2b](https://github.com/team-aliens/design-system/commit/e2feb2b61060610a0669cf76697da4f8d15b154d))
+
 # [1.20.0](https://github.com/team-aliens/design-system/compare/v1.19.0...v1.20.0) (2026-09-09)
 
 
