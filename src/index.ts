@@ -29,3 +29,4 @@ export * from './components/button/ActionButton/ActionButton';
 export * from './components/sideBar/HistorySidebar';
 export * from './components/modal/ApprovalModal';
 export * from './components/dropdown/DropDownFilter';
+export * from './components/skeleton/Skeleton';
