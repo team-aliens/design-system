@@ -62,8 +62,10 @@ export const DropDownFilter = ({
 
 const _Wrapper = styled.div``;
 
+/** 기본 191px, 라벨이 길면 내용에 맞춰 늘어난다 */
 const _DropDownBox = styled.div`
-  width: 191px;
+  min-width: 191px;
+  width: max-content;
   display: flex;
   flex-direction: column;
   gap: 6px;
