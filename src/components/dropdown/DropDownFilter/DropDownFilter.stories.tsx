@@ -15,7 +15,7 @@ const items = [
 ];
 
 const Template: ComponentStory<typeof DropDownFilter> = (args) => (
-  <DropDownFilter width={240} items={items} {...args} />
+  <DropDownFilter items={items} {...args} />
 );
 
 export const Disable = Template.bind({});
@@ -31,5 +31,15 @@ export const Enabled = Template.bind({});
 Enabled.args = {
   disable: false,
   placeholder: '전체',
+  onChange: () => undefined,
+};
+
+/** 라벨이 길면 박스가 내용에 맞춰 늘어나고 줄바꿈되지 않는다 */
+export const LongLabel = Template.bind({});
+
+LongLabel.args = {
+  disable: false,
+  placeholder: '전체',
+  value: 'ITEM_3',
   onChange: () => undefined,
 };
