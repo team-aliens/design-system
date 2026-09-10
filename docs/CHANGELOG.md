@@ -1,3 +1,12 @@
+## [1.21.2](https://github.com/team-aliens/design-system/compare/v1.21.1...v1.21.2) (2026-09-10)
+
+
+### Bug Fixes
+
+* 드롭다운 너비가 라벨 길이에 맞춰 늘어나도록 수정 ([8b8a789](https://github.com/team-aliens/design-system/commit/8b8a789e99ccfe168c85c35d8c9e066b327b2a18))
+* 드롭다운 선택 박스에서 긴 라벨이 줄바꿈되지 않도록 수정 ([a423234](https://github.com/team-aliens/design-system/commit/a42323473a73d3171c48a205ca4d7cd923cf8421))
+* 드롭다운 항목이 박스를 벗어나거나 줄바꿈되지 않도록 수정 ([7439373](https://github.com/team-aliens/design-system/commit/74393734011658cd7538d772ce61e3c0c73e91e7))
+
 ## [1.21.1](https://github.com/team-aliens/design-system/compare/v1.21.0...v1.21.1) (2026-09-10)
 
 
