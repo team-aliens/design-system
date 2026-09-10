@@ -9,16 +9,21 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      issues: write
     steps:
       - name: github action checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
         with:
           fetch-depth: 0
+          ref: main
 
-      - name: use Node 16
-        uses: actions/setup-node@v4
+      - name: use Node 20
+        uses: actions/setup-node@v4.4.0
         with:
-          node-version: 16
+          node-version: 22
 
       - name: Install dependencies
         run: yarn install --immutable
@@ -30,5 +35,4 @@ jobs:
         env:
           CI: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: yarn semantic-release

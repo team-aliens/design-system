@@ -1,3 +1,262 @@
+## [1.21.2](https://github.com/team-aliens/design-system/compare/v1.21.1...v1.21.2) (2026-09-10)
+
+
+### Bug Fixes
+
+* 드롭다운 너비가 라벨 길이에 맞춰 늘어나도록 수정 ([8b8a789](https://github.com/team-aliens/design-system/commit/8b8a789e99ccfe168c85c35d8c9e066b327b2a18))
+* 드롭다운 선택 박스에서 긴 라벨이 줄바꿈되지 않도록 수정 ([a423234](https://github.com/team-aliens/design-system/commit/a42323473a73d3171c48a205ca4d7cd923cf8421))
+* 드롭다운 항목이 박스를 벗어나거나 줄바꿈되지 않도록 수정 ([7439373](https://github.com/team-aliens/design-system/commit/74393734011658cd7538d772ce61e3c0c73e91e7))
+
+## [1.21.1](https://github.com/team-aliens/design-system/compare/v1.21.0...v1.21.1) (2026-09-10)
+
+
+### Bug Fixes
+
+* 신청사유 칸이 아니라 행 전체를 눌러 상세를 열도록 수정 ([1beb6cf](https://github.com/team-aliens/design-system/commit/1beb6cf66f855b1b85a74da26aa79a6bc0531c08))
+
+# [1.21.0](https://github.com/team-aliens/design-system/compare/v1.20.1...v1.21.0) (2026-09-09)
+
+
+### Features
+
+* HistorySidebar가 이력 목록의 다음 장 요청을 전달 ([702ac3c](https://github.com/team-aliens/design-system/commit/702ac3c8cd70b342112fc576b9efec72592b7143))
+* HistorySidebar에 onReachEnd prop 추가 ([bf71a52](https://github.com/team-aliens/design-system/commit/bf71a52d5551aa51667a415d3f65ddaefbae3de5))
+* HistoryTable 끝까지 스크롤하면 다음 장을 요청 ([e41900e](https://github.com/team-aliens/design-system/commit/e41900e7a6602202a61660d99161b301cc3762e5))
+* HistoryTable에 onReachEnd prop 추가 ([87c6c78](https://github.com/team-aliens/design-system/commit/87c6c78f364a5d0bba8e371f3fb4ebb47b7c6a03))
+* 스크롤 끝 도달을 알리는 useReachEnd 훅 추가 ([77a8fdc](https://github.com/team-aliens/design-system/commit/77a8fdc7ad97ebda00d02cf25769f760f5f9f514))
+
+## [1.20.1](https://github.com/team-aliens/design-system/compare/v1.20.0...v1.20.1) (2026-09-09)
+
+
+### Bug Fixes
+
+* 사유 박스 높이를 내용과 무관하게 184px로 고정 ([e2feb2b](https://github.com/team-aliens/design-system/commit/e2feb2b61060610a0669cf76697da4f8d15b154d))
+
+# [1.20.0](https://github.com/team-aliens/design-system/compare/v1.19.0...v1.20.0) (2026-09-09)
+
+
+### Features
+
+* HistorySidebar 로딩 자리표시 LoadingContent 추가 ([0b472bb](https://github.com/team-aliens/design-system/commit/0b472bba6080726bb876b7c274af7a560f5959b7))
+* HistorySidebar에 isLoading prop 추가 ([96dc68b](https://github.com/team-aliens/design-system/commit/96dc68b361a63dffcfb9252eccccf142cee44a7e))
+* 로딩 자리표시용 Skeleton 컴포넌트 추가 ([df4e558](https://github.com/team-aliens/design-system/commit/df4e5588b46fe317b64a440ea75a8b369b527f89))
+* 이력을 받는 동안 HistorySidebar에 자리표시 표시 ([275a156](https://github.com/team-aliens/design-system/commit/275a1567ae035ff21fb30461954c57e405052216))
+
+# [1.19.0](https://github.com/team-aliens/design-system/compare/v1.18.0...v1.19.0) (2026-09-08)
+
+
+### Bug Fixes
+
+* 뒤로가기 버튼을 이름과 56px 간격의 형제 요소로 배치 ([0b0fa54](https://github.com/team-aliens/design-system/commit/0b0fa54947b1c37a0eba349a4edb638ffb180c41))
+
+
+### Features
+
+* HistorySidebar 헤더에 뒤로가기 버튼 추가 ([6f1396f](https://github.com/team-aliens/design-system/commit/6f1396fe3994a74134c52fcac5f2d9c39b1976e5))
+* 뒤로가기 버튼을 BackButton 컴포넌트로 분리 ([6699592](https://github.com/team-aliens/design-system/commit/6699592fe71e95a8f27d7d8ad6abf2e017fda3aa))
+* 신청 정보를 그리는 ApplicationInfo 컴포넌트 추가 ([171de0e](https://github.com/team-aliens/design-system/commit/171de0e81e101b0bba66dd804edb0166b1ee92fc))
+* 이력 항목을 누르면 해당 신청 상세 뷰로 전환 ([fbbc3be](https://github.com/team-aliens/design-system/commit/fbbc3be6e94be7b14485cc6f7bfadf917e0937a1))
+
+# [1.18.0](https://github.com/team-aliens/design-system/compare/v1.17.1...v1.18.0) (2026-09-08)
+
+
+### Bug Fixes
+
+* HistorySidebar 이력 목록이 남은 높이를 채우도록 조정 ([c8c98d2](https://github.com/team-aliens/design-system/commit/c8c98d28e914318e6e55b7633ca7496faa1a313e))
+* HistorySidebar 패널을 화면 가운데가 아닌 우측에 붙임 ([49df755](https://github.com/team-aliens/design-system/commit/49df755c532ca2f31deb9fc0a2d2b328f947781e))
+* 테이블 선택이 선택 가능한 행만 다루도록 제한 ([9814909](https://github.com/team-aliens/design-system/commit/98149091c84ba044260d4af77b2ad84de2a243a9))
+
+
+### Features
+
+* HistorySidebar 하단 승인/거절 버튼 영역 제거 ([2c1e2a2](https://github.com/team-aliens/design-system/commit/2c1e2a2605daa6535be64de247225940184c27e2))
+* HistorySidebar 헤더에 상태 뱃지 노출 ([1cc39d0](https://github.com/team-aliens/design-system/commit/1cc39d0321041c7c48724facb9cc093a8a60da14))
+* HistorySidebar가 선택한 신청의 상태를 헤더로 전달 ([decbacb](https://github.com/team-aliens/design-system/commit/decbacb313797caa48659c49db49ff6a4fadf775))
+* HistorySidebar에 사유/이력 섹션 라벨 추가 ([8d3f5ee](https://github.com/team-aliens/design-system/commit/8d3f5ee6b1d8bcd13a3dec3025fa43b925e2a2dd))
+* StudyHistoryRequest에 신청 상태 필드 추가 ([3f2128d](https://github.com/team-aliens/design-system/commit/3f2128df403c8aa9c6bcffa2d95e16539c3455c9))
+* 신청 상태 뱃지 StatusChip 추가 ([321def8](https://github.com/team-aliens/design-system/commit/321def87144497b99d099d5ecb61694fa74b82ac))
+* 요청 중이 아닌 신청 행의 체크박스를 잠금 상태로 렌더 ([da1c3ca](https://github.com/team-aliens/design-system/commit/da1c3cac73b827b1473bce5c7c85ad2f67807777))
+* 체크박스 disabled 상태에 teacher 회색 스타일 추가 ([2fbf1f6](https://github.com/team-aliens/design-system/commit/2fbf1f6fb748f7527aec697c44622ee5291b5fef))
+
+## [1.17.1](https://github.com/team-aliens/design-system/compare/v1.17.0...v1.17.1) (2026-09-02)
+
+
+### Bug Fixes
+
+* Item type import 수정 ([e5d8bda](https://github.com/team-aliens/design-system/commit/e5d8bdab189cc9c094503f05fe03556b8088d8e7))
+* Navigator 컴포넌트 수정 ([ac1b8c7](https://github.com/team-aliens/design-system/commit/ac1b8c737a64a469989d4f9a809232f3e5a62981))
+
+# [1.17.0](https://github.com/team-aliens/design-system/compare/v1.16.0...v1.17.0) (2026-09-02)
+
+
+### Features
+
+* DropDownFilter, ApprovalModal 컴포넌트 추가 ([b1b0f29](https://github.com/team-aliens/design-system/commit/b1b0f29083f8f8bf5aace1d5c87538c4a3f6f604))
+
+# [1.16.0](https://github.com/team-aliens/design-system/compare/v1.15.0...v1.16.0) (2026-09-02)
+
+
+### Features
+
+* HistoryTable, HistorySlider 컴포넌트 추가 ([aba0efb](https://github.com/team-aliens/design-system/commit/aba0efbccbdd4047bbca241400970a59e13d4079))
+
+# [1.15.0](https://github.com/team-aliens/design-system/compare/v1.14.10...v1.15.0) (2026-09-02)
+
+
+### Features
+
+* 새벽 자습 관련 컴포넌트 색상, 폰트 변경 ([0b84c8c](https://github.com/team-aliens/design-system/commit/0b84c8c1b131fab046e777e0b7267ee66e4cd8bc))
+
+## [1.14.10](https://github.com/team-aliens/design-system/compare/v1.14.9...v1.14.10) (2026-06-20)
+
+
+### Bug Fixes
+
+* npm release 권한 업데이트 ([5f1b67c](https://github.com/team-aliens/design-system/commit/5f1b67ccdd0f9ac7b88c7f27ed81d94f5554e2f2))
+* trigger cd ([4f44b6a](https://github.com/team-aliens/design-system/commit/4f44b6a6963cefc848340518d849698726009ab8))
+
+## [1.14.9](https://github.com/team-aliens/design-system/compare/v1.14.8...v1.14.9) (2026-06-20)
+
+
+### Bug Fixes
+
+* migrate to npm trusted publishing ([46a0b07](https://github.com/team-aliens/design-system/commit/46a0b07230d3992763fe870b7cc7138bf865dc1b))
+* migrate to npm trusted publishing ([73c8afd](https://github.com/team-aliens/design-system/commit/73c8afd6d9e9a11381024a3a4de92a65550a8c85))
+* node version 수정 ([f2b4820](https://github.com/team-aliens/design-system/commit/f2b48201a944130fe7410a0d6dd074f355549277))
+* trigger cd ([9f2e8f0](https://github.com/team-aliens/design-system/commit/9f2e8f0b3da5286c9a06dc207e60eda415333cdf))
+* upgrade semantic-release and npm plugin for trusted publishing ([b4d6959](https://github.com/team-aliens/design-system/commit/b4d6959e16c60d4e87e1731f19d96a9ad591f605))
+
+## [1.14.8](https://github.com/team-aliens/design-system/compare/v1.14.7...v1.14.8) (2026-06-03)
+
+
+### Bug Fixes
+
+* update github actions checkout ref to main ([40cc7df](https://github.com/team-aliens/design-system/commit/40cc7df722f028d4d3972eb9adb6ca13fdf3754f))
+
+## [1.14.7](https://github.com/team-aliens/design-system/compare/v1.14.6...v1.14.7) (2026-05-26)
+
+
+### Bug Fixes
+
+* LoginPage 하단 공백 수정 ([de34494](https://github.com/team-aliens/design-system/commit/de34494e1759d9cab7eefa7efe9bf57c79826de1))
+
+## [1.14.6](https://github.com/team-aliens/design-system/compare/v1.14.5...v1.14.6) (2026-05-08)
+
+
+### Bug Fixes
+
+* LoginPage 엔터 활성화 및 label 커서, StatusBadge Status 타입 수정 ([a692c78](https://github.com/team-aliens/design-system/commit/a692c78de87b0449b64496a73e9a5a5aa5b0e602))
+* Table status 타입 수정 ([2f008c6](https://github.com/team-aliens/design-system/commit/2f008c6de3693b5b3f39ea8454f896cf6bb8db77))
+
+## [1.14.5](https://github.com/team-aliens/design-system/compare/v1.14.4...v1.14.5) (2026-05-05)
+
+
+### Bug Fixes
+
+* TagButton hover 시 background-color 변경, LoginPage 배경 깨짐 수정 ([88cad77](https://github.com/team-aliens/design-system/commit/88cad77d836b17b4626ba63d9e6bd526037e716f))
+
+## [1.14.4](https://github.com/team-aliens/design-system/compare/v1.14.3...v1.14.4) (2026-05-04)
+
+
+### Bug Fixes
+
+* TagButton 컴포넌트 스타일 수정 ([7eca54c](https://github.com/team-aliens/design-system/commit/7eca54c5fd2972351bc6a9c2a91f273f63a59e83))
+
+## [1.14.3](https://github.com/team-aliens/design-system/compare/v1.14.2...v1.14.3) (2026-05-04)
+
+
+### Bug Fixes
+
+* Header, ActionButton 컴포넌트 수정 ([1f087ce](https://github.com/team-aliens/design-system/commit/1f087ce66c89da90b0b5916d6c3baaf506effe18))
+
+## [1.14.2](https://github.com/team-aliens/design-system/compare/v1.14.1...v1.14.2) (2026-04-23)
+
+
+### Bug Fixes
+
+* Login 컴포넌트 수정 ([a952f31](https://github.com/team-aliens/design-system/commit/a952f311d2a4e0a40bcac7f08f037cc70572d55e))
+* LoginPage 프로퍼티 수정 ([e4e1b6c](https://github.com/team-aliens/design-system/commit/e4e1b6c991e1cb48fa3f03e8c17c778a85519586))
+
+## [1.14.1](https://github.com/team-aliens/design-system/compare/v1.14.0...v1.14.1) (2026-04-22)
+
+
+### Bug Fixes
+
+* Login 컴포넌트 프로퍼티 수정 ([9724b15](https://github.com/team-aliens/design-system/commit/9724b15d045a214de4c3f0f49866a3c8ab805d5f))
+
+# [1.14.0](https://github.com/team-aliens/design-system/compare/v1.13.1...v1.14.0) (2026-04-22)
+
+
+### Features
+
+* 컴포넌트 export 추가 ([da384fa](https://github.com/team-aliens/design-system/commit/da384fa60d215882a1ab1e7ad188bc2dc87633b2))
+
+## [1.13.1](https://github.com/team-aliens/design-system/compare/v1.13.0...v1.13.1) (2026-04-22)
+
+
+### Bug Fixes
+
+* LoginInput, LoginPage 컴포넌트 프로퍼티 수정 ([c5d378c](https://github.com/team-aliens/design-system/commit/c5d378c0c3fd6656af6bc1c8233cc49f3eb87e64))
+
+# [1.13.0](https://github.com/team-aliens/design-system/compare/v1.12.0...v1.13.0) (2026-04-22)
+
+
+### Bug Fixes
+
+* svg 관련 webpack.config.js 수정 ([1785241](https://github.com/team-aliens/design-system/commit/1785241d3fb88b8b3e6fc81dc4053940766603c3))
+
+
+### Features
+
+* index.ts 파일에 컴포넌트 export 추가 ([dd698be](https://github.com/team-aliens/design-system/commit/dd698beac47c8dbeecbcd7380a2e1abe72dde152))
+
+# [1.12.0](https://github.com/team-aliens/design-system/compare/v1.11.0...v1.12.0) (2026-04-20)
+
+
+### Features
+
+* 새벽 자습 메뉴 추가 ([da556b7](https://github.com/team-aliens/design-system/commit/da556b7052b45e13716bf91a583de771220fa58c))
+
+# [1.11.0](https://github.com/team-aliens/design-system/compare/v1.10.0...v1.11.0) (2026-04-20)
+
+
+### Features
+
+* 컴포넌트 디자인 수정 ([d4f967e](https://github.com/team-aliens/design-system/commit/d4f967e05d21e023058559cf53ab927dfba6dff1))
+
+# [1.10.0](https://github.com/team-aliens/design-system/compare/v1.9.0...v1.10.0) (2026-04-17)
+
+
+### Features
+
+* modal 컴포넌트 추가 ([b768b77](https://github.com/team-aliens/design-system/commit/b768b770aa7cff83ab46822b4cce49e58e617a6b))
+
+# [1.9.0](https://github.com/team-aliens/design-system/compare/v1.8.0...v1.9.0) (2026-04-17)
+
+
+### Features
+
+* 로그인 컴포넌트 및 페이지 추가 ([97399e6](https://github.com/team-aliens/design-system/commit/97399e603a860ecd8016e67bf49c21b6eed22660))
+
+# [1.8.0](https://github.com/team-aliens/design-system/compare/v1.7.0...v1.8.0) (2026-04-16)
+
+
+### Bug Fixes
+
+* 빌드 오류 수정 ([3a26b0a](https://github.com/team-aliens/design-system/commit/3a26b0a4d40bd65698d54e6ba1c2242464813d7e))
+* 주석 제거 ([2391452](https://github.com/team-aliens/design-system/commit/2391452b6ff9923531dec117f75beb6081755521))
+
+
+### Features
+
+* ActionButton, TagButton 추가 ([0ab7875](https://github.com/team-aliens/design-system/commit/0ab7875b37447770c833f391569d70c8718974c8))
+* color styles 추가 ([152025c](https://github.com/team-aliens/design-system/commit/152025ce6941e5c9bb3b8e5bbdb258fb8c87fdbc))
+* npm 자동 배포 테스트 ([f1b8195](https://github.com/team-aliens/design-system/commit/f1b81955981be165812bccd9cae5e2e960b86fa6))
+* StatusBadge, TypeBadge 추가 ([993c30c](https://github.com/team-aliens/design-system/commit/993c30c5d2e771eeb138616dd97000084c6a78f1))
+* table 컴포넌트 추가 및 badge 수정 ([0cdf281](https://github.com/team-aliens/design-system/commit/0cdf281e0530576d87d0cf8b5fd2930cca0c2d9d))
+* teacherColor 내보내기 ([7b6826e](https://github.com/team-aliens/design-system/commit/7b6826ebf3b4b45fea6f5be24581f9a569502b31))
+* 헤더 컴포넌트 추가 ([fcbe262](https://github.com/team-aliens/design-system/commit/fcbe26276167f9040ab9ad9824ea4eb0243a26d8))
+
 # [1.7.0](https://github.com/team-aliens/design-system/compare/v1.6.3...v1.7.0) (2025-11-11)
 
 
