@@ -40,7 +40,10 @@ export function TableRow(props: TableRowProps) {
     variant === 'GENERAL_TEACHER' && props.data.status !== 'PENDING';
 
   return (
-    <StyledRow $variant={variant}>
+    <StyledRow
+      $variant={variant}
+      onClick={() => onRowClick(data.application_id)}
+    >
       {variant !== 'DORMITORY_TEACHER' && (
         <Cell onClick={(e) => e.stopPropagation()}>
           <CheckBox
@@ -63,12 +66,7 @@ export function TableRow(props: TableRowProps) {
       {(variant === 'HEAD_TEACHER' || variant === 'DORMITORY_TEACHER') && (
         <Cell $color={theme.teacherColor.gray[500]}>{data.teacher_name}</Cell>
       )}
-      <Cell
-        $color={theme.teacherColor.gray[600]}
-        onClick={() => onRowClick(data.application_id)}
-      >
-        {data.reason}
-      </Cell>
+      <Cell $color={theme.teacherColor.gray[600]}>{data.reason}</Cell>
       <Cell $color={theme.teacherColor.gray[400]}>
         {`${data.start_date} ~ ${data.end_date}`}
       </Cell>
