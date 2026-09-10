@@ -22,22 +22,29 @@ export const SelectedBox = ({
       onClick={() => !disable && setIsOpen(!isOpen)}
     >
       <_Text>{text}</_Text>
-      <Arrow colorKey={'gray7'} direction="bottom" />
+      <_ArrowBox>
+        <Arrow colorKey={'gray7'} direction="bottom" />
+      </_ArrowBox>
     </_DropDownSelectedBox>
   );
 };
+
+const _ArrowBox = styled.span`
+  display: flex;
+  flex-shrink: 0;
+`;
 
 const _DropDownSelectedBox = styled.div<{
   disable: boolean;
 }>`
   width: 100%;
   height: 50px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   gap: 10px;
   border: 1px solid ${theme.teacherColor.gray[500]};
   padding: 10px 16px 10px 32px;
-  display: flex;
   align-items: center;
   border-radius: 12px;
   background-color: ${theme.teacherColor.gray[50]};
@@ -48,7 +55,9 @@ const _DropDownSelectedBox = styled.div<{
   }
 `;
 
+/** 라벨이 길어도 줄바꿈되지 않고 한 줄로 유지된다 */
 const _Text = styled.p`
-  width: 109px;
+  flex: 1;
   text-align: center;
+  white-space: nowrap;
 `;
