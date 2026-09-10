@@ -1,3 +1,10 @@
+## [1.21.1](https://github.com/team-aliens/design-system/compare/v1.21.0...v1.21.1) (2026-09-10)
+
+
+### Bug Fixes
+
+* 신청사유 칸이 아니라 행 전체를 눌러 상세를 열도록 수정 ([1beb6cf](https://github.com/team-aliens/design-system/commit/1beb6cf66f855b1b85a74da26aa79a6bc0531c08))
+
 # [1.21.0](https://github.com/team-aliens/design-system/compare/v1.20.1...v1.21.0) (2026-09-09)
 
 
