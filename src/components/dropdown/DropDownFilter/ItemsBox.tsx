@@ -41,6 +41,7 @@ export const ItemBox = ({
 const _DropDownItemsBox = styled.div<{ isOpen: boolean }>`
   top: 54px;
   width: 100%;
+  box-sizing: border-box;
   background-color: ${theme.teacherColor.gray[50]};
   z-index: 5;
   @keyframes DropDownOpen {
@@ -76,9 +77,12 @@ const _DropDownItemsBox = styled.div<{ isOpen: boolean }>`
 const _DropDownItem = styled.div`
   width: 100%;
   min-height: 51px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 8px 48px 8px 32px;
+  white-space: nowrap;
   ${theme.font.titleS}
   cursor: pointer;
   color: ${theme.teacherColor.gray[600]};
