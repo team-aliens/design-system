@@ -60,6 +60,9 @@ const StyledHeader = styled.div<{ $variant: TableVariant }>`
   padding: 0 40px;
   gap: 40px;
   height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background: ${theme.teacherColor.blue[300]};
   border: 1px solid ${theme.teacherColor.blue[100]};
   border-top-right-radius: 24px;
