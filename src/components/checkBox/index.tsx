@@ -4,12 +4,15 @@ import { marginCssType, marginToCss } from '../../utils/distance';
 import { Box } from './Box';
 import { Label } from './Label';
 
+export type CheckBoxVariant = 'primary' | 'teacherHeader' | 'teacherRow';
+
 interface PropsType extends marginCssType {
   className?: string;
   disabled?: boolean;
   label?: string;
   status: boolean;
   size?: number;
+  variant?: CheckBoxVariant;
   onChange: (status: boolean) => void;
 }
 
@@ -21,6 +24,7 @@ export const CheckBox = ({
   status,
   onChange,
   size = 24,
+  variant = 'primary',
   margin,
 }: PropsType) => {
   return (
@@ -30,7 +34,7 @@ export const CheckBox = ({
       onClick={() => !disabled && onChange(!status)}
       margin={margin}
     >
-      <Box size={size} status={status} disabled={disabled} />
+      <Box size={size} status={status} disabled={disabled} variant={variant} />
       {label && <Label label={label} disabled={disabled} />}
     </_Wrapper>
   );
