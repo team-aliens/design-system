@@ -1,3 +1,15 @@
+# [1.22.0](https://github.com/team-aliens/design-system/compare/v1.21.2...v1.22.0) (2026-10-09)
+
+
+### Bug Fixes
+
+* 테이블 행 기본 배경을 흰색으로, hover 시 어두워지도록 수정 ([ba8fd9b](https://github.com/team-aliens/design-system/commit/ba8fd9b5fc001283fef2bd6a2aa0c70aa568b1b1))
+
+
+### Features
+
+* 테이블 헤더가 스크롤 시 상단에 고정되도록 수정 ([91253b1](https://github.com/team-aliens/design-system/commit/91253b1dbfc013f32f37ef16ae73b841f559c16c))
+
 ## [1.21.2](https://github.com/team-aliens/design-system/compare/v1.21.1...v1.21.2) (2026-09-10)
 
 
