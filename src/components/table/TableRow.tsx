@@ -87,10 +87,11 @@ const StyledRow = styled.div<{ $variant: TableVariant }>`
   gap: 40px;
   height: 80px;
   cursor: pointer;
+  background: ${theme.teacherColor.gray[50]};
   transition: background 0.15s ease;
 
   &:hover {
-    background: ${theme.teacherColor.gray[50]};
+    background: ${theme.teacherColor.gray[200]};
   }
 `;
 
