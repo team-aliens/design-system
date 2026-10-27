@@ -24,22 +24,66 @@ const baseData = {
 };
 
 const generalData: GeneralStudyRequest[] = [
-  { ...baseData, status: 'FIRST_APPROVED' },
-  { ...baseData, application_id: '2', status: 'SECOND_APPROVED' },
-  { ...baseData, application_id: '3', status: 'REJECTED' },
+  {
+    ...baseData,
+    status: 'FIRST_APPROVED',
+    application_days: ['MONDAY', 'TUESDAY', 'THURSDAY'],
+  },
+  {
+    ...baseData,
+    application_id: '2',
+    status: 'SECOND_APPROVED',
+    application_days: [],
+  },
+  {
+    ...baseData,
+    application_id: '3',
+    status: 'REJECTED',
+    application_days: ['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY'],
+  },
   { ...baseData, application_id: '4', status: 'PENDING' },
 ];
 
 const headData: HeadStudyRequest[] = [
-  { ...baseData, teacher_name: '정은진' },
-  { ...baseData, application_id: '2', teacher_name: '정은진' },
-  { ...baseData, application_id: '3', teacher_name: '정은진' },
+  {
+    ...baseData,
+    teacher_name: '정은진',
+    application_days: ['MONDAY', 'TUESDAY', 'THURSDAY'],
+  },
+  {
+    ...baseData,
+    application_id: '2',
+    teacher_name: '정은진',
+    application_days: [],
+  },
+  {
+    ...baseData,
+    application_id: '3',
+    teacher_name: '정은진',
+    application_days: ['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY'],
+  },
+  { ...baseData, application_id: '4', teacher_name: '정은진' },
 ];
 
 const dormitoryData: DormitoryStudyRequest[] = [
-  { ...baseData, teacher_name: '서무성' },
-  { ...baseData, application_id: '2', teacher_name: '서무성' },
-  { ...baseData, application_id: '3', teacher_name: '서무성' },
+  {
+    ...baseData,
+    teacher_name: '서무성',
+    application_days: ['MONDAY', 'TUESDAY', 'THURSDAY'],
+  },
+  {
+    ...baseData,
+    application_id: '2',
+    teacher_name: '서무성',
+    application_days: [],
+  },
+  {
+    ...baseData,
+    application_id: '3',
+    teacher_name: '서무성',
+    application_days: ['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY'],
+  },
+  { ...baseData, application_id: '4', teacher_name: '서무성' },
 ];
 
 /** PENDING인 행만 선택할 수 있고, 나머지는 회색 체크 박스로 잠긴다 */
