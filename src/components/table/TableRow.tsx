@@ -11,6 +11,13 @@ import {
 } from './types';
 import { GRID_TEMPLATE } from './constants';
 
+const APPLICATION_DAYS = [
+  { value: 1, label: '월' },
+  { value: 2, label: '화' },
+  { value: 3, label: '수' },
+  { value: 4, label: '목' },
+] as const;
+
 type TableRowProps =
   | {
       variant: 'HEAD_TEACHER';
@@ -34,6 +41,9 @@ type TableRowProps =
 
 export function TableRow(props: TableRowProps) {
   const { variant, data, onRowClick } = props;
+  const applicationDays = new Set(
+    data.dates.map((date) => new Date(`${date}T00:00:00Z`).getUTCDay())
+  );
 
   // 요청 중(PENDING)인 신청만 선택해서 상태를 바꿀 수 있다
   const locked =
@@ -68,7 +78,16 @@ export function TableRow(props: TableRowProps) {
       )}
       <Cell $color={theme.teacherColor.gray[600]}>{data.reason}</Cell>
       <Cell $color={theme.teacherColor.gray[400]}>
-        {`${data.start_date} ~ ${data.end_date}`}
+        <WeekdayList>
+          {APPLICATION_DAYS.map(({ value, label }) => {
+            const applied = applicationDays.has(value);
+            return (
+              <WeekdayBadge key={value} $applied={applied}>
+                {label}
+              </WeekdayBadge>
+            );
+          })}
+        </WeekdayList>
       </Cell>
       {variant === 'GENERAL_TEACHER' && (
         <Cell>
@@ -102,4 +121,27 @@ const Cell = styled.div<{ $color?: string }>`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+`;
+
+const WeekdayList = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+`;
+
+const WeekdayBadge = styled.span<{ $applied: boolean }>`
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  ${theme.font.titleLS}
+  font-weight: 600;
+  background: ${({ $applied }) =>
+    $applied ? theme.teacherColor.blue[50] : theme.teacherColor.gray[200]};
+  color: ${({ $applied }) =>
+    $applied ? theme.teacherColor.blue[200] : theme.teacherColor.gray[400]};
 `;
