@@ -6,6 +6,7 @@ import { HistorySidebarProps } from './types';
 import { BackButton } from './BackButton';
 import { Header } from './Header';
 import { ApplicationInfo } from './ApplicationInfo';
+import { ApplicationDates } from './ApplicationDates';
 import { ReasonBox } from './ReasonBox';
 import { LoadingContent } from './LoadingContent';
 import { HistoryTable } from '../../table/HistoryTable/index';
@@ -48,10 +49,10 @@ export function HistorySidebar({
           />
           <_Body>
             <ApplicationInfo
-              createdAt={viewedApplication.created_at}
               teacherName={viewedApplication.teacher_name}
               type={viewedApplication.type_name}
             />
+            <ApplicationDates dates={viewedApplication.dates} />
             <_Section>
               <_SectionLabel>사유</_SectionLabel>
               <ReasonBox reason={viewedApplication.reason} />
@@ -103,7 +104,16 @@ const _Body = styled.div`
   display: flex;
   flex-direction: column;
   gap: 28px;
-  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  > * {
+    flex-shrink: 0;
+  }
 `;
 
 const _Section = styled.div`
@@ -114,10 +124,12 @@ const _Section = styled.div`
 
   &:last-child {
     flex: 1;
+    min-height: 240px;
   }
 `;
 
 const _SectionLabel = styled.span`
   ${theme.font.titleM}
+  font-weight: 600;
   color: ${theme.teacherColor.gray[600]};
 `;

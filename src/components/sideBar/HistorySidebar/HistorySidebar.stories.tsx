@@ -17,8 +17,7 @@ const data: StudyHistoryRequest[] = [
     application_id: 'b264324f-366a-11f1-a76c-a78f14fa5d8b',
     type_name: '개인 프로젝트',
     created_at: '2026.12.28',
-    start_date: '2026.12.28',
-    end_date: '2026.12.30',
+    dates: ['2026-12-30', '2026-12-31', '2027-01-01', '2027-01-02'],
     reason:
       'DMS 프로젝트 개발 어쩌구 저쩌구 이러쿵 저러쿵. 새벽에 남아서 배포 파이프라인을 정리하려고 합니다.',
     student_name: '2312 정일웅',
@@ -30,8 +29,7 @@ const data: StudyHistoryRequest[] = [
     application_id: '2',
     type_name: '개인공부',
     created_at: '2026.11.02',
-    start_date: '2026.11.02',
-    end_date: '2026.11.02',
+    dates: ['2026-11-02'],
     reason: '정보처리기능사 실기 준비',
     student_name: '2312 정일웅',
     student_gcn: '2312',
@@ -42,8 +40,7 @@ const data: StudyHistoryRequest[] = [
     application_id: '3',
     type_name: '팀 프로젝트',
     created_at: '2026.10.15',
-    start_date: '2026.10.15',
-    end_date: '2026.10.18',
+    dates: ['2026-10-18', '2026-10-15', '2026-10-16', '2026-10-18'],
     reason: '교내 해커톤 팀 프로젝트 마무리',
     student_name: '2312 정일웅',
     student_gcn: '2312',
@@ -54,8 +51,7 @@ const data: StudyHistoryRequest[] = [
     application_id: '4',
     type_name: '대회 준비',
     created_at: '2026.09.21',
-    start_date: '2026.09.21',
-    end_date: '2026.09.25',
+    dates: ['2026-10-18'],
     reason: '전국 기능경기대회 준비',
     student_name: '2312 정일웅',
     student_gcn: '2312',
@@ -132,4 +128,24 @@ export const SingleApplication = Template.bind({});
 SingleApplication.args = {
   data: [data[0]],
   close: () => undefined,
+};
+
+export const ManyDates = Template.bind({});
+ManyDates.args = {
+  ...Default.args,
+  data: [
+    {
+      ...data[0],
+      dates: [
+        '2026-12-01',
+        '2026-12-03',
+        '2026-12-08',
+        '2026-12-10',
+        '2026-12-15',
+        '2026-12-17',
+        '2027-01-04',
+      ],
+    },
+    ...data.slice(1),
+  ],
 };
