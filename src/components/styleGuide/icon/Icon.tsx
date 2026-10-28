@@ -23,6 +23,7 @@ import {
   Change,
   SeeMore,
   Outing,
+  Daybreak,
 } from './index';
 
 const IconList = [
@@ -57,6 +58,7 @@ const IconList = [
   { svg: <SeeMore />, name: 'see-more' },
   { svg: <Outing />, name: 'outing' },
   { svg: <Cancel size={16} colorKey="gray9" />, name: 'cancel' },
+  { svg: <Daybreak fill={false} />, name: 'daybreak' },
 ];
 
 export const Icon = () => {

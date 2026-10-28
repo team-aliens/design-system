@@ -11,10 +11,11 @@
     "allowJs": true,
     "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "noEmit": false
   },
-  "typeRoots": ["node_modules/@types", "src/@types"],
+  "typeRoots": ["node_modules/@types", "src/types"],
   "exclude": [
     "node_modules",
     "build",
