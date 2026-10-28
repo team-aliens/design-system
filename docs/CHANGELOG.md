@@ -1,3 +1,15 @@
+# [1.23.0](https://github.com/team-aliens/design-system/compare/v1.22.1...v1.23.0) (2026-10-28)
+
+
+### Bug Fixes
+
+* 이력 대표 날짜를 오름차순으로 표시하고 날짜 정렬 공통화 ([07f4b3e](https://github.com/team-aliens/design-system/commit/07f4b3e2785803174a9fa324566081a91640711d))
+
+
+### Features
+
+* SideBar 신청 날짜 표시 추가 및 요일 계산 공통화 ([d1d44eb](https://github.com/team-aliens/design-system/commit/d1d44eb03426bd541cdcad6a6b9a96a24f07a7b1))
+
 ## [1.22.1](https://github.com/team-aliens/design-system/compare/v1.22.0...v1.22.1) (2026-10-28)
 
 
