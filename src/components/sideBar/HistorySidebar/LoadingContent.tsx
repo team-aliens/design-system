@@ -10,13 +10,22 @@ export function LoadingContent() {
       <Skeleton width="260px" height="50px" radius="8px" />
       <_Body>
         <_InfoRow>
-          {[0, 1, 2].map((key) => (
+          {[0, 1].map((key) => (
             <_InfoItem key={key}>
               <Skeleton width="80px" height="34px" />
               <Skeleton width="100px" height="28px" />
             </_InfoItem>
           ))}
         </_InfoRow>
+        <_Section>
+          <Skeleton width="135px" height="34px" />
+          <Skeleton width="83px" height="22px" />
+          <_DateTiles>
+            {[0, 1, 2, 3].map((key) => (
+              <Skeleton key={key} width="88px" height="83px" radius="12px" />
+            ))}
+          </_DateTiles>
+        </_Section>
         <_Section>
           <Skeleton width="44px" height="34px" />
           <Skeleton height="184px" radius="8px" />
@@ -40,13 +49,17 @@ const _Body = styled.div`
   display: flex;
   flex-direction: column;
   gap: 28px;
-  overflow: hidden;
+  overflow-y: auto;
+
+  > * {
+    flex-shrink: 0;
+  }
 `;
 
 const _InfoRow = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, max-content);
-  justify-content: space-between;
+  grid-template-columns: repeat(2, max-content);
+  gap: 80px;
 `;
 
 const _InfoItem = styled.div`
@@ -66,4 +79,9 @@ const _Rows = styled.div`
   flex-direction: column;
   gap: 28px;
   padding-top: 13px;
+`;
+
+const _DateTiles = styled.div`
+  display: flex;
+  gap: 10px;
 `;

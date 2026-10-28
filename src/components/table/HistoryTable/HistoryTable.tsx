@@ -3,6 +3,7 @@ import { TableHeader } from './TableHeader';
 import { TableRow } from './TableRow';
 import { HistoryTableProps } from './types';
 import { useReachEnd } from '../../../hooks/useReachEnd';
+import { getSortedDates } from '../../../utils/date';
 
 export function HistoryTable(props: HistoryTableProps) {
   const { data, onRowClick, onReachEnd } = props;
@@ -15,7 +16,7 @@ export function HistoryTable(props: HistoryTableProps) {
         {data.map((item) => (
           <TableRow
             key={item.application_id}
-            data={item}
+            data={{ ...item, dates: getSortedDates(item.dates) }}
             onRowClick={onRowClick}
           />
         ))}
@@ -39,6 +40,7 @@ const RowContainer = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   padding: 10px 0;
   overflow-y: auto;
 

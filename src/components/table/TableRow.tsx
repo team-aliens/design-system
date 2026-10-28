@@ -10,12 +10,13 @@ import {
   TableVariant,
 } from './types';
 import { GRID_TEMPLATE } from './constants';
+import { getDayOfWeek, WEEKDAY_LABELS } from '../../utils/date';
 
 const APPLICATION_DAYS = [
-  { value: 1, label: '월' },
-  { value: 2, label: '화' },
-  { value: 3, label: '수' },
-  { value: 4, label: '목' },
+  { value: 1, label: WEEKDAY_LABELS[1] },
+  { value: 2, label: WEEKDAY_LABELS[2] },
+  { value: 3, label: WEEKDAY_LABELS[3] },
+  { value: 4, label: WEEKDAY_LABELS[4] },
 ] as const;
 
 type TableRowProps =
@@ -41,9 +42,7 @@ type TableRowProps =
 
 export function TableRow(props: TableRowProps) {
   const { variant, data, onRowClick } = props;
-  const applicationDays = new Set(
-    data.dates.map((date) => new Date(`${date}T00:00:00Z`).getUTCDay())
-  );
+  const applicationDays = new Set(data.dates.map(getDayOfWeek));
 
   // 요청 중(PENDING)인 신청만 선택해서 상태를 바꿀 수 있다
   const locked =

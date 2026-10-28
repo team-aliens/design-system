@@ -14,7 +14,6 @@ const Template: ComponentStory<typeof ApplicationInfo> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  createdAt: '2026.12.28',
   teacherName: '정은진',
   type: '개인 프로젝트',
 };

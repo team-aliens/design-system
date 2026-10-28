@@ -2,22 +2,13 @@ import styled from 'styled-components';
 import { theme } from '../../../styles/theme';
 
 interface ApplicationInfoProps {
-  createdAt: string;
   teacherName: string;
   type: string;
 }
 
-export function ApplicationInfo({
-  createdAt,
-  teacherName,
-  type,
-}: ApplicationInfoProps) {
+export function ApplicationInfo({ teacherName, type }: ApplicationInfoProps) {
   return (
     <_Wrapper>
-      <_Item>
-        <_Label>신청날짜</_Label>
-        <_Value>{createdAt}</_Value>
-      </_Item>
       <_Item>
         <_Label>담당 선생님</_Label>
         <_Value>{teacherName}</_Value>
@@ -33,8 +24,8 @@ export function ApplicationInfo({
 const _Wrapper = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, max-content);
-  justify-content: space-between;
+  grid-template-columns: repeat(2, max-content);
+  gap: 80px;
 `;
 
 const _Item = styled.div`
@@ -46,10 +37,12 @@ const _Item = styled.div`
 
 const _Label = styled.label`
   ${theme.font.titleM}
+  font-weight: 600;
   color: ${theme.teacherColor.gray[600]};
 `;
 
 const _Value = styled.span`
   ${theme.font.titleLS}
+  font-weight: 600;
   color: ${theme.teacherColor.blue[300]};
 `;

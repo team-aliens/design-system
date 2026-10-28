@@ -1,8 +1,7 @@
 export interface HistoryTableItem {
   application_id: string;
   type_name: string;
-  start_date: string;
-  end_date: string;
+  dates: string[];
   reason: string;
 }
 
