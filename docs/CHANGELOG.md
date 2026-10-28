@@ -1,3 +1,11 @@
+## [1.22.1](https://github.com/team-aliens/design-system/compare/v1.22.0...v1.22.1) (2026-10-28)
+
+
+### Bug Fixes
+
+* Table Storybook 데이터를 dates 배열 구조에 맞게 수정 ([6ed35b1](https://github.com/team-aliens/design-system/commit/6ed35b1eed4d844fd7c9905ce64c263f5635ac6b))
+* 신청 기간 컬럼 요일 배지로 변경 ([6931f03](https://github.com/team-aliens/design-system/commit/6931f0398f1096cd34264e5a758ab777c2319096))
+
 # [1.22.0](https://github.com/team-aliens/design-system/compare/v1.21.2...v1.22.0) (2026-10-09)
 
 
