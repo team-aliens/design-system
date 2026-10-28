@@ -9,8 +9,7 @@ type TableRowProps = {
 
 export function TableRow(props: TableRowProps) {
   const { data, onRowClick } = props;
-  // 대표 날짜는 전달받은 첫 날짜이므로 정렬하지 않고, 추가 신청일 수에는 중복을 제외한다.
-  const dates = [...new Set(data.dates)];
+  const { dates } = data;
 
   return (
     <StyledRow onClick={() => onRowClick(data.application_id)}>

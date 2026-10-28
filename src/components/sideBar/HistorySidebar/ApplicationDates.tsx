@@ -7,22 +7,17 @@ interface ApplicationDatesProps {
 }
 
 export function ApplicationDates({ dates }: ApplicationDatesProps) {
-  // 같은 날짜는 한 번만 세며, YYYY-MM-DD 문자열 정렬로 연월별 표시 순서를 맞춘다.
-  const sortedDates = [...new Set(dates)].sort();
-  const groups = sortedDates.reduce<Record<string, string[]>>(
-    (result, date) => {
-      const month = date.slice(0, 7);
-      (result[month] ??= []).push(date);
-      return result;
-    },
-    {}
-  );
+  const groups = dates.reduce<Record<string, string[]>>((result, date) => {
+    const month = date.slice(0, 7);
+    (result[month] ??= []).push(date);
+    return result;
+  }, {});
 
   return (
     <_Wrapper>
       <_LabelRow>
         <_Title>신청 날짜</_Title>
-        <_Count>{sortedDates.length}일</_Count>
+        <_Count>{dates.length}일</_Count>
       </_LabelRow>
       <_Groups>
         {Object.entries(groups).map(([month, days]) => (
